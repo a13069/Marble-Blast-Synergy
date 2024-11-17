@@ -1,0 +1,485 @@
+
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   new ScriptObject(MissionInfo) {
+         time = "0";
+         desc = "A test mission for an interior";
+         name = "Waterrings";
+         level = "8";
+         goldTime = "35000";
+         note = "Made in Aug 17, 2023. The author thinks this level is too hard to be in Intermediate Theme 1.";
+         music = "puzzlegame3.ogg";
+         type = "Intermediate";
+   };
+
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 7.45949e-031 1.3684e-038";
+      fogVolume2 = "-1 1.07208e-014 8.756e-014";
+      fogVolume3 = "-1 5.1012e-010 2.05098e-008";
+      materialList = "~/data/skies/blizzard.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 0.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000004";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 14435505.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/intermediate/waterrings_trimmed.dif";
+      showTerrainInside = "0";
+   };
+
+   new StaticShape() {
+      position = "0 0 2";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "StartPad";
+   };
+   new Item() {
+      position = "-9.5 18 -3.25";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "9.5 45 3.75";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "9.5 32 -3.25";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-9.5 58 3.75";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0 73 -8";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "AntiGravityItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0 64 -8";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "AntiGravityItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0 73 8";
+      rotation = "0.9999999999982396 1.3267948386803024e-06 1.326794838680302e-06 179.99999487735812";
+      scale = "1 1 1";
+      datablock = "AntiGravityItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0 64 8";
+      rotation = "0.9999999999982396 1.3267948386803024e-06 1.326794838680302e-06 179.99999487735812";
+      scale = "1 1 1";
+      datablock = "AntiGravityItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "-6.25 52.5 -2.5";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-2 53.75 -1";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "2 53.75 0.5";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "10.25 42.75 3.5";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "6.25 52.25 2";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "4.75 54.75 1.5";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "0 56 -0.25";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-7.5 49.75 -3";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-4 55.25 -1.75";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "8.25 51.75 2.75";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "7.5 49.75 2.5";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "8.25 47 2.75";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "8.25 43.5 2.75";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "9.5 48.5 3.25";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "9 40.25 3";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "6.25 39 2";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "6.25 36 2";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "4 36.75 1.25";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "2 34.25 0.5";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-1.25 34.25 -0.75";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "0.75 36.25 0";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-3.5 36.5 -1.5";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-6.25 36.5 -2.5";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-7.5 39.25 -3";
+      rotation = "-0.0 -1.0 -0.0 160.0001831636678";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "4.75 9.25 1.25";
+      rotation = "-0.0 1.0 -0.0 13.00001130106175";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-4 8.75 -2";
+      rotation = "-0.0 1.0 -0.0 13.00001130106175";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "0 27.25 -0.5";
+      rotation = "-0.0 1.0 -0.0 13.00001130106175";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-9.5 20.5 -4";
+      rotation = "-0.0 1.0 -0.0 13.00001130106175";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-0.25 7.75 -0.5";
+      rotation = "-0.18360366589236587 0.2722040158723414 0.9445605685258381 71.06106507829989";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-9.25 14.75 -4";
+      rotation = "-0.18360366589236587 0.2722040158723414 0.9445605685258381 71.06106507829989";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "9.25 17.25 3";
+      rotation = "-0.11992707723276937 0.177799720737325 0.9767316701388025 69.25632647740885";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-4 27.25 -2";
+      rotation = "0.15222516190958824 0.38644669942630716 -0.909662821370706 46.82803656511058";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "7 25.5 2";
+      rotation = "0.15222516190958824 0.38644669942630716 -0.909662821370706 46.82803656511058";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-6.75 11.75 -3";
+      rotation = "0.15222516190958824 0.38644669942630716 -0.909662821370706 46.82803656511058";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-7 24.25 -3";
+      rotation = "-0.1657515840162913 0.49537882513634307 0.8527169706313033 42.8488547754115";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "9 21.75 2.75";
+      rotation = "-0.1657515840162913 0.49537882513634307 0.8527169706313033 42.8488547754115";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "8.25 12.75 2.5";
+      rotation = "0.24940136160537837 0.08831787085949724 -0.964364513302013 142.290041320325";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "3.75 27.75 1";
+      rotation = "-0.11992707723276937 0.177799720737325 0.9767316701388025 69.25632647740885";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new Item() {
+      position = "9.5 31.5 -3.75";
+      rotation = "-0.0 -1.0 -0.0 179.99984796115504";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "9.5 58.5 -3.75";
+      rotation = "-0.0 -1.0 -0.0 179.99984796115504";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "4.259 23 -2.03297";
+      rotation = "-0.0 -1.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-4.53295 22.5 1.10178";
+      rotation = "-0.0 -1.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-0.50459 41 -0.320303";
+      rotation = "-0.0 -1.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-0.696101 21.5 -0.159606";
+      rotation = "0.15238981289185524 -0.2259268764263511 0.9621509192611196 70.06418566836678";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-4.53295 41 1.10178";
+      rotation = "-0.16539315286514047 -0.41987582676588814 -0.8923841073680044 47.634630907153884";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-7.28236 25.5 2.1034";
+      rotation = "-0.16539315286514047 -0.41987582676588814 -0.8923841073680044 47.634630907153884";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-7.47387 38 2.2641";
+      rotation = "0.14171088400186158 -0.42353059352137595 0.8947289319714893 41.007845525492655";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "8.97887 35.5 -3.61575";
+      rotation = "0.14171088400186158 -0.42353059352137595 0.8947289319714893 41.007845525492655";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "7.74364 26.5 -3.32517";
+      rotation = "-0.09579021929997751 -0.03392123951246928 -0.9948233930685385 141.18702093824712";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "3.33226 41.5 -1.58169";
+      rotation = "0.2133965803006189 -0.3163735806045234 0.9243211871484255 72.238921380126";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "6.27613 38 -2.7359";
+      rotation = "0.19604628041067626 -0.5859193065848768 0.7862979219788359 46.10268230330628";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "0 0 -2";
+      rotation = "0.9999999999982396 1.326794896676365e-06 1.326794896676365e-06 180.0";
+      scale = "1 1 1";
+      datablock = "EndPad";
+   };
+   new StaticShape() {
+      position = "-10.25 60.25 1.25";
+      rotation = "0 -1 0 19.9999681689845";
+      scale = "2.0 2.0 2.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "-10.25 31.25 1.25";
+      rotation = "0 -1 0 19.9999681689845";
+      scale = "2.0 2.0 2.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "-8.75 45.25 -5.75";
+      rotation = "0 1 0 19.9999681689845";
+      scale = "2.0 2.0 2.0";
+      datablock = "Lava";
+   };
+
+   new Trigger(Bounds) {
+      position = "-40.25 101.0 -36.0";
+      rotation = "1 0 0 0";
+      scale = "80.1037 133.0 72.0";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+};
+//--- OBJECT WRITE END ---
+

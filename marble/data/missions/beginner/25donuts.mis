@@ -1,0 +1,661 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         goldTime = "33000";
+         level = "25";
+         music = "customshader.ogg";
+         name = "Interior Test: warm_donut.dif";
+         time = "0";
+         note = "Made in Jul 16, 2023";
+         AwesomeTime = "19500";
+         desc = "A test mission for an interior";
+         type = "Beginner";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 7.45949e-031 1.3684e-038";
+      fogVolume2 = "-1 1.07208e-014 8.756e-014";
+      fogVolume3 = "-1 5.1012e-010 2.05098e-008";
+      materialList = "~/data/skies/sc.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 0.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000004";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 14435505.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 -1";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/warm_donut.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "0 0 11";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/warm_cutdonut.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "0 0 16";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/warm_circle.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "0 -14 12";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/1x1x2_sixa.dif";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "0 -5 13";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "AntiGravityItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0 0 13.5";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "ShockAbsorberItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0 9 1";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0 -14 10";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/warm_circle.dif";
+      showTerrainInside = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "0 0 2";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad";
+   };
+   new StaticShape(EndPoint) {
+      position = "0 0 -2";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "EndPad";
+   };
+   new Item() {
+      position = "0 9 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0 0 18";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0 -14 14";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-4 8 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4 8 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "0 0 -2";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "Tornado";
+   };
+   new StaticShape() {
+      position = "8 8 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "5 5 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "2 11 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "5 9 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "2.5 7 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "9 5 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "7 2.5 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "8 -8 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "5 -5 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "2 -11 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "5 -9 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "2.5 -7 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "9 -5 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "7 -2.5 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-8 -8 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-5 -5 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-2 -11 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-5 -9 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-2.5 -7 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-9 -5 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-7 -2.5 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-8 8 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-5 5 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-2 11 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-5 9 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-2.5 7 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-9 5 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-7 2.5 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "9 0 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-9 0 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "0 -9 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "-3 -9 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "3 -9 -1";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "LandMine";
+         resetTime = "Default";
+   };
+   new StaticShape() {
+      position = "8 8 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "5.5 4.5 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "9.5 4.5 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "7.5 2 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "11 0 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "8 -8 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "5.5 -4.5 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "9.5 -4.5 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "7.5 -2 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-8 8 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-5.5 4.5 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-9.5 4.5 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-7.5 2 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-11 0 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-8 -8 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-5.5 -4.5 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-9.5 -4.5 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-7.5 -2 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-2 -7 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-4 -10 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "2 -7 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "4 -10 11";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "7 7 13";
+      rotation = "0 0 1 100";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "7.5 2.5 13";
+      rotation = "0 0 1 40";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "9 -2 13";
+      rotation = "0 0 1 225";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "6.5 -5.5 13";
+      rotation = "0 0 1 115";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "2.5 -9.5 13";
+      rotation = "0 0 -1 45";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-2 -7.5 13";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-6.5 -6.5 13";
+      rotation = "0 0 1 80";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-9.5 -3.5 13";
+      rotation = "0 0 -1 115";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-8 1 13";
+      rotation = "0 0 1 120";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-9 4 13";
+      rotation = "0 0 1 70";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-6 7.5 13";
+      rotation = "0 0 -1 100";
+      scale = "1 1 1";
+      dataBlock = "TriangleBumper";
+   };
+   new Trigger(Bounds) {
+      position = "-18.5 18.5 -13.5";
+      rotation = "1 0 0 0";
+      scale = "37 37 38";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger(JJB1) {
+      position = "-1.84965 10.516 0.8";
+      rotation = "1 0 0 0";
+      scale = "4 4 4";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         text = "Jump + Super jump to gain the necessary height!";
+   };
+   new Trigger(JumpOnBumper) {
+      position = "-6.10824 11.6188 12.8";
+      rotation = "1 0 0 0";
+      scale = "12 6 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         text = "Jump onto a bumper to get the gem at the top of the level.";
+   };
+   new AudioProfile(MusicProfile) {
+      fileName = "~/data/sound/Shell.ogg";
+      description = "AudioMusic";
+      preload = "0";
+   };
+   new Trigger(TurnAround) {
+      position = "-1.42989 -12.569 13.6861";
+      rotation = "1 0 0 0";
+      scale = "3 3 3";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         text = "Turn around and grab the gravity modifier to proceed.";
+   };
+   new Trigger(RamInto) {
+      position = "-1.00751 -3.83358 12.1";
+      rotation = "1 0 0 0";
+      scale = "2 2 2";
+      dataBlock = "HelpTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+         text = "Activate the shock absorber, then ram into the wall to climb up!";
+   };
+};
+//--- OBJECT WRITE END ---

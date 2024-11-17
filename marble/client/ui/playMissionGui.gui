@@ -1,0 +1,910 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(playMissionGui) {
+   profile = "GuiContentProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "./background.jpg";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiControl() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "center";
+      vertSizing = "center";
+      position = "-1 44";
+      extent = "641 392";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+
+      new GuiBitmapCtrl(PM_Box) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "width";
+         vertSizing = "height";
+         position = "16 0";
+         extent = "610 393";
+         minExtent = "8 8";
+         visible = "1";
+         helpTag = "0";
+         bitmap = "./play/level_select.png";
+         wrap = "0";
+
+         new GuiBitmapCtrl(PM_preview) {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "203 16";
+            extent = "258 193";
+            minExtent = "8 8";
+            visible = "1";
+            helpTag = "0";
+            bitmap = "~/data/missions/beginner/superspeed";
+            wrap = "0";
+
+            new GuiControl(PM_NoQualOverlay) {
+               profile = "OverlayScreenProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "2 3";
+               extent = "256 190";
+               minExtent = "8 8";
+               visible = "1";
+               helpTag = "0";
+            };
+            new GuiBitmapCtrl() {
+               profile = "GuiDefaultProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "0 0";
+               extent = "258 194";
+               minExtent = "8 8";
+               visible = "1";
+               helpTag = "0";
+               bitmap = "./play/level_window.png";
+               wrap = "0";
+
+               new GuiMLTextCtrl(PM_level_bkgnd) {
+                  profile = "GuiMLTextProfile";
+                  horizSizing = "right";
+                  vertSizing = "bottom";
+                  position = "5 156";
+                  extent = "254 24";
+                  minExtent = "8 8";
+                  visible = "1";
+                  helpTag = "0";
+                  lineSpacing = "2";
+                  allowColorChars = "0";
+                  maxChars = "-1";
+               };
+               new GuiMLTextCtrl(PM_level_fgnd) {
+                  profile = "GuiMLTextProfile";
+                  horizSizing = "right";
+                  vertSizing = "bottom";
+                  position = "4 155";
+                  extent = "254 24";
+                  minExtent = "8 8";
+                  visible = "1";
+                  helpTag = "0";
+                  lineSpacing = "2";
+                  allowColorChars = "0";
+                  maxChars = "-1";
+               };
+               new GuiMLTextCtrl(PM_NoQualText) {
+                  profile = "GuiMLTextProfile";
+                  horizSizing = "right";
+                  vertSizing = "bottom";
+                  position = "0 84";
+                  extent = "254 32";
+                  minExtent = "8 8";
+                  visible = "1";
+                  helpTag = "0";
+                  lineSpacing = "2";
+                  allowColorChars = "0";
+                  maxChars = "-1";
+               };
+            };
+         };
+         new GuiBitmapButtonCtrl(PM_play) {
+            profile = "GuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "470 96";
+            extent = "131 34";
+            minExtent = "8 8";
+            visible = "1";
+            command = "PM_StartMission();";
+            helpTag = "0";
+            text = "play";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./play/start_level";
+         };
+         new GuiBitmapButtonCtrl(PM_prev) {
+            profile = "GuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "489 46";
+            extent = "94 27";
+            minExtent = "8 8";
+            visible = "1";
+            command = "PM_setSelected(4);";
+            helpTag = "0";
+            text = "Prev";
+            groupNum = "-1";
+            buttonType = "RepeaterButton";
+            repeatPeriod = 350;
+            repeatDecay = 0.9;
+            accelerator = "left";
+            bitmap = "./play/pprev";
+         };
+         new GuiBitmapButtonCtrl(PM_next) {
+            profile = "GuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "489 153";
+            extent = "94 25";
+            minExtent = "8 8";
+            visible = "1";
+            command = "PM_setSelected(6);";
+            helpTag = "0";
+            text = "Next";
+            groupNum = "-1";
+            buttonType = "RepeaterButton";
+            repeatPeriod = 350;
+            accelerator = "right";
+            repeatDecay = 0.9;
+            bitmap = "./play/nnext";
+         };
+         new GuiTextListCtrl(PM_missionList) {
+            profile = "GuiTextArrayProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "0 0";
+            extent = "80 384";
+            minExtent = "8 8";
+            visible = "0";
+            helpTag = "0";
+            enumerate = "0";
+            resizeCell = "1";
+            columns = "0";
+            fitParentWidth = "1";
+            clipColumnText = "0";
+               noDuplicates = "false";
+         };
+         new GuiMLTextCtrl(PM_description) {
+            profile = "GuiMLTextProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "203 226";
+            extent = "185 174";
+            minExtent = "8 8";
+            visible = "1";
+            helpTag = "0";
+            lineSpacing = "2";
+            allowColorChars = "0";
+            maxChars = "-1";
+         };
+         new GuiMLTextCtrl(PM_desctimes) {
+            profile = "GuiMLTextProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "400 226";
+            extent = "215 174";
+            minExtent = "8 8";
+            visible = "1";
+            helpTag = "0";
+            lineSpacing = "2";
+            allowColorChars = "1";
+            maxChars = "-1";
+         };
+      };
+      new GuiControl(PM_TabButtons) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "16 0";
+         extent = "180 480";
+         minExtent = "8 8";
+         visible = "1";
+         helpTag = "0";
+
+         new GuiButtonBaseCtrl() {
+            profile = "GuiDefaultProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "577 18";
+            extent = "43 40";
+            minExtent = "8 8";
+            visible = "1";
+            command = "$MissionType=\"\";buildMissionList();";
+            helpTag = "0";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+         };
+         new GuiBitmapButtonCtrl() {
+            profile = "GuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "9 15";
+            extent = "161 25";
+            minExtent = "8 8";
+            visible = "1";
+            command = "PMSetMissionTab(\"Tutorial\");";
+            helpTag = "0";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./play/tutorial_tab";
+         };
+         new GuiBitmapButtonCtrl() {
+            profile = "GuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "9 50";
+            extent = "161 25";
+            minExtent = "8 8";
+            visible = "1";
+            command = "PMSetMissionTab(\"Beginner\");";
+            helpTag = "0";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./play/beginner_tab";
+         };
+         new GuiBitmapButtonCtrl() {
+            profile = "GuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "9 85";
+            extent = "161 25";
+            minExtent = "8 8";
+            visible = "1";
+            command = "PMSetMissionTab(\"Intermediate\");";
+            helpTag = "0";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./play/intermediate_tab";
+         };
+         new GuiBitmapButtonCtrl() {
+            profile = "GuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "9 120";
+            extent = "161 25";
+            minExtent = "8 8";
+            visible = "1";
+            command = "PMSetMissionTab(\"Advanced\");";
+            helpTag = "0";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./play/advanced_tab";
+         };
+         new GuiBitmapButtonCtrl() {
+            profile = "GuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "9 155";
+            extent = "161 25";
+            minExtent = "8 8";
+            visible = "1";
+            command = "PMSetMissionTab(\"Expert\");";
+            helpTag = "0";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./play/expert_tab";
+         };
+         new GuiBitmapButtonCtrl() {
+            profile = "GuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "9 190";
+            extent = "161 25";
+            minExtent = "8 8";
+            visible = "1";
+            command = "PMSetMissionTab(\"Custom\");";
+            helpTag = "0";
+            text = "Button";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./play/custom_tab";
+         };
+
+         new GuiBitmapButtonCtrl() {
+            profile = "GuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "9 283";
+            extent = "161 25";
+            minExtent = "8 8";
+            visible = "1";
+            command = "Canvas.pushDialog(InfoDlg);";
+            accelerator = "escape";
+            helpTag = "0";
+            text = "play";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./play/info_tab";
+         };
+         new GuiBitmapButtonCtrl() {
+            profile = "GuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "9 318";
+            extent = "161 25";
+            minExtent = "8 8";
+            visible = "1";
+            command = "Canvas.pushDialog(StatsDlg);";
+            accelerator = "escape";
+            helpTag = "0";
+            text = "play";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./play/stats_tab";
+         };
+         new GuiBitmapButtonCtrl() {
+            profile = "GuiButtonProfile";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            position = "9 353";
+            extent = "161 25";
+            minExtent = "8 8";
+            visible = "1";
+            command = "disconnect(); Canvas.setContent(MainMenuGui);";
+            accelerator = "escape";
+            helpTag = "0";
+            text = "play";
+            groupNum = "-1";
+            buttonType = "PushButton";
+            bitmap = "./play/back_tab";
+         };
+      };
+   };
+   new GuiButtonBaseCtrl() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "left";
+      vertSizing = "top";
+      position = "625 465";
+      extent = "18 19";
+      minExtent = "8 8";
+      visible = "1";
+      command = "PM_skipQualify();";
+      helpTag = "0";
+      text = "Button";
+      groupNum = "-1";
+      buttonType = "PushButton";
+   };
+};
+
+new GuiControl(StatsDlg) {
+   profile = "GuiDialogProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   
+   new GuiBitmapCtrl() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "center";
+      vertSizing = "center";
+      position = "120 80";
+      extent = "400 320";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      bitmap = "./play/blank.png";
+      wrap = "0";
+
+      new GuiMLTextCtrl(stat_desc) {
+         profile = "GuiMLTextProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "20 20";
+         extent = "360 240";
+         minExtent = "8 8";
+         visible = "1";
+         helpTag = "0";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+      };
+      new GuiBitmapButtonCtrl() {
+         profile = "GuiButtonProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "153 285";
+         extent = "94 25";
+         minExtent = "8 8";
+         visible = "1";
+         command = "Canvas.popDialog(StatsDlg);";
+         accelerator = "escape";
+         helpTag = "0";
+         text = "play";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./play/bback";
+      };
+   };
+};
+
+
+new GuiControl(InfoDlg) {
+   profile = "GuiDialogProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   
+   new GuiBitmapCtrl() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "center";
+      vertSizing = "center";
+      position = "120 80";
+      extent = "400 320";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      bitmap = "./play/blank.png";
+      wrap = "0";
+
+      new GuiMLTextCtrl(info_desc) {
+         profile = "GuiMLTextProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "20 20";
+         extent = "360 240";
+         minExtent = "8 8";
+         visible = "1";
+         helpTag = "0";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+      };
+      new GuiBitmapButtonCtrl() {
+         profile = "GuiButtonProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "153 285";
+         extent = "94 25";
+         minExtent = "8 8";
+         visible = "1";
+         command = "Canvas.popDialog(InfoDlg);";
+         accelerator = "escape";
+         helpTag = "0";
+         text = "play";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./play/bback";
+      };
+   };
+};
+
+
+
+//--- OBJECT WRITE END ---
+
+
+//----------------------------------------
+
+function get_stat_string(%catstr){
+   %stat_text = %catstr @ ": ";
+   %mystr = strlwr(%catstr);
+   %beginner_grp = nameToID("MTYPE_" @ %mystr);
+   if(%beginner_grp != -1){
+      %beginner_beaten = 0;
+      %beginner_total = 0;
+	  %beginner_grand = 0;
+	  %beginner_text = "<spush><color:FFFFFF><font:Lucida Console:16><just:center>";
+      for(%j = 0; (%mission = %beginner_grp.getObject(%j)) != -1; %j++)
+      {
+	     %beginner_total += 1;
+         $stats_level_count += 1;
+		 if(%mission.goldTime !$= ""){
+            $stats_gold_count += 1;
+	 	 }
+		 if(%mission.AwesomeTime !$= ""){
+            $stats_awesome_count += 1;
+	 	 }
+         %file_best_time = $pref::highScores[%mission.file, 0];
+		 %status_text = "";
+         if(%file_best_time !$= ""){ 
+            %beginner_beaten += 1;
+		    %beginner_grand += %file_best_time;
+		    $stats_grand_total += %file_best_time;
+            $stats_level_beaten += 1;
+			if(%mission.AwesomeTime !$= "" && %file_best_time < %mission.AwesomeTime){
+               $stats_awesome_beaten += 1;
+			   if(%status_text $= ""){
+			      %status_text = "<spush><color:00FFFF>#<spop>";
+			   }
+			}
+			if(%mission.goldTime !$= "" && %file_best_time < %mission.goldTime){
+               $stats_gold_beaten += 1;
+			   if(%status_text $= ""){
+			      %status_text = "<spush><color:FFFF00>#<spop>";
+			   }
+			}
+			if(%status_text $= ""){
+			   %status_text = "#";
+			}
+         }else{
+		 	%status_text = "-";
+		 }
+	     %beginner_text = %beginner_text @ %status_text;
+      }
+	  %beginner_text = %beginner_text @ "<spop>";
+
+      %stat_text = %stat_text @ %beginner_beaten @ "/" @ %beginner_total ;
+      if(%beginner_beaten < %beginner_total){
+         %stat_text = %stat_text @ "<spush><just:right>(" @ mFloor(100 * %beginner_beaten / %beginner_total) @ "%)<spop>\n";
+      }else{
+         %stat_text = %stat_text @ "<spush><just:right>(100% in " @ formatTimeNoTab(%beginner_grand) @ ")<spop>\n";
+      }
+      %stat_text = %stat_text @ %beginner_text @ "\n";
+   }else{
+      %stat_text = %stat_text @ "0/0 <spush><just:right>(NaN%)<spop>\n" ;
+      %stat_text = %stat_text @ "\n";
+   }
+   return %stat_text;
+}
+
+function StatsDlg::onWake()
+{
+   %stat_text = "<color:FFFFFF><font:Lucida Sans:24>Statistics\n<font:Lucida Sans:16>";
+   $stats_level_count = 0;
+   $stats_gold_count = 0;
+   $stats_awesome_count = 0;
+   $stats_level_beaten = 0;
+   $stats_gold_beaten = 0;
+   $stats_awesome_beaten = 0;
+   $stats_grand_total = 0;
+
+   %stat_text = %stat_text @ "<spush><just:left>" @ get_stat_string("Beginner") @ "<spop>";
+   %stat_text = %stat_text @ "<spush><just:left>" @ get_stat_string("Intermediate") @ "<spop>";
+   %stat_text = %stat_text @ "<spush><just:left>" @ get_stat_string("Advanced") @ "<spop>";
+   %stat_text = %stat_text @ "<spush><just:left>" @ get_stat_string("Expert") @ "<spop>";
+   // Grand Total
+   %stat_text = %stat_text @ "\n<spush><just:left>Grand Total: " @ $stats_level_beaten @ "/" @ $stats_level_count;
+   if($stats_level_beaten < $stats_level_count){
+      %stat_text = %stat_text @ "<spush><just:right>(" @ mFloor(100 * $stats_level_beaten / $stats_level_count) @ "%)<spop>\n";
+   }else{
+      %stat_text = %stat_text @ "<spush><just:right>(100% in " @ formatTimeNoTab($stats_grand_total) @ ")<spop>\n";
+   }
+   %stat_text = %stat_text @ "<spop>\n";
+
+   // Gold and Awesome Times
+   %stat_text = %stat_text @ "<spush><just:left>Gold Times: " @ $stats_gold_beaten @ "/" @ $stats_gold_count;
+   %stat_text = %stat_text @ "<spush><just:right>(" @ mFloor(100 * $stats_gold_beaten / $stats_gold_count) @ "%)<spop>\n";
+   %stat_text = %stat_text @ "<spop>\n";
+   %stat_text = %stat_text @ "<spush><just:left>Awesome Times: " @ $stats_awesome_beaten @ "/" @ $stats_awesome_count;
+   %stat_text = %stat_text @ "<spush><just:right>(" @ mFloor(100 * $stats_awesome_beaten / $stats_awesome_count) @ "%)<spop>\n";
+   %stat_text = %stat_text @ "<spop>";
+
+   stat_desc.setValue(%stat_text);
+}
+
+function InfoDlg::onWake()
+{
+   %info_text = "<color:FFFFFF><font:Lucida Sans:16>";
+   %id = PM_missionList.getSelectedId();
+   %mission = getField(PM_missionList.getRowTextById(%id), 1);
+   %info_text = %info_text @ "<spush><font:Lucida Sans:24>" @ %mission.name @ "<spop>\n";
+   if(%mission.note !$= "")
+      %info_text = %info_text @ "<spush><font:Lucida Sans:20>Author\'s Note<spop>\n" @ %mission.note @ "\n";
+   if(%mission.hint !$= "")
+      %info_text = %info_text @ "<spush><font:Lucida Sans:20>Hint<spop>\n" @ %mission.hint @ "\n";
+   if(getField($hs[0], 0) !$= "" && %mission.goldTime !$= "")
+      if(%mission.AwesomeHint !$= "" && getField($hs[0], 0) < %mission.goldTime)
+         %info_text = %info_text @ "<spush><font:Lucida Sans:20>Awesome Hint<spop>\n" @ %mission.AwesomeHint @ "\n";
+   info_desc.setValue(%info_text);
+}
+
+function playMissionGui::onWake()
+{
+   if($MissionType $= "")
+      $MissionType = "Beginner";
+   PMSetMissionTab($MissionType);
+}
+
+function PMSetMissionTab(%tab)
+{
+   $MissionType = %tab;
+   %par = PM_Box.getGroup();
+   RootGroup.add(PM_Box);
+   RootGroup.add(PM_TabButtons);
+   %par.add(PM_Box);
+   %par.add(PM_TabButtons);
+   buildMissionList();
+}
+
+function sortByLevel(%grp)
+{
+   %ngrp = new SimGroup();
+   // take all the objects out of grp and put them in ngrp
+   while((%obj = %grp.getObject(0)) != -1)
+      %ngrp.add(%obj);
+
+   while(%ngrp.getCount() != 0)
+   {
+      %lowest = %ngrp.getObject(0).level;
+      %lowestIndex = 0;
+      for(%i = 1; %i < %ngrp.getCount(); %i++)
+      {
+         %level = %ngrp.getObject(%i).level;
+         if(%level < %lowest)
+         {
+            %lowest = %level;
+            %lowestIndex = %i;
+         }
+      }
+      %obj = %ngrp.getObject(%lowestIndex);
+      %grp.add(%obj);
+      %obj.level = %grp.getCount();
+   }
+   %ngrp.delete();
+}
+
+function buildMissionList()
+{
+   if (!isObject(PlayMissionGroup))
+   {
+      new SimGroup(PlayMissionGroup);
+      RootGroup.add(PlayMissionGroup);
+
+      for(%file = findFirstFile($Server::MissionFileSpec);
+            %file !$= ""; %file = findNextFile($Server::MissionFileSpec))
+      { 
+         if (strStr(%file, "CVS/") == -1 && strStr(%file, "common/") == -1)
+            getMissionObject(%file);
+      }
+      for(%i = 0;(%grp = PlayMissionGroup.getObject(%i)) != -1; %i++)
+         sortByLevel(%grp);
+   }
+   PM_missionList.clear();
+   %cnt = 0;
+   for(%i = 0;(%grp = PlayMissionGroup.getObject(%i)) != -1; %i++)
+   {
+      if($MissionType $= "" || %grp.getName() $= ("MTYPE_" @ $MissionType))
+      {
+         for(%j = 0; (%mission = %grp.getObject(%j)) != -1; %j++)
+         {
+            PM_missionList.addRow(%cnt++, %mission.level TAB %mission);
+         }
+      }
+   }
+   // Select mission level, or highest qualified
+   if(isObject(MissionInfo) && $LastMissionType $= $MissionType)
+   {
+      if($Game::Qualified)
+         %level = MissionInfo.level + 1;
+      else
+         %level = MissionInfo.level;
+   }
+   else
+      %level = $Pref::QualifiedLevel[$MissionType];
+   %selected = PM_missionList.rowCount() - 1;
+   for (%row = 0; %row < PM_missionList.rowCount(); %row++)
+   {
+      %mission = getField(PM_missionList.getRowText(%row), 1);
+      if (%mission.level + 0 == %level)
+      {
+         %selected = %row;
+         break;
+      }
+   }
+
+   PM_setSelected(%selected);
+} 
+
+function PM_skipQualify()
+{
+   %row = PM_MissionList.getRowNumById(PM_MissionList.getSelectedId());
+   if($MissionType !$= "" && %row == $pref::QualifiedLevel[$MissionType])
+   {
+      $pref::QualifiedLevel[$MissionType]++;
+      PM_setSelected(%row);
+   }
+}
+
+//----------------------------------------
+function PM_StartMission()
+{
+
+   %id = PM_missionList.getSelectedId();
+   %mission = getField(PM_missionList.getRowTextById(%id), 1);
+   $LastMissionType = %mission.type;
+
+   //
+   if ($pref::HostMultiPlayer)
+      %serverType = "MultiPlayer";
+   else
+      %serverType = "SinglePlayer";
+
+   // We need to start a server if one isn't already running
+   if ($Server::ServerType $= "") {
+      if($doRecordDemo)
+         recordDemo("~/client/demos/demo.rec", %mission.file);
+      createServer(%serverType, %mission.file);
+      %conn = new GameConnection(ServerConnection);
+      RootGroup.add(ServerConnection);
+      %conn.setConnectArgs($pref::Player::Name);
+      %conn.setJoinPassword($Client::Password);
+      %conn.connectLocal();
+   }
+   else
+      loadMission(%mission.file);
+   if(isObject(MissionInfo))
+      MissionInfo.level = %mission.level;
+}
+
+function onDemoPlay(%misFile)
+{
+   $playingDemo = true;
+   createServer("SinglePlayer", %misFile);
+   %conn = new GameConnection(ServerConnection);
+   RootGroup.add(ServerConnection);
+   %conn.setConnectArgs($pref::Player::Name);
+   %conn.setJoinPassword($Client::Password);
+   %conn.connectLocal();
+}
+
+function onDemoPlayDone(%forced)
+{
+   $playingDemo = false;
+   disconnect();
+   if(%forced)
+      Canvas.setContent(MainMenuGui);
+   else
+      runPresentation();
+}
+
+//----------------------------------------
+function PM_setSelected( %row )
+{
+   %playEnabled = (PM_missionList.rowCount() > 0) && ($testCheats || ($MissionType $= "") || (%row < $pref::QualifiedLevel[$MissionType]));
+   
+   PM_play.setActive(%playEnabled);
+   PM_NoQualOverlay.setVisible(!%playEnabled);
+   PM_NoQualText.setText(%playEnabled ? "" : "<color:CCCCCC><font:DomCasualD:32><just:center>Not Qualified!");
+   
+   PM_missionList.setSelectedRow(%row);
+   %id = PM_missionList.getSelectedId();
+   %mission = getField(PM_missionList.getRowTextById(%id), 1);
+   
+   // set the preview info
+   %levelText = "<font:DomCasualD:24><just:center>" @ upperFirst(%mission.type) @ " Level " @ (%mission.level+0);
+   PM_level_fgnd.setText("<color:FFFFFF>" @ %levelText);
+   PM_level_bkgnd.setText("<color:000000>" @ %levelText);
+   %descText = "<color:FFFFFF><font:Lucida Sans Demibold Roman:18>" @ %mission.name @ 
+               "<font:Lucida Sans:16><lmargin:10>\n" @ 
+               %mission.desc;
+
+   %file = %mission.file;
+   %deftime = "0";
+   if(%mission.time)
+      %deftime = %mission.time;
+   getBestTimes(%file, %deftime);
+   %descTimeText = "<lmargin:10><tab:0,130,180><color:FFFFFF><font:Lucida Sans:16>";
+
+   if(%mission.time)
+      %descTimeText = %descTimeText @ "Qualify Time: " TAB formatTime(%mission.time) TAB "\n";
+   else
+      %descTimeText = %descTimeText @ "Qualify Time: " TAB "\t99:59.99" TAB "\n";
+
+   if(%mission.goldTime)
+      %descTimeText = %descTimeText @ "<spush><color:FFFF00>Gold Time: " TAB formatTime(%mission.goldTime) TAB "<spop>\n";
+   else
+      %descTimeText = %descTimeText @ "\n";
+
+   if(%mission.AwesomeTime)
+      %descTimeText = %descTimeText @ "<spush><color:00FFFF>Awesome Time: " TAB formatTime(%mission.AwesomeTime) TAB "<spop>\n";
+   else
+      %descTimeText = %descTimeText @ "\n";
+
+   %descTimeText = %descTimeText @ "\n";
+   for(%i = 0; %i < 5; %i++)
+   {
+      %time = getField($hs[%i], 0);
+      %endl = "\n";
+      if(%time < %mission.AwesomeTime)
+      {
+        %descTimeText = %descTimeText @ "<spush><color:00FFFF>";
+        %endl = "<spop>\n";
+      }
+      else if(%time < %mission.goldTime)
+      {
+        %descTimeText = %descTimeText @ "<spush><color:FFFF00>";
+        %endl = "<spop>\n";
+      }
+      %descTimeText = %descTimeText @ (%i + 1) @ ". " @ getField($hs[%i], 1) TAB formatTime(%time) TAB %endl;
+   }
+
+   PM_description.setValue( %descText );
+   PM_desctimes.setValue( %descTimeText );
+   
+   PM_preview.setBitmap(filePath(%mission.file) @ "/" @fileBase(%mission.file));
+
+   %next = %row+1;
+   PM_next.setActive(%next < PM_missionList.rowCount());
+
+   if (%next >= PM_missionList.rowCount())
+      %next = PM_missionList.rowCount() - 1;
+   PM_next.command = "PM_setSelected(" @ %next @ ");";
+
+   %prev = %row-1;
+   PM_prev.setActive(%prev >= 0);
+   if (%prev < 0 )
+      %prev = 0;
+   PM_prev.command = "PM_setSelected(" @ %prev @ ");";
+}
+
+
+//----------------------------------------
+function getMissionObject( %missionFile ) 
+{
+   %file = new FileObject();
+   
+   %missionInfoObject = "";
+   
+   if ( %file.openForRead( %missionFile ) ) {
+		%inInfoBlock = false;
+		
+		while ( !%file.isEOF() ) {
+			%line = %file.readLine();
+			%line = trim( %line );
+			
+			if( %line $= "new ScriptObject(MissionInfo) {" ) {
+				%line = "new ScriptObject() {";
+				%inInfoBlock = true;
+			}
+			else if( %inInfoBlock && %line $= "};" ) {
+				%inInfoBlock = false;
+				%missionInfoObject = %missionInfoObject @ %line; 
+				break;
+			}
+			
+			if( %inInfoBlock )
+			   %missionInfoObject = %missionInfoObject @ %line @ " "; 	
+		}
+		
+		%file.close();
+	}
+	%missionInfoObject = "%missionInfoObject = " @ %missionInfoObject;
+	eval( %missionInfoObject );
+
+   // find the directory this file belongs in:
+
+   %path = filePath(%missionFile);
+   %misPath = filePath(%path);
+
+   if(%misPath !$= "marble/data/missions")
+      %groupTab = "custom";
+   else
+      %groupTab = fileBase(%path);
+
+   %grp = nameToId("MTYPE_" @ %groupTab);
+   if(%grp == -1)
+   {
+      %grp = new SimGroup("MTYPE_" @ %groupTab);
+      PlayMissionGroup.add(%grp);
+   }
+   %missionInfoObject.type = %groupTab;
+   %missionInfoObject.setName("");
+   %grp.add(%missionInfoObject);
+	%missionInfoObject.file = %missionFile;
+   %file.delete();
+}

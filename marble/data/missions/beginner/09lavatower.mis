@@ -1,0 +1,297 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         goldTime = "26000";
+         level = "9";
+         music = "movingpieces.ogg";
+         name = "Lava Tower Descent";
+         time = "0";
+         note = "Made in Feb 27, 2019.";
+         AwesomeTime = "14000";
+         desc = "Follow the arrows while taking care of your water timer!";
+         type = "Beginner";
+         startHelpText = "Water powerup, when activated, adds five seconds to your water timer.";
+         AwesomeHint = "Skip the middle floor!";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 7.45949e-031 1.3684e-038";
+      fogVolume2 = "-1 1.07208e-014 8.756e-014";
+      fogVolume3 = "-1 5.1012e-010 2.05098e-008";
+      materialList = "~/data/skies/hell.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 0.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000004";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 14435505.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/lavatower.dif";
+      showTerrainInside = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "-6 -13 2";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad";
+   };
+   new StaticShape(EndPoint) {
+      position = "-6 23 -12";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EndPad";
+   };
+   new StaticShape() {
+      position = "0 0 1";
+      rotation = "1 0 0 0";
+      scale = "8 8 1";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "0 -6 -2";
+      rotation = "1 0 0 0";
+      scale = "2 2 2";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "6 0 -8";
+      rotation = "1 0 0 0";
+      scale = "2 2 2";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "0 0 -5";
+      rotation = "1 0 0 0";
+      scale = "8 8 1";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "0 0 -11";
+      rotation = "1 0 0 0";
+      scale = "8 8 1";
+      dataBlock = "Lava";
+   };
+   new Item() {
+      position = "-6 9 2";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "6 9 2.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-9 6 2.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "9 6 2";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "14 -6 -9";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "14 6 -9";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-6 -9 2.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "10 -6 -9.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "10 6 -9.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-10 -6 -9.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-6 6 -3.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "6 6 -3.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-10 6 -9.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-6 -10 -3.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Trigger(Bounds) {
+      position = "-19 29 -21";
+      rotation = "1 0 0 0";
+      scale = "38 48 46";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new AudioProfile(MusicProfile) {
+      fileName = "~/data/sound/Shell.ogg";
+      description = "AudioMusic";
+      preload = "0";
+   };
+   new Item() {
+      position = "-6 14.4 4.6";
+      rotation = "0 -1 0 89.9544";
+      scale = "1 1 1";
+      dataBlock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "13.8826 5.96598 4.89291";
+      rotation = "-1 0 0 89.9544";
+      scale = "1 1 1";
+      dataBlock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "6.11043 -13.687 5.09565";
+      rotation = "0 1 0 127.197";
+      scale = "1 1 1";
+      dataBlock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-6.39905 9.59974 -1.9859";
+      rotation = "0 -1 0 89.9544";
+      scale = "1 1 1";
+      dataBlock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "9.61893 6.21837 -2.19968";
+      rotation = "-1 0 0 89.9544";
+      scale = "1 1 1";
+      dataBlock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "6.01377 -13.4655 -1.67594";
+      rotation = "0 1 0 127.197";
+      scale = "1 1 1";
+      dataBlock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+};
+//--- OBJECT WRITE END ---

@@ -1,0 +1,45 @@
+C:/Users/User/Desktop/New_folder/Marble Blast Gold Mod/marble/data/interiors/beginner/bowl_blue_u.dif
+
+
+
+Constructor Version: 1.0.3
+
+
+
+Date: 2020/07/22 10:27:33
+
+
+Detail Level 0
+
+
+
+  Zones:         1
+
+  Points:        250
+
+  Surfaces:      128
+
+  Null Surfaces: 0
+
+  BSP Nodes:     187
+
+
+
+  Textures From Brushes:
+
+
+
+    6B
+
+    WALL_WARM6B
+
+
+
+  Static Meshes and Textures:
+
+
+
+    -- None --
+
+
+

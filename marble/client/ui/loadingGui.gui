@@ -1,0 +1,76 @@
+new GuiControlProfile ("LoadingGuiContentProfile")
+{
+   opaque = true;
+   fillColor = "200 200 200";
+   border = true;
+   borderColor   = "0 0 0";
+};
+
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(LoadingGui) {
+   profile = "GuiContentProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "./background.jpg";
+   useVariable = "0";
+   tile = "0";
+      qLineCount = "0";
+
+   new GuiBitmapCtrl() {
+      profile = "GuiContentProfile";
+      horizSizing = "center";
+      vertSizing = "center";
+      position = "74 113";
+      extent = "491 253";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      bitmap = "./loading/loadingGui";
+      wrap = "0";
+
+      new GuiMLTextCtrl(LOAD_MapName) {
+         profile = "GuiMLTextProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "166 23";
+         extent = "286 42";
+         minExtent = "8 8";
+         visible = "1";
+         helpTag = "0";
+         lineSpacing = "2";
+         allowColorChars = "0";
+         maxChars = "-1";
+      };
+      new GuiProgressCtrl(LoadingProgress) {
+         profile = "GuiProgressProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "17 65";
+         extent = "456 40";
+         minExtent = "8 8";
+         visible = "1";
+         helpTag = "0";
+      };
+      new GuiBitmapButtonCtrl() {
+         profile = "GuiButtonProfile";
+         horizSizing = "right";
+         vertSizing = "top";
+         position = "451 0";
+         extent = "40 40";
+         minExtent = "8 8";
+         visible = "1";
+         command = "disconnect();";
+         helpTag = "0";
+         text = "play";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./loading/cancel";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

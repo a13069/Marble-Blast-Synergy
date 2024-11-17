@@ -1,0 +1,254 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         type = "Beginner";
+         time = "0";
+         desc = "A test mission for an interior";
+         level = "7";
+         goldTime = "21000";
+         AwesomeTime = "4250";
+         AwesomeHint = "Two words: edge hit!";
+         name = "Interior Test: cave3.dif";
+         note = "Made in Jul 2, 2020.";
+         music = "movingpieces.ogg";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 -1.61384e+030 7.67642e-038";
+      fogVolume2 = "-1 -4.73686e+026 -2.24708e+024";
+      fogVolume3 = "-1 -1.20454e+036 -1.84876e+028";
+      materialList = "~/data/skies/hell.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 -107661436660292810000000000000.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 -1916249359644017100000000.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 -926426612884618350000.000000";
+   };
+   new Sun() {
+      direction = "0.57735 -0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/cave3.dif";
+      showTerrainInside = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad";
+   };
+   new StaticShape(EndPoint) {
+      position = "0 32 6";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EndPad";
+   };
+   new Item() {
+      position = "0 8 0.25";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperBounceItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4 32 -3.75";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperBounceItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0 4 16.25";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperBounceItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0 -5 18";
+      rotation = "-1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "AntiGravityItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "28 28 -7";
+      rotation = "-1 0 0 90";
+      scale = "1 1 1";
+      dataBlock = "AntiGravityItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "28 26.25 0";
+      rotation = "-1 0 0 90";
+      scale = "1 1 1";
+      dataBlock = "ShockAbsorberItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "0 -8 40";
+      rotation = "1 0 0 0";
+      scale = "6 1 6";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "0 -8 28";
+      rotation = "1 0 0 0";
+      scale = "6 1 6";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "0 -8 16";
+      rotation = "1 0 0 0";
+      scale = "6 1 6";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "12 -8 40";
+      rotation = "1 0 0 0";
+      scale = "6 1 6";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "12 -8 28";
+      rotation = "1 0 0 0";
+      scale = "6 1 6";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "12 -8 16";
+      rotation = "1 0 0 0";
+      scale = "6 1 6";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "24 -8 40";
+      rotation = "1 0 0 0";
+      scale = "6 1 6";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "24 -8 28";
+      rotation = "1 0 0 0";
+      scale = "6 1 6";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "24 -8 16";
+      rotation = "1 0 0 0";
+      scale = "6 1 6";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "36 -8 40";
+      rotation = "1 0 0 0";
+      scale = "6 1 6";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "36 -8 28";
+      rotation = "1 0 0 0";
+      scale = "6 1 6";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "36 -8 16";
+      rotation = "1 0 0 0";
+      scale = "6 1 6";
+      dataBlock = "Lava";
+   };
+   new Item() {
+      position = "0 18 -7.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+         timeBonus = "1500";
+   };
+   new Item() {
+      position = "14 32 -11.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+         timeBonus = "1500";
+   };
+   new Trigger(Bounds) {
+      position = "-13 45 -19";
+      rotation = "1 0 0 0";
+      scale = "52 62 68";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Item() {
+      position = "0 36 -2";
+      rotation = "0 -1 0 90";
+      scale = "1 1 1";
+      dataBlock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "28 28 4";
+      rotation = "-1 0 0 90";
+      scale = "1 1 1";
+      dataBlock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0 32 18";
+      rotation = "1 0 0 180";
+      scale = "1 1 1";
+      dataBlock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+};
+//--- OBJECT WRITE END ---

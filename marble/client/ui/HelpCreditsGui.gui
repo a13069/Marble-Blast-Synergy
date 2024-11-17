@@ -1,0 +1,101 @@
+//--- OBJECT WRITE BEGIN ---
+new GuiChunkedBitmapCtrl(HelpCreditsGui) {
+   profile = "GuiDefaultProfile";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   helpTag = "0";
+   bitmap = "./background";
+   useVariable = "0";
+   tile = "0";
+
+   new GuiBitmapCtrl() {
+      profile = "GuiDefaultProfile";
+      horizSizing = "center";
+      vertSizing = "center";
+      position = "15 10";
+      extent = "609 460";
+      minExtent = "8 8";
+      visible = "1";
+      helpTag = "0";
+      bitmap = "~/client/help/help_gui";
+      wrap = "0";
+
+      new GuiBitmapButtonCtrl() {
+         profile = "GuiButtonProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "482 376";
+         extent = "75 60";
+         minExtent = "8 8";
+         visible = "1";
+         command = "HelpNext();";
+         helpTag = "0";
+         text = "Next";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./play/next";
+      };
+      new GuiBitmapButtonCtrl() {
+         profile = "GuiButtonProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "58 383";
+         extent = "77 58";
+         minExtent = "8 8";
+         visible = "1";
+         command = "HelpPrev();";
+         helpTag = "0";
+         text = "Prev";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./play/prev";
+      };
+      new GuiBitmapButtonCtrl() {
+         profile = "GuiButtonProfile";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         position = "278 378";
+         extent = "79 61";
+         minExtent = "8 8";
+         visible = "1";
+         command = "Canvas.setContent(MainMenuGui);";
+         accelerator = "escape";
+         helpTag = "0";
+         text = "play";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "./play/back";
+      };
+         new GuiScrollCtrl(HC_Scroll){
+            profile = "GuiScrollProfile";
+            horizSizing = "left";
+            vertSizing = "top";
+            position = "30 30";
+            extent = "549 320";
+            minExtent = "17 18";
+            visible = "1";
+            helpTag = "0";
+            wrap = "0";
+            hasBitmapArray = true;
+            bitmap = "~/client/help/darkscroll";
+            hScrollBar = alwaysOff;
+            new GuiMLTextCtrl(HC_Text) {
+               profile = "GuiMLTextProfile";
+               horizSizing = "right";
+               vertSizing = "bottom";
+               position = "10 10";
+               extent = "529 300";
+               minExtent = "8 8";
+               visible = "1";
+               helpTag = "0";
+               lineSpacing = "2";
+               maxChars = "-1";
+            };
+         };
+   };
+};
+//--- OBJECT WRITE END ---

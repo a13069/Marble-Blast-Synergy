@@ -1,0 +1,361 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         name = "Interior Test: tents.dif";
+         time = "0";
+         desc = "A test mission for an interior";
+         type = "Beginner";
+         level = "13";
+         goldTime = "36000";
+         AwesomeTime = "25000";
+         note = "Made in Jul 8, 2020.";
+         music = "purpleskies.ogg";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 -1.61384e+030 7.67642e-038";
+      fogVolume2 = "-1 -4.73686e+026 -2.24708e+024";
+      fogVolume3 = "-1 -1.20454e+036 -1.84876e+028";
+      materialList = "~/data/skies/purplevalley.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 -107661436660292810000000000000.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 -1916249359644017100000000.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 -926426612884618350000.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+
+   // Tent 1 : Fans
+   new InteriorInstance() {
+      position = "-18.9 44.9411 0";
+      rotation = "0 0 1 120";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/curvroad2_mirrored.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "-22.4 38.9411 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/tents.dif";
+      showTerrainInside = "0";
+   };
+   new StaticShape() {
+      position = "-22.4 38.9411 0";
+      rotation = "-1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "DuctFan";
+   };
+   new Item() {
+      position = "-22.4 38.9411 5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "-25.9 10.9866 0";
+      rotation = "0 0 1 60";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/curvroad2_mirrored.dif";
+      showTerrainInside = "0";
+   };
+
+   // Tent 2 : Start point
+   new InteriorInstance() {
+      position = "-7 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/curvroad2_mirrored.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/tents.dif";
+      showTerrainInside = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad";
+   };
+   new InteriorInstance() {
+      position = "7 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/curvroad2.dif";
+      showTerrainInside = "0";
+   };
+
+   // Tent 3 : Moving blocks
+   new InteriorInstance() {
+      position = "44.775 22.0165 0";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/curvroad2.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "51.775 22.0165 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/tents.dif";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "51.775 22.0165 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "55.275 28.0165 0";
+      rotation = "0 0 1 -60";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/curvroad2.dif";
+      showTerrainInside = "0";
+   };
+   new SimGroup(MustChange_Left) {
+      new Path() {
+         new Marker() {
+            position = "0 0 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "3000";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "0 10 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "3000";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "0 0 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/beginner/1x1x1mp_purple.dif";
+         interiorIndex = "0";
+         basePosition = "51.775 17.0165 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange_Left) {
+      new Path() {
+         new Marker() {
+            position = "0 0 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "2400";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "0 -6 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "2400";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "0 0 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/beginner/1x1x1mp_purple.dif";
+         interiorIndex = "0";
+         basePosition = "47.775 25.0165 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1";
+      };
+   };
+
+   new SimGroup(MustChange_Left) {
+      new Path() {
+         new Marker() {
+            position = "0 0 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "2000";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "0 -6 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "2000";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "0 0 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/beginner/1x1x1mp_purple.dif";
+         interiorIndex = "0";
+         basePosition = "55.775 25.0165 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+            initialTargetPosition = "-1";
+      };
+   };
+
+   // Tent 4 : ???
+   new InteriorInstance() {
+      position = "55.275 49.9710 0";
+      rotation = "0 0 1 -120";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/curvroad2.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "29.275 60.9710 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/tents.dif";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "29.275 60.9710 2";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "29.275 60.9710 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/tentchallange3.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "25.775 54.9710 0";
+      rotation = "0 0 1 -60";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/curvroad2_mirrored.dif";
+      showTerrainInside = "0";
+   };
+
+   // Other thingies
+   new InteriorInstance() {
+      position = "4 50 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/between.dif";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "3.75 45 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "HelicopterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "3.75 55 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "HelicopterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "10 24 8";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/tents.dif";
+      showTerrainInside = "0";
+   };
+
+   new StaticShape(EndPoint) {
+      position = "10 24 8";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EndPad";
+   };
+   new Trigger(Bounds) {
+      position = "-56 80 -4";
+      rotation = "1 0 0 0";
+      scale = "150 92 43";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+};
+//--- OBJECT WRITE END ---

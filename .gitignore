@@ -1,0 +1,16 @@
+*.py
+*.pdn
+*.swp
+console.log
+INSTALL.LOG
+version.txt
+*prefs.cs
+*.map
+*.csx
+*map2dif
+* - Copy*
+*.backup
+* (1)*
+theUninstallFile*
+Unwise.exe
+*.clx

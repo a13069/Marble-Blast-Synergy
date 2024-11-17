@@ -1,0 +1,411 @@
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         type = "Beginner";
+         time = "0";
+         time = "0";
+         goldTime = "16500";
+         AwesomeTime = "12750";
+         AwesomeHint = "You can edge-hit straight to the first gem by rolling diagonally from the start pad without jumping.";
+         desc = "A test mission for an interior";
+         name = "Interior Test: static.dif";
+         level = "2";
+         note = "Made in Apr 30, 2020.";
+         music = "movingpieces.ogg";
+   };
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 7.45949e-031 1.3684e-038";
+      fogVolume2 = "-1 1.07208e-014 8.756e-014";
+      fogVolume3 = "-1 5.1012e-010 2.05098e-008";
+      materialList = "~/data/skies/hell.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 0.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000004";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 14435505.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/beginner/loop.dif";
+      showTerrainInside = "0";
+   };
+   new StaticShape(StartPoint) {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "StartPad";
+   };
+   new StaticShape(EndPoint) {
+      position = "0 -8 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "EndPad";
+   };
+   new StaticShape() {
+      position = "-9 30 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "1 30 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "11 30 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "20.5 33 -5";
+      rotation = "1 0 0 0";
+      scale = "4.5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "34 36 -5";
+      rotation = "1 0 0 0";
+      scale = "9 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "36 22 -5";
+      rotation = "1 0 0 0";
+      scale = "4 9 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "45 30 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "45 20 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "45 10 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "45 0 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "45 -10 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "45 -20 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "35 -17 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "25 -17 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "-9 20 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "1 20 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "11 20 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "21 20 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "-9 10 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "1 10 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "11 10 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "21 10 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "-9 0 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "1 0 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "11 0 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "21 0 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "-9 -10 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "1 -10 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "11 -10 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "21 -10 -5";
+      rotation = "1 0 0 0";
+      scale = "5 5 4";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "30 0.5 -5";
+      rotation = "1 0 0 0";
+      scale = "4 6.5 4";
+      dataBlock = "Lava";
+   };
+   new Item() {
+      position = "37 -9 -1.75";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0 28 1.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "33 10 -2";
+      rotation = "1 0 0 0";
+      scale = "0.5 3 0.5";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "33.5 -9 -2";
+      rotation = "1 0 0 0";
+      scale = "0.5 3 0.5";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "37 -5.5 -2";
+      rotation = "1 0 0 0";
+      scale = "3 0.5 0.5";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "29 17.5 -2";
+      rotation = "1 0 0 0";
+      scale = "3 0.5 0.5";
+      dataBlock = "Lava";
+   };
+   new Item() {
+      position = "29 28 -2";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "7 -9 6";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "20 -11.5 5.5";
+      rotation = "1 1 1 45";
+      scale = "1 1 1";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "14.5 -7 6";
+      rotation = "1 0.5 1 50";
+      scale = "1 1 1";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "24 -7.5 5.5";
+      rotation = "0.5 0.5 1 135";
+      scale = "1 1 1";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "21.5 -12 5";
+      rotation = "0.5 0.5 1 65";
+      scale = "1 1 1";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "25 -9 5";
+      rotation = "0.5 0.5 -1 90";
+      scale = "1 1 1";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "16 -8.5 5";
+      rotation = "0.4 -0.3 -1 30";
+      scale = "1 1 1";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "13.5 -11.5 5";
+      rotation = "-0.5 -0.5 1 75";
+      scale = "1 1 1";
+      dataBlock = "Lava";
+   };
+   new Item() {
+      position = "0 32 3";
+      rotation = "0 -1 0 90";
+      scale = "1 1 1";
+      dataBlock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "34 28 1";
+      rotation = "-1 0 0 90";
+      scale = "1 1 1";
+      dataBlock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "37 -14 1";
+      rotation = "0 1 0 45";
+      scale = "1 1 1";
+      dataBlock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2 -9 8";
+      rotation = "0 1 0 180";
+      scale = "1 1 1";
+      dataBlock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Trigger(Bounds) {
+      position = "-14 39.6 -9.4";
+      rotation = "1 0 0 0";
+      scale = "60 60 40";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new AudioProfile(MusicProfile) {
+      fileName = "~/data/sound/Shell.ogg";
+      description = "AudioMusic";
+      preload = "0";
+   };
+};
+//--- OBJECT WRITE END ---
