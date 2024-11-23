@@ -20,14 +20,14 @@ new GuiControl(EndGameGui) {
       minExtent = "8 8";
       visible = "1";
       helpTag = "0";
-      bitmap = "./play/playGui.png";
+      bitmap = "./play/blank.png";
       wrap = "0";
 
       new GuiMLTextCtrl(EndGameGuiDescription) {
          profile = "GuiMLTextProfile";
          horizSizing = "right";
          vertSizing = "bottom";
-         position = "48 20";
+         position = "28 25";
          extent = "429 384";
          minExtent = "8 8";
          visible = "1";
@@ -40,8 +40,8 @@ new GuiControl(EndGameGui) {
          profile = "GuiButtonProfile";
          horizSizing = "right";
          vertSizing = "bottom";
-         position = "333 386";
-         extent = "113 47";
+         position = "320 411";
+         extent = "145 25";
          minExtent = "8 8";
          visible = "1";
          command = "setPlayMissionGui();";
@@ -56,8 +56,8 @@ new GuiControl(EndGameGui) {
          profile = "GuiButtonProfile";
          horizSizing = "right";
          vertSizing = "bottom";
-         position = "51 388";
-         extent = "104 48";
+         position = "20 411";
+         extent = "116 25";
          minExtent = "8 8";
          visible = "1";
          command = "Canvas.popDialog(EndGameGui);restartLevel();";

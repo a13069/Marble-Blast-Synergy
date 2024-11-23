@@ -830,7 +830,7 @@ function PM_setSelected( %row )
         %descTimeText = %descTimeText @ "<spush><color:FFFF00>";
         %endl = "<spop>\n";
       }
-      %descTimeText = %descTimeText @ (%i + 1) @ ". " @ getField($hs[%i], 1) TAB formatTime(%time) TAB %endl;
+      %descTimeText = %descTimeText @ (%i + 1) @ ". <clip:100>" @ getField($hs[%i], 1) @ "</clip>" TAB formatTime(%time) TAB %endl;
    }
 
    PM_description.setValue( %descText );

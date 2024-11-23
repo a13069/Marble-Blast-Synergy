@@ -74,8 +74,8 @@ new GuiControlProfile (OverlayScreenProfile)
 
 new GuiControlProfile (GuiBigTextEditProfile)
 {
-   fontType = "DomCasualD";
-   fontSize = 32;
+   fontType = "Lucida Sans";
+   fontSize = 24;
    opaque = false;
    fillColor = "255 255 255";
    fillColorHL = "128 128 128";

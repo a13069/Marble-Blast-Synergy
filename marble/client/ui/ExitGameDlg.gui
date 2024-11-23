@@ -19,28 +19,38 @@ new GuiControl(ExitGameDlg) {
       minExtent = "48 92";
       visible = "1";
       helpTag = "0";
-      bitmap = "common/ui/dialog.png";
+      bitmap = "marble/client/ui/play/blank.png";
       wrap = "0";
 
+      new GuiMLTextCtrl(ExitGameTextTitle) {
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "20 20";
+         extent = "348 49";
+         minExtent = "8 8";
+         visible = "1";
+         maxChars = "-1";
+      };
       new GuiMLTextCtrl(ExitGameText) {
-         profile = "GuiComic24Profile";
-         horizSizing = "center";
-         vertSizing = "bottom";
-         position = "95 46";
-         extent = "198 23";
+         profile = "GuiDefaultProfile";
+         horizSizing = "left";
+         vertSizing = "top";
+         position = "20 69";
+         extent = "243 146";
          minExtent = "8 8";
          visible = "1";
          helpTag = "0";
          lineSpacing = "2";
-         allowColorChars = "0";
+         allowColorChars = "1";
          maxChars = "-1";
       };
       new GuiBitmapButtonCtrl() {
          profile = "GuiButtonProfile";
          horizSizing = "right";
          vertSizing = "top";
-         position = "47 107";
-         extent = "88 52";
+         position = "268 69";
+         extent = "110 25";
          minExtent = "8 8";
          visible = "1";
          command = "Canvas.popDialog(ExitGameDlg); resumeGame(); disconnect();";
@@ -49,15 +59,31 @@ new GuiControl(ExitGameDlg) {
          text = "YES";
          groupNum = "-1";
          buttonType = "PushButton";
-         bitmap = "common/ui/yes";
+         bitmap = "marble/client/ui/endgame/exit";
             simpleStyle = "0";
       };
       new GuiBitmapButtonCtrl() {
          profile = "GuiButtonProfile";
          horizSizing = "right";
          vertSizing = "top";
-         position = "151 107";
-         extent = "83 55";
+         position = "268 106";
+         extent = "101 25";
+         minExtent = "8 8";
+         visible = "1";
+         command = "Canvas.popDialog(ExitGameDlg); resumeGame(); restartLevel();";
+         helpTag = "0";
+         text = "button";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         bitmap = "marble/client/ui/endgame/restart";
+            simpleStyle = "0";
+      };
+      new GuiBitmapButtonCtrl() {
+         profile = "GuiButtonProfile";
+         horizSizing = "right";
+         vertSizing = "top";
+         position = "268 144";
+         extent = "110 25";
          minExtent = "8 8";
          visible = "1";
          command = "Canvas.popDialog(ExitGameDlg); resumeGame();";
@@ -66,23 +92,7 @@ new GuiControl(ExitGameDlg) {
          text = "NO";
          groupNum = "-1";
          buttonType = "PushButton";
-         bitmap = "common/ui/no";
-            simpleStyle = "0";
-      };
-      new GuiBitmapButtonCtrl() {
-         profile = "GuiButtonProfile";
-         horizSizing = "right";
-         vertSizing = "top";
-         position = "249 107";
-         extent = "103 56";
-         minExtent = "8 8";
-         visible = "1";
-         command = "Canvas.popDialog(ExitGameDlg); resumeGame(); restartLevel();";
-         helpTag = "0";
-         text = "button";
-         groupNum = "-1";
-         buttonType = "PushButton";
-         bitmap = "common/ui/restart";
+         bitmap = "marble/client/ui/endgame/resume";
             simpleStyle = "0";
       };
    };

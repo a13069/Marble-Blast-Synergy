@@ -30,7 +30,14 @@ function escapeFromGame()
    if ( $Server::ServerType $= "SinglePlayer" )  {
       // In single player, we'll pause the game while the dialog box is up.
       pauseGame();
-      ExitGameText.setText("<just:center><font:DomCasualD:32>Exit from this Level?");
+	  %newText = "<color:FFFFFF><font:Lucida Sans:22>" @ MissionInfo.name @
+	  "\n<font:Arial:12>\n<tab:155,155><font:Lucida Sans:22>Qualify Time: " @ formatTime(MissionInfo.time <= 0 ? 5998999 : MissionInfo.time);
+	  if (MissionInfo.goldTime)
+	     %newText = %newText @ "\n<font:Lucida Sans:22><color:FFFF00>Gold Time: " @ formatTime(MissionInfo.goldTime);
+	  if (MissionInfo.AwesomeTime)
+	     %newText = %newText @ "\n<font:Lucida Sans:22><color:00FFFF>Awesome Time: " @ formatTime(MissionInfo.AwesomeTime);
+	  ExitGameText.setText(%newText);
+	  ExitGameTextTitle.setText("<font:Lucida Sans:32><color:FFFFFF><just:center>Game Paused");
       Canvas.pushDialog(ExitGameDlg);
    }
    else

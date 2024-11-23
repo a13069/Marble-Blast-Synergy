@@ -61,7 +61,7 @@ function clientCmdGameEnd()
          %msgIn = " 4th";
       else
          %msgIn = " 5th";
-      EnterNameText.setText("<just:center><font:Expo:50>Congratulations!\n<font:DomCasualD:32>You got the" @ %msgIn @ " best time!");
+      EnterNameText.setText("<color:FFFFFF><just:center><font:Lucida Sans:24>Congratulations!\nYou got the" @ %msgIn @ " best time!<font:Arial:14>\n\n<font:Lucida Sans:24><just:left>Enter your name: ");
       Canvas.pushDialog(EnterNameDlg);
       EnterNameEdit.setSelectionRange(0, 100000);
    }
@@ -84,9 +84,8 @@ function reformatGameEndText()
 {
    // Final Score
    %text = 
-      "<shadow:1:1><tab:240,250>" @
-      "<font:Expo:50><color:ffff00>Final Time:\t<color:fff090>" @
-      formatTime($Game::ScoreTime) @ "<color:000000><font:Expo:32>\n<just:center>";
+      "<lmargin:57><font:Lucida Sans:36><color:ffffff>Final Time: " @
+      formatTime($Game::ScoreTime) @ "\n<lmargin:0><font:Lucida Sans:24><color:ffffff><just:center>";
 
    // Qualification time
    if($Game::Qualified) {
@@ -102,41 +101,41 @@ function reformatGameEndText()
    
    // Basic time info
    %text = %text @
-      "\n<just:left><font:Arial:14>\n<lmargin:65><tab:235,245><shadowcolor:ffffff7f><shadow:1:1>";
+      "\n<just:left><lmargin:57><font:Arial:14>\n<tab:270,280>";
    if (MissionInfo.time)
       %text = %text @
-         "<color:000000>" @
+         "<color:ffffff>" @
          "<font:Lucida Sans:24>Qualify Time:\t" @
-         ($Game::Qualified? "<shadowcolor:ffffff7f><color:000000>": "<shadowcolor:0000007f><color:ff0000>") @
+         ($Game::Qualified? "<color:ffffff>": "<color:ff0000>") @
          formatTime(MissionInfo.time) @ "\n";
    else
-      %text = %text @ "<color:000000><font:Lucida Sans:24>Qualify Time:\t\t99:59.99\n";
+      %text = %text @ "<color:ffffff><font:Lucida Sans:24>Qualify Time:\t\t99:59.99\n";
 
    if(MissionInfo.goldTime)
    {
-      %text = %text @ "<shadowcolor:ffffff7f><color:000000><font:Lucida Sans:24>Gold Time:\t<color:FFFF00><shadowcolor:0000007f>" @
+      %text = %text @ "<color:ffffff><font:Lucida Sans:24>Gold Time:\t<color:FFFF00><shadowcolor:0000007f>" @
          formatTime(MissionInfo.goldTime) @ "\n";
    }
 
    if(MissionInfo.AwesomeTime)
    {
-      %text = %text @ "<shadowcolor:ffffff7f><color:000000><font:Lucida Sans:24>Awesome Time:\t<color:00ffff><shadowcolor:0000007f>" @
+      %text = %text @ "<color:ffffff><font:Lucida Sans:24>Awesome Time:\t<color:00ffff><shadowcolor:0000007f>" @
          formatTime(MissionInfo.AwesomeTime) @ "\n";
    }
 
    %text = %text @
-      "<shadowcolor:ffffff7f><color:000000>" @
+      "<color:ffffff>" @
       "<font:Lucida Sans:24>Elapsed Time:\t" @ formatTime($Game::ElapsedTime)  @ "\n" @
       "<font:Lucida Sans:24>Bonus Time:\t" @ formatTime($Game::BonusTime) @ "\n";
-   %text = %text @ "<font:Arial:14>\n<font:Lucida Sans:24><color:000000>Best Times:\n";
+   %text = %text @ "<font:Arial:14>\n<font:Lucida Sans:24><color:ffffff>Best Times:\n";
    for(%i = 0; %i < 5; %i++)
    {
       %time = getField($hs[%i], 0);
       %name = getField($hs[%i], 1);
       %text = %text 
-         @ "<shadowcolor:ffffff7f><color:000000><font:Lucida Sans:24>" @ %i+1 @ ". " @ %name @ "\t" 
+         @ "<color:ffffff><font:Lucida Sans:24>" @ %i+1 @ ". " @ %name @ "\t" 
          @ (%time < MissionInfo.goldTime ? 
-		       (%time < MissionInfo.AwesomeTime? "<shadowcolor:0000007f><color:00ffff>" : "<shadowcolor:0000007f><color:ffff00>")
+		       (%time < MissionInfo.AwesomeTime? "<color:00ffff>" : "<color:ffff00>")
 			: "") @ formatTime(%time) @ "\n";
    }
    // Display the end-game screen

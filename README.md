@@ -13,5 +13,9 @@ This mod is currently unfinished, and the author wishes to continue working on i
 - Only 8 intermediate levels have been made, and they are unstable right now. Some intermediate levels may be changed, reordered, or be relegeted to a later theme in the future.
 - There aren't any advanced, expert, or tutorial level being made yet.
 
+## FAQ
+### How do I open console? / Is the console disabled?
+No, console isn't disabled in this mod. Press F10 to open console.
+
 ## Other
 If you have any feedback, suggestions, bug reports or you want to help with this mod, contact a13069 on Discord or marbleblast.com!
