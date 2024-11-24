@@ -2,14 +2,14 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         desc = "A test mission for an interior";
+         desc = "When bouncing around in this level, don\'t forget to catch powerups and use them to your advantage!";
          level = "14";
          type = "Beginner";
-         name = "Interior Test: bouncefield.dif";
+         name = "Bounce Field";
          time = "0";
          goldTime = "23000";
          AwesomeTime = "14500";
-         note = "Made in Jul 14, 2020.";
+         note = "Bounce Field, made in Jul 14, 2020.";
          music = "purpleskies.ogg";
    };
    new MissionArea(MissionArea) {

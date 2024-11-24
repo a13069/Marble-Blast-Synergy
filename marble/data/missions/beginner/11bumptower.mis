@@ -8,7 +8,7 @@ new SimGroup(MissionGroup) {
          name = "Bump Tower";
          desc = "A simple level that greets you to the second realm.";
          level = "11";
-         note = "Made in Jul 3, 2020.";
+         note = "Bump Tower, made in Jul 3, 2020. The author doesn\'t like the concept of \"qualify time\" because it makes him stressed while playing a level, so he avoids setting them in this mod. As a result the author thought there weren\'t any qualify times in this mod, until the playtester pointed out this level, somehow, has one. Unwilling to change an established level, the author kept it, but this level will probably be the only level in this mod with a qualify time.";
          type = "Beginner";
          music = "purpleskies.ogg";
    };

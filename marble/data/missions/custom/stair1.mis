@@ -3,10 +3,10 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          type = "Custom";
-         desc = "A test mission for an interior";
+         desc = "Don\'t get blown off the course!";
          level = "25";
-         name = "Interior Test: stair1.dif";
-         note = "Made in Jul 4, 2020.";
+         name = "Windy Stairs";
+         note = "Windy Stairs, made in Jul 4, 2020. This level probably wasn\'t meant to be a serious level, but the author doesn\'t remember if that\'s the case.";
          goldTime = "27000";
          time = "0";
    };

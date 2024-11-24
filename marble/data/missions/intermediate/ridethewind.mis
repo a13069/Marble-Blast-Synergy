@@ -4,10 +4,10 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          time = "0";
-         desc = "A test mission for an interior";
-         name = "Ridethewind";
+         desc = "Harness the duct fan\'s power to conquer the challanges.";
+         name = "Ride the Wind";
          level = "7";
-         note = "Made in Aug 13, 2023. The author thinks this level is possibly too hard to be in Intermediate Theme 1.";
+         note = "Ride the Wind, made in Aug 13, 2023. The author thinks this level is possibly too hard to be in Intermediate Theme 1.";
          music = "puzzlegame3.ogg";
          type = "Intermediate";
    };

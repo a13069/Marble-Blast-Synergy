@@ -3,10 +3,10 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          time = "0";
-         name = "Interior Test: cave2.dif";
-         desc = "A test mission for an interior";
+         name = "Lava Cave";
+         desc = "Find your way in this lava-filled cave.";
          level = "19";
-         note = "Made in May 13, 2020.";
+         note = "Lava Cave, made in May 13, 2020. This level is scrapped because the route is way too confusing, and the playing experience (with the intended route) is clunky as well. The author later made another cave-themed level, you can see it in the beginner section.";
          type = "Custom";
    };
    new MissionArea(MissionArea) {

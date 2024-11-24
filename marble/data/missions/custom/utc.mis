@@ -4,9 +4,9 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          type = "Custom";
          time = "0";
-         desc = "A test mission for an interior";
-         name = "Interior Test: utc";
-         note = "Made in Jul 23, 2020.";
+         desc = "Ascend this level with the help of tornadoes!";
+         name = "Up the Icy Creek";
+         note = "Up the Icy Creek, made in Jul 23, 2020. This level was deemed too easy by the author and thus demoted to custom level. If I recall correctly, Tornado Arena and Challange Cylinders were made because this level and Obligatory Finale were scrapped, leaving the beginner levels with no tornadoes.";
          level = "40";
    };
    new MissionArea(MissionArea) {

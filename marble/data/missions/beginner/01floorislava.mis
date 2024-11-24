@@ -8,10 +8,10 @@ new SimGroup(MissionGroup) {
          goldTime = "13000";
          AwesomeTime = "7000";
          AwesomeHint = "Go diagonal, and control your landing on the first floor.";
-         desc = "A test mission for an interior";
+         desc = "Learn about lava and the water powerup, the new gameplay element for this mod!";
          name = "The Floor Is Lava";
          startHelpText = "Lava is hot. If you touch lava, you get out of bounds.";
-         note = "The Floor Is Lava, made in Feb 11, 2019";
+         note = "The Floor Is Lava, made in Feb 11, 2019. If you look closely, you can see that this level is shaped like a house, that's because when this mod started, the author wanted to include a storyline in which the marble wakes up in his house filled with lava and goes on a quest to find out why it happened. The storyline was later dropped, but the design of this level remained.";
          music = "movingpieces.ogg";
    };
    new MissionArea(MissionArea) {

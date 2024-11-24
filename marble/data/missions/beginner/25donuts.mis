@@ -5,11 +5,11 @@ new SimGroup(MissionGroup) {
          goldTime = "33000";
          level = "25";
          music = "customshader.ogg";
-         name = "Interior Test: warm_donut.dif";
+         name = "Challange Cylinders";
          time = "0";
-         note = "Made in Jul 16, 2023";
+         note = "Challange Cylinders, made in Jul 16, 2023";
          AwesomeTime = "19500";
-         desc = "A test mission for an interior";
+         desc = "Complete the various challanges in this multi-layered level.";
          type = "Beginner";
    };
    new MissionArea(MissionArea) {

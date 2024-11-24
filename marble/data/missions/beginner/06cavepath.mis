@@ -2,15 +2,15 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         name = "Interior Test: cavepath.dif";
+         name = "Feel the Heat";
          time = "0";
-         desc = "A test mission for an interior";
+         desc = "This level is about staying close to lava.";
          type = "Beginner";
          level = "6";
          goldTime = "20000";
          AwesomeTime = "10500";
          AwesomeHint = "There are so many time travels on the latter part of this level, the time you collect the first one should be your final time.";
-         note = "Made in Jul 3, 2020.";
+         note = "Feel the Heat, made in Jul 3, 2020. This level was made from scrapped level parts.";
          music = "movingpieces.ogg";
    };
    new MissionArea(MissionArea) {

@@ -2,12 +2,12 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         name = "Interior Test: blocks.dif";
+         name = "Moving Blocks";
          time = "0";
-         desc = "A test mission for an interior";
+         desc = "Welcome to the intermediate levels!";
          level = "1";
          type = "Intermediate";
-         note = "Made in Jul 18, 2023.";
+         note = "Moving Blocks, made in Jul 18, 2023.";
          music = "puzzlegame3.ogg";
    };
    new MissionArea(MissionArea) {

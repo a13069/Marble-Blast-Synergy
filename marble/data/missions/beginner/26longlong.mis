@@ -2,13 +2,13 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         name = "Interior Test: longlong.dif";
+         name = "Winding Trail";
          level = "26";
          type = "Beginner";
          time = "0";
          goldTime = "45000";
-         desc = "A test mission for an interior";
-         note = "Made in Jul 16, 2023";
+         desc = "Follow the winding trail... or... maybe you can find a shortcut?";
+         note = "Winding Trail, made in Jul 16, 2023";
          music = "customshader.ogg";
    };
    new MissionArea(MissionArea) {

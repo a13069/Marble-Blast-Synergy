@@ -2,13 +2,13 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         desc = "A test mission for an interior";
+         desc = "Cross the bridge made out of moving platforms!";
          type = "Custom";
          level = "3";
          goldTime = "5000";
          AwesomeTime = "2500";
-         note = "Made in Feb 11, 2019.";
-         name = "Interior Test: static.dif";
+         note = "Moving Bridge, made in Feb 11, 2019. This level was scrapped because it\'s too simple; however this idea are later used in \"Unstable Bridges\".";
+         name = "Moving Bridge";
          time = "0";
    };
    new MissionArea(MissionArea) {

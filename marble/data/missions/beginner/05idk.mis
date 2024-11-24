@@ -2,15 +2,15 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         desc = "A test mission for an interior";
-         name = "Interior Test: misc1.dif";
+         desc = "It's like MBG's \"There and back again\" but you go back with the powerup you pick.";
+         name = "Pick Your Fighter";
          level = "5";
          type = "Beginner";
          goldTime = "20000";
          AwesomeTime = "12000";
          AwesomeHint = "There are some powerups in the lower part of this level, maybe you can combine them with the powerup you bring?";
          time = "0";
-         note = "Made in Jun 8, 2019.";
+         note = "Pick Your Fighter, made in Jun 8, 2019. When playtesting the beginner levels, the author thought that levels 4 through 8 were about as hard as each other, so he ordered them by their gold times. Years later, when revisiting the mod, the author thought this level was significantly harder than the rest because the way back up is not as clear to the player. But the order of the level was set in stone (see the names of the .mis files). Oh well.";
          startHelpText = "Pick a powerup, then jump into the hole to get the gem!";
          music = "movingpieces.ogg";
    };

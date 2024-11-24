@@ -3,12 +3,12 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          level = "8";
-         name = "Interior Test: volcano.dif";
+         name = "Volcano";
          time = "0";
          type = "Custom";
          goldTime = "17500";
-         desc = "A test mission for an interior";
-         note = "Made in Feb 26, 2019.";
+         desc = "What\'s more fitting than a volcano in a lava-themed mod?";
+         note = "Volcano, made in Feb 26, 2019. The author remembers hating this level, probably because of its appearance. However, upon revisiting it in 2024, the author found nothing wrong with this level.";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";

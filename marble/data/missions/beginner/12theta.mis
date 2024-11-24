@@ -2,7 +2,7 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         desc = "A test mission for an interior";
+         desc = "Collect the gems on the outer rim.";
          name = "Theta";
          level = "12";
          type = "Beginner";
@@ -10,7 +10,7 @@ new SimGroup(MissionGroup) {
          goldTime = "25000";
          AwesomeTime = "16000";
          music = "purpleskies.ogg";
-         note = "Made in Jun 8, 2019. Originally in Realm 1 but moved here.";
+         note = "Theta, made in Jun 8, 2019. Originally in Realm 1 but moved here.";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";

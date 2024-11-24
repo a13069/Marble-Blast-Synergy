@@ -4,10 +4,10 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          time = "0";
          type = "Intermediate";
-         desc = "A test mission for an interior";
+         desc = "Don\'t be afraid to make big jumps.";
          level = "3";
-         note = "Made in Jul 28, 2023.";
-         name = "Interior Test: notm.dif";
+         note = "Knight of the Marble, made in Jul 28, 2023. This level is inspired by MBP\'s \"King of the Marble\", where the level looks like the possible moves of a chess king from the center. So this level takes an obvious extension...";
+         name = "Knight of the Marble";
          music = "puzzlegame3.ogg";
    };
    new MissionArea(MissionArea) {

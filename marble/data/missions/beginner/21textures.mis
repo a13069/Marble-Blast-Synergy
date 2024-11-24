@@ -5,9 +5,9 @@ new SimGroup(MissionGroup) {
          type = "Beginner";
          name = "Twin Mountain";
          time = "0";
-         desc = "A test mission for an interior";
+         desc = "Climb up the two mountains. Don't worry, the mountains are really small.";
          level = "21";
-         note = "Made in Jul 19, 2020.";
+         note = "Twin Mountain, made in Jul 19, 2020.";
          goldTime = "25000";
          AwesomeTime = "16750";
          music = "customshader.ogg";

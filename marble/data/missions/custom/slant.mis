@@ -3,12 +3,12 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          type = "Custom";
-         desc = "A test mission for an interior";
+         desc = "Say hello to the sand texture.";
          level = "14";
-         name = "Interior Test: slant.dif";
+         name = "Sand Slopes";
          time = "0";
          goldTime = "36000";
-         note = "Made in Jun 28, 2019.";
+         note = "Sand Slopes, made in Jun 28, 2019. This level's design is based on a popular meme at the time of this level\'s creation. Actually there\'s a main level based on a meme... can you find which?";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";

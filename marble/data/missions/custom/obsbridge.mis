@@ -4,9 +4,9 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          type = "Custom";
          time = "0";
-         desc = "A test mission for an interior";
-         name = "Interior Test: 6x6x1.dif";
-         note = "Made in May 13, 2020.";
+         desc = "Avoid the moving obstacles!";
+         name = "Obstacle Bridge";
+         note = "Obstacle Bridge, made in May 13, 2020. This level never felt right to the author.";
          level = "18";
    };
    new MissionArea(MissionArea) {

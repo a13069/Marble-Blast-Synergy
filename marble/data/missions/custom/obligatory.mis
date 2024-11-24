@@ -2,12 +2,12 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         name = "Interior Test: obligatory1";
+         name = "Obligatory Finale";
          level = "42";
          type = "Custom";
          time = "0";
-         note = "Made in Jul 25, 2020.";
-         desc = "A test mission for an interior";
+         note = "Obligatory Finale, made in Jul 25, 2020. Made because many mods have their last beginner level to be a level containing every gameplay element (MBG, MB STOP, PQ, Evil\'s minimod, etc.), scrapped because \"Four-layered\" actually serves the position well enough.";
+         desc = "A level containing every gameplay element in this mod, just like MBG\'s \"Grand Finale\"!";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";

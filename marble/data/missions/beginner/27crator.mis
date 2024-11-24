@@ -3,12 +3,12 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          time = "0";
-         desc = "A test mission for an interior";
+         desc = "\"THIS is how lava should be used in a level.\" - the playtester";
          type = "Beginner";
          level = "27";
-         name = "Interior Test: crator";
+         name = "Hot Spring Playground";
          goldTime = "32000";
-         note = "Made in Jul 22, 2020.";
+         note = "Hot Spring Playground, made in Jul 22, 2020.";
          AwesomeTime = "21500";
          music = "customshader.ogg";
    };

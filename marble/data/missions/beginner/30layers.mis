@@ -2,13 +2,13 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         name = "Interior Test: layers.dif";
+         name = "Four-layered";
          time = "0";
-         desc = "A test mission for an interior";
+         desc = "Having two sides with two layers each, this level\'s great variety of challanges should make a good beginner finale.";
          type = "Beginner";
          level = "30";
          goldTime = "42000";
-         note = "Made in Jul 22, 2020.";
+         note = "Four-layered, made in Jul 22, 2020.";
          AwesomeTime = "28000";
          music = "customshader.ogg";
    };

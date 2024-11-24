@@ -3,11 +3,11 @@
 new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          time = "0";
-         desc = "A test mission for an interior";
-         name = "Waterrings";
+         desc = "Go through the interlocking ring while avoiding the hazards!";
+         name = "Water Rings";
          level = "8";
          goldTime = "35000";
-         note = "Made in Aug 17, 2023. The author thinks this level is too hard to be in Intermediate Theme 1.";
+         note = "Water Rings, made in Aug 17, 2023. The author thinks this level is too hard to be in Intermediate Theme 1.";
          music = "puzzlegame3.ogg";
          type = "Intermediate";
    };

@@ -2,14 +2,14 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         name = "Interior Test: tents.dif";
+         name = "Challange Gazebos";
          time = "0";
-         desc = "A test mission for an interior";
+         desc = "Take a walk among the gazebos, each with a unique (small) challange!";
          type = "Beginner";
          level = "13";
          goldTime = "36000";
          AwesomeTime = "25000";
-         note = "Made in Jul 8, 2020.";
+         note = "Challange Gazebos, made in Jul 8, 2020. Yes I know the bridges between the gazebos aren't perfectly aligned. I tried my best.";
          music = "purpleskies.ogg";
    };
    new MissionArea(MissionArea) {

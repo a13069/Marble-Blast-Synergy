@@ -4,7 +4,7 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          time = "0";
          name = "Tornado Arena";
-         desc = "A test mission for an interior";
+         desc = "Defy the tornado\'s pull... or just go along with it.";
          level = "24";
          goldTime = "28000";
          type = "Beginner";

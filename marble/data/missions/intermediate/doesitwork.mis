@@ -3,12 +3,12 @@
 new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          time = "0";
-         desc = "Will this text stay";
-         name = "Doesitwork";
+         desc = "Collect the gems in this confusing structure.";
+         name = "Chilly Gem Hunter";
          level = "2";
          music = "puzzlegame3.ogg";
          type = "Intermediate";
-         note = "Made in Aug 5, 2023, with minor adjustments in Aug 15, 2023.";
+         note = "Chilly Gem Hunter, made in Aug 5, 2023, with minor adjustments in Aug 15, 2023. This level\'s working name is \"Does it work?\", probably referring to the author\'s python code that automatically converts .csx files to mission files.";
    };
 
    new MissionArea(MissionArea) {

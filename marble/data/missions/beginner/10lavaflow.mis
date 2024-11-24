@@ -2,14 +2,14 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         desc = "A test mission for an interior";
+         desc = "The last level in this realm.";
          level = "10";
          type = "Beginner";
          time = "0";
          goldTime = "22000";
          AwesomeTime = "13500";
-         name = "Interior Test: lavaflow.dif";
-         note = "Made in Feb 13, 2019.";
+         name = "Lavaflow";
+         note = "Lavaflow, made in Feb 13, 2019.";
          music = "movingpieces.ogg";
          AwesomeHint = "Aim for the leftmost, third lowest platform when flying back. Jump on it without slowing down and diagonal to the finish.";
    };

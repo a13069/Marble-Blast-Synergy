@@ -3,14 +3,14 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          time = "0";
-         name = "Interior Test: triggers_edge.dif";
-         desc = "A test mission for an interior";
+         name = "Shape-shifter";
+         desc = "Watch this level change shape as you progress.";
          level = "15";
          goldTime = "45000";
          AwesomeTime = "30000";
          type = "Beginner";
          startHelpText = "Go to the center after you\'ve collected six gems.";
-         note = "Made in Jul 11, 2020. This the the author\'s first ever level using trigger.";
+         note = "Made in Jul 11, 2020. This the the author\'s first ever level using trigger. Also sometimes the marble will bump when rolling on the lowered center part of the level (the part with four gems). I don't know why.";
          music = "purpleskies.ogg";
          AwesomeHint = "Take advantage of the trigger boundaries!";
    };

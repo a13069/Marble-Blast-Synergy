@@ -3,14 +3,14 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          name = "Unstable Bridges";
-         desc = "A test mission for an interior";
+         desc = "Cross the bridges to get to the finish pad! They do not seem to be in good condition though...";
          level = "3";
          type = "Beginner";
          goldTime = "8000";
          AwesomeTime = "4000";
          AwesomeHint = "Hit the edge of the second platform to slow yourself down quickly. Also don\'t collect the time travel beneath the trapdoors - you won\'t have the time.";
          time = "0";
-         note = "Unstable Bridges, made in Feb 16, 2019";
+         note = "Unstable Bridges, made in Feb 16, 2019. ";
          music = "movingpieces.ogg";
    };
    new MissionArea(MissionArea) {

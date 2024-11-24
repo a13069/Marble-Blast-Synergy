@@ -4,13 +4,13 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          time = "0";
          type = "Beginner";
-         desc = "A test mission for an interior";
+         desc = "Hop between the islands!";
          level = "17";
-         name = "Recolor Test: Islands";
+         name = "Gem Islands";
          goldTime = "22500";
          AwesomeTime = "9500";
          AwesomeHint = "A short story about this level: when this level was made, the author playtested the level rigorously with the route \"collect the gems in the order he put them into the level\", and set the awesome time to be 14.5 seconds. Three years later, the author revisited the level with a different route, and beat the awesome time easily. Then the awesome time was lowered to 9.5 seconds. Moral of the story: finding a good route is way more imortant then maintaining a good speed.";
-         note = "Made in Feb 16, 2019.";
+         note = "Gem Islands, Made in Feb 16, 2019.";
          music = "purpleskies.ogg";
    };
    new MissionArea(MissionArea) {

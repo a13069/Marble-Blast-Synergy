@@ -2,12 +2,12 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         desc = "A test mission for an interior";
+         desc = "Don\'t fall into the gap in the middle!";
          type = "Beginner";
          level = "29";
-         name = "Interior Test: frictions.dif";
+         name = "Slippery Ditches";
          time = "0";
-         note = "Made in Jul 20, 2020.";
+         note = "Slippery Ditches, made in Jul 20, 2020.";
          goldTime = "25000";
          AwesomeTime = "7250";
          music = "customshader.ogg";

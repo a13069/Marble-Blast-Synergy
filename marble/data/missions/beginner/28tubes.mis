@@ -5,10 +5,10 @@ new SimGroup(MissionGroup) {
          level = "28";
          type = "Beginner";
          time = "0";
-         desc = "A test mission for an interior";
-         name = "Interior Test: tube_corner";
+         desc = "Many marble blast mods have tube levels, this mod is not an exception.";
+         name = "Tube Pathfinder";
          goldTime = "30000";
-         note = "Made in Jul 24, 2020.";
+         note = "Tube Pathfinder, made in Jul 24, 2020.";
          music = "customshader.ogg";
    };
    new MissionArea(MissionArea) {

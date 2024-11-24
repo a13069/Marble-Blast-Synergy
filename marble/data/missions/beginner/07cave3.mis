@@ -4,13 +4,13 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          type = "Beginner";
          time = "0";
-         desc = "A test mission for an interior";
+         desc = "This level can be a good introduction to super bounce, gravity modifier and shock absorber, don\'t you think?";
          level = "7";
          goldTime = "21000";
          AwesomeTime = "4250";
          AwesomeHint = "Two words: edge hit!";
-         name = "Interior Test: cave3.dif";
-         note = "Made in Jul 2, 2020.";
+         name = "Gravitational Cave";
+         note = "Gravitational Cave, made in Jul 2, 2020.";
          music = "movingpieces.ogg";
    };
    new MissionArea(MissionArea) {

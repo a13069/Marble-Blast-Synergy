@@ -5,11 +5,11 @@ new SimGroup(MissionGroup) {
          goldTime = "30000";
          level = "19";
          music = "purpleskies.ogg";
-         name = "Interior Test: circles_one.dif";
+         name = "Dome Hopping";
          time = "0";
-         note = "Made in Jul 11, 2019.";
+         note = "Dome Hopping, made in Jul 11, 2019.";
          AwesomeTime = "20000";
-         desc = "A test mission for an interior";
+         desc = "Keep you balance on the domes!";
          type = "Beginner";
          startHelpText = "If you screw up, you have one chance to save yourself.";
    };

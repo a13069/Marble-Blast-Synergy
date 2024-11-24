@@ -2,12 +2,12 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         name = "Interior Test: circles_zzsequel.dif";
+         name = "Inside the Domes";
          level = "30";
          type = "Custom";
          time = "0";
-         note = "Made in Jul 12, 2020.";
-         desc = "A test mission for an interior";
+         note = "Inside the Domes, made in Jul 12, 2020. Intended to be a sequel to \"Dome Hopping\", this level just fell short of the author\'s expectation of a beginner theme 2 level (The author could not pin down why). The various rooms of this level actually correspond with Dome Hopping\'s domes, check it yourself!";
+         desc = "A sequel to Dome Hopping.";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";

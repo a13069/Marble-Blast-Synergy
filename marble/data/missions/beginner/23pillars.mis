@@ -7,10 +7,10 @@ new SimGroup(MissionGroup) {
          AwesomeTime = "24000";
          AwesomeHint = "When I beat the awesome time I\'ve set, I\'ll fill this field out.";
          type = "Custom";
-         desc = "A test mission for an interior";
+         desc = "This level feels like MBG\'s \"Stepping Stone\" without the time limit... what do you think?";
          level = "23";
-         name = "Texture Test: hex_pillar_6b.dif";
-         note = "Made in Jun 28, 2019.";
+         name = "Hex Pillars";
+         note = "Hex Pillars, made in Jun 28, 2019.";
          music = "customshader.ogg";
    };
    new MissionArea(MissionArea) {

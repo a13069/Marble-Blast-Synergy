@@ -5,10 +5,10 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          time = "0";
          goldTime = "60000";
-         desc = "A test mission for an interior";
-         name = "Ti2";
+         desc = "Travel between the islands to get to the finish.";
+         name = "Tale of Three Islands";
          level = "5";
-         note = "Made in Aug 13, 2023.";
+         note = "Tale of Three Islands, made in Aug 13, 2023.";
          music = "puzzlegame3.ogg";
          type = "Intermediate";
    };

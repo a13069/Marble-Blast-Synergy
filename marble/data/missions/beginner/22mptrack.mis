@@ -4,10 +4,10 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          time = "0";
          type = "Beginner";
-         desc = "A test mission for an interior";
+         desc = "Stay on the platform and collect the time travels along the way!";
          level = "22";
-         name = "Interior Test: mptrack";
-         note = "Made in Jul 23, 2020.";
+         name = "Platform Adventure I";
+         note = "Platform Adventure I, made in Jul 23, 2020. The author doesn't like this type of level, but made one anyway.";
          goldTime = "25000";
          AwesomeTime = "15000";
          music = "customshader.ogg";

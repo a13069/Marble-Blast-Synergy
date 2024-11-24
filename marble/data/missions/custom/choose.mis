@@ -4,11 +4,11 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          type = "Custom";
          time = "0";
-         name = "Interior Test: choose.dif";
+         name = "Gap Crossing";
          goldTime = "15000";
          AwesomeTime = "7250";
-         desc = "A test mission for an interior";
-         note = "Made in Feb 11, 2019.";
+         desc = "Pick a powerup and run to the finish! It\'s that simple, really.";
+         note = "Gap Crossing, made in Feb 11, 2019. This level is scrapped because it\'s just too simple.";
          level = "2";
    };
    new MissionArea(MissionArea) {

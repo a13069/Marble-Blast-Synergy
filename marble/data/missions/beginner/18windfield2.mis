@@ -2,12 +2,12 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         desc = "A test mission for an interior";
+         desc = "Can you withstand the strong wind from the fans?";
          level = "18";
          type = "Beginner";
-         name = "Interior Test: windfield.dif";
+         name = "Wind Field";
          time = "0";
-         note = "Made in Jul 15, 2020.";
+         note = "Wind Field, made in Jul 15, 2020.";
          goldTime = "25000";
          AwesomeTime = "13250";
          music = "purpleskies.ogg";

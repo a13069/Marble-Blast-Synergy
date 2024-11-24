@@ -3,14 +3,14 @@ new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
          level = "20";
-         note = "Made in Jun 8, 2019.";
+         note = "The Flying Marble, made in Jun 8, 2019. This level is the author\'s favorite level of the 49 levels in the initial release, because its simplicity (no gems, no powerups, no hazards) makes for a unique playing experience.";
          AwesomeTime = "17000";
          type = "Beginner";
          goldTime = "24000";
          music = "purpleskies.ogg";
-         name = "Interior Test: slope.dif";
+         name = "The Flying Marble";
          time = "0";
-         desc = "A test mission for an interior";
+         desc = "With a good starting jump, even a marble can soar.";
          startHelpText = "Build up your speed and fly off the ramps!";
          AwesomeHint = "Jump on the end of the first ramp and bounce off the end of the second ramp for a shortcut.";
    };

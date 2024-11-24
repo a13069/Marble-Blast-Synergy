@@ -7,7 +7,7 @@ new SimGroup(MissionGroup) {
          music = "movingpieces.ogg";
          name = "Lava Tower Descent";
          time = "0";
-         note = "Made in Feb 27, 2019.";
+         note = "Lava Tower Descent, made in Feb 27, 2019.";
          AwesomeTime = "14000";
          desc = "Follow the arrows while taking care of your water timer!";
          type = "Beginner";

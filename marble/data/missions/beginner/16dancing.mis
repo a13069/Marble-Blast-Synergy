@@ -4,12 +4,12 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          type = "Beginner";
          time = "0";
-         desc = "Dance with the moving trims!";
+         desc = "Dance with the moving trims or get knocked off!";
          level = "16";
          name = "Dancing Trims";
          goldTime = "24000";
          AwesomeTime = "13500";
-         note = "Made in Jul 8, 2020. This level is inspired by Level 9 & 10 in GLC 4.";
+         note = "Dancing Trims, made in Jul 8, 2020. This level's design is inspired by Level 9 & 10 in Gerson's Level Compilation 4.";
          music = "purpleskies.ogg";
          AwesomeHint = "Just go fast, and maybe cut some corners.";
    };

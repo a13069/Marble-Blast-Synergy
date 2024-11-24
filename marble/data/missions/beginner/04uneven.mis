@@ -7,10 +7,10 @@ new SimGroup(MissionGroup) {
          AwesomeTime = "5750";
          AwesomeHint = "Don\'t bounce too high - stay close to the level to minimize the distance traveled.";
          type = "Beginner";
-         desc = "A test mission for an interior";
+         desc = "Descent the bumpy road to the finish!";
          level = "4";
-         name = "Interior Test: uneven.dif";
-         note = "Made in Jun 30, 2019.";
+         name = "Bumpy Descent";
+         note = "Bumpy Descent, made in Jun 30, 2019.";
          startHelpText = "The finish is right in front of you.";
          music = "movingpieces.ogg";
    };
