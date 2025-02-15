@@ -1,0 +1,326 @@
+
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   new ScriptObject(MissionInfo) {
+         time = "0";
+         goldTime = "55000";
+         desc = "It\'s impossible to go out of bounds in this level... How hard can it be?";
+         name = "Ice Cave Descent";
+         note = "Ice Cave Descent, made in Feb 8, 2025. If you think this level feels like a Marble Blast Fubar level (okay at least this is what the author thinks)... that\'s because on the day the author made this level, he was playing a lot (then) newly released Marble Blast Fubar levels on Marble Blast Web. It definitely influenced the level design.";
+         level = "7";
+         music = "puzzlegame3.ogg";
+         type = "Intermediate";
+   };
+
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 7.45949e-031 1.3684e-038";
+      fogVolume2 = "-1 1.07208e-014 8.756e-014";
+      fogVolume3 = "-1 5.1012e-010 2.05098e-008";
+      materialList = "~/data/skies/blizzard.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 0.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000004";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 14435505.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/intermediate/icepath_trimmed.dif";
+      showTerrainInside = "0";
+   };
+
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/intermediate/icepath_decor.dif";
+      showTerrainInside = "0";
+   };
+
+   new StaticShape() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "StartPad";
+   };
+   new Item() {
+      position = "40 32 -20";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "38 12 -20.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+      timeBonus = "5000";
+   };
+   new Item() {
+      position = "42 24 -20.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+      timeBonus = "5000";
+   };
+   new StaticShape() {
+      position = "32.5 66 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "33.5 62 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "29.5 63.5 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "27.5 67 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "26 61 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "24 65 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "21 63 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "19.5 67 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "18 61 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "15 65 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "12.5 62 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "10.5 65.5 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "6 67 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "5 61.5 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "7.5 63.5 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "9 60.5 -26";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "0 56 -26.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-1.5 50.5 -27.5";
+      rotation = "-0.0 -0.0 -1.0 33.00001987257537";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "2 47.5 -28";
+      rotation = "-0.0 -0.0 -1.0 37.999993367564024";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "2.5 39.5 -29.5";
+      rotation = "-0.0 -0.0 -1.0 178.00022525549778";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new Item() {
+      position = "40 32 -30";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "40 32 -36";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "48 -4 -36";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "DuctFan";
+   };
+   new StaticShape() {
+      position = "72 -4 -36";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "DuctFan";
+   };
+   new StaticShape() {
+      position = "56 -4 -36";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "DuctFan";
+   };
+   new Item() {
+      position = "60 -4 -28";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+      timeBonus = "5000";
+   };
+   new StaticShape() {
+      position = "40 64 -36";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "EndPad";
+   };
+   new Item() {
+      position = "40 32 -15";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "64 -4 -36";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "DuctFan";
+   };
+   new StaticShape() {
+      position = "-2 42 -29";
+      rotation = "-0.0 -0.0 -1.0 100.99985421007126";
+      scale = "1 1 1";
+      datablock = "TriangleBumper";
+   };
+   new Item() {
+      position = "78 14 -20";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+      timeBonus = "5000";
+   };
+   new Item() {
+      position = "80 -4 -36";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+
+   new Trigger(Bounds) {
+      position = "-34.0 98.0 -72.0";
+      rotation = "1 0 0 0";
+      scale = "148.0 136.0 108.0";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+};
+//--- OBJECT WRITE END ---
+

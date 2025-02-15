@@ -1,0 +1,4312 @@
+
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   new ScriptObject(MissionInfo) {
+         time = "0";
+         desc = "Be decisive, for any hesitation will make you fall into the abyss below!";
+         name = "Trapdoor Bridges";
+         level = "15";
+         music = "loading.ogg";
+         goldTime = "60000";
+         note = "Trapdoor Bridges, made in Dec 29, 2024.";
+         type = "Intermediate";
+   };
+
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 7.45949e-031 1.3684e-038";
+      fogVolume2 = "-1 1.07208e-014 8.756e-014";
+      fogVolume3 = "-1 5.1012e-010 2.05098e-008";
+      materialList = "~/data/skies/rainforest.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 0.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000004";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 14435505.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/intermediate/trapdoors_trimmed.dif";
+      showTerrainInside = "0";
+   };
+
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/intermediate/trapdoors_decor.dif";
+      showTerrainInside = "0";
+   };
+
+   new StaticShape() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "StartPad";
+   };
+   new StaticShape() {
+      position = "-1 4 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 4 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 6 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 6 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 8 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 8 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 10 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 10 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 12 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 12 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 14 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 14 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 16 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 16 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 18 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 18 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 20 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 20 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 22 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 22 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 24 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 24 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 26 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 26 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "4 29 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "6 29 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "4 31 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "6 31 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "8 29 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "10 29 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "8 31 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "10 31 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "12 29 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "14 29 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "12 31 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "14 31 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "16 29 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "18 29 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "16 31 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "18 31 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "20 29 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "22 29 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "20 31 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "22 31 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "24 29 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "26 29 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "24 31 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "26 31 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 26 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 26 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 24.1228 0.147739";
+      rotation = "1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 24.1228 0.147739";
+      rotation = "1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 22.2918 0.587321";
+      rotation = "1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 22.2918 0.587321";
+      rotation = "1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 20.5521 1.30792";
+      rotation = "1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 20.5521 1.30792";
+      rotation = "1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 18.9466 2.29179";
+      rotation = "1.0 -0.0 -0.0 36.000026887880374";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 18.9466 2.29179";
+      rotation = "1.0 -0.0 -0.0 36.000026887880374";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 17.5147 3.51472";
+      rotation = "1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 17.5147 3.51472";
+      rotation = "1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 16.2918 4.94658";
+      rotation = "1.0 -0.0 -0.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 16.2918 4.94658";
+      rotation = "1.0 -0.0 -0.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 15.3079 6.55211";
+      rotation = "1.0 -0.0 -0.0 63.00014732140479";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 15.3079 6.55211";
+      rotation = "1.0 -0.0 -0.0 63.00014732140479";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 14.5873 8.2918";
+      rotation = "1.0 -0.0 -0.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 14.5873 8.2918";
+      rotation = "1.0 -0.0 -0.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 14.1477 10.1228";
+      rotation = "1.0 -0.0 -0.0 81.00018941323475";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 14.1477 10.1228";
+      rotation = "1.0 -0.0 -0.0 81.00018941323475";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 14 12";
+      rotation = "1.0 4.706340493065789e-12 4.70634049306622e-12 90.00021045914971";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 14 12";
+      rotation = "1.0 4.706340493065789e-12 4.70634049306622e-12 90.00021045914971";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 14.1477 13.8772";
+      rotation = "0.9999999999999626 1.9360120895646722e-07 1.9360120895646722e-07 98.99981058673582";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 14.1477 13.8772";
+      rotation = "0.9999999999999626 1.9360120895646722e-07 1.9360120895646722e-07 98.99981058673582";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 14.5873 15.7082";
+      rotation = "0.9999999999998684 3.6281899982441323e-07 3.6281899982441313e-07 107.99983163262507";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 14.5873 15.7082";
+      rotation = "0.9999999999998684 3.6281899982441323e-07 3.6281899982441313e-07 107.99983163262507";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 15.3079 17.4479";
+      rotation = "0.9999999999997361 5.137315919811395e-07 5.137315919811395e-07 116.99985267851709";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 15.3079 17.4479";
+      rotation = "0.9999999999997361 5.137315919811395e-07 5.137315919811395e-07 116.99985267851709";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 16.2918 19.0534";
+      rotation = "0.9999999999995763 6.507589601572575e-07 6.507589601572577e-07 125.99998831597024";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 16.2918 19.0534";
+      rotation = "0.9999999999995763 6.507589601572575e-07 6.507589601572577e-07 125.99998831597024";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 17.5147 20.4853";
+      rotation = "0.999999999999396 7.772185829814454e-07 7.772185829814454e-07 135.00000936186598";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 17.5147 20.4853";
+      rotation = "0.999999999999396 7.772185829814454e-07 7.772185829814454e-07 135.00000936186598";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 18.9466 21.7082";
+      rotation = "0.9999999999991979 8.956927576977405e-07 8.956927576977405e-07 143.99997311198345";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 18.9466 21.7082";
+      rotation = "0.9999999999991979 8.956927576977405e-07 8.956927576977405e-07 143.99997311198345";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 20.5521 22.6921";
+      rotation = "0.9999999999989834 1.0082595527890959e-06 1.0082595527890959e-06 152.9999941578813";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 20.5521 22.6921";
+      rotation = "0.9999999999989834 1.0082595527890959e-06 1.0082595527890959e-06 152.9999941578813";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 22.2918 23.4127";
+      rotation = "0.9999999999987531 1.1166514099955924e-06 1.1166514099955924e-06 162.0000152037798";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 22.2918 23.4127";
+      rotation = "0.9999999999987531 1.1166514099955924e-06 1.1166514099955924e-06 162.0000152037798";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 24.1228 23.8523";
+      rotation = "0.9999999999985059 1.2223736285130644e-06 1.2223736285130644e-06 170.99997895389916";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 24.1228 23.8523";
+      rotation = "0.9999999999985059 1.2223736285130644e-06 1.2223736285130644e-06 170.99997895389916";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29 26 24";
+      rotation = "0.9999999999982396 1.3267949362179045e-06 1.3267949362179045e-06 179.99999618180817";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 26 24";
+      rotation = "0.9999999999982396 1.3267949362179045e-06 1.3267949362179045e-06 179.99999618180817";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 6 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 6 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 8 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 8 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 10 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 10 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 12 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 12 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 14 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 14 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 16 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 16 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 18 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 18 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 20 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 20 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 22 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 22 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 24 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 24 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 26 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 26 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new Item() {
+      position = "30 30 23.5";
+      rotation = "-0.0 -1.0 -0.0 179.99984796115504";
+      scale = "1 1 1";
+      datablock = "AntiGravityItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "30 18.5 4";
+      rotation = "5.07742324959237e-07 0.9238795637759127 -0.38268335688526 179.99985953412494";
+      scale = "1 1 1";
+      datablock = "AntiGravityItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "30 15 12";
+      rotation = "9.38023195201774e-07 0.7072292155967164 -0.7069843255727621 179.9998924719629";
+      scale = "1 1 1";
+      datablock = "AntiGravityItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "30 18.5 20";
+      rotation = "-4.673582557951925e-07 0.38268335688530547 -0.9238795637759153 179.99986143593026";
+      scale = "1 1 1";
+      datablock = "AntiGravityItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "30 26 23";
+      rotation = "4.371134200393751e-08 4.371145799139664e-08 -0.9999999999999982 179.9998479707441";
+      scale = "1 1 1";
+      datablock = "AntiGravityItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "29 34 18";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "31 34 18";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "28.9233 35.4634 18";
+      rotation = "-0.0 -0.0 -1.0 6.000014030609976";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "30.9123 35.6725 18";
+      rotation = "-0.0 -0.0 -1.0 6.000014030609976";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "28.6941 36.9108 18";
+      rotation = "-0.0 -0.0 -1.0 12.000028061219965";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "30.6504 37.3266 18";
+      rotation = "-0.0 -0.0 -1.0 12.000028061219965";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "28.3148 38.3262 18";
+      rotation = "-0.0 -0.0 -1.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "30.2169 38.9443 18";
+      rotation = "-0.0 -0.0 -1.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "27.7896 39.6943 18";
+      rotation = "-0.0 -0.0 -1.0 23.999998826660434";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "29.6167 40.5078 18";
+      rotation = "-0.0 -0.0 -1.0 23.999998826660434";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "27.1244 41 18";
+      rotation = "-0.0 -0.0 -1.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "28.8564 42 18";
+      rotation = "-0.0 -0.0 -1.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "26.3262 42.229 18";
+      rotation = "-0.0 -0.0 -1.0 36.000026887880374";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "27.9443 43.4046 18";
+      rotation = "-0.0 -0.0 -1.0 36.000026887880374";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "25.404 43.3678 18";
+      rotation = "-0.0 -0.0 -1.0 41.999983622710836";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "26.8903 44.7061 18";
+      rotation = "-0.0 -0.0 -1.0 41.999983622710836";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "24.3678 44.404 18";
+      rotation = "-0.0 -0.0 -1.0 47.99999765332082";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "25.7061 45.8903 18";
+      rotation = "-0.0 -0.0 -1.0 47.99999765332082";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "23.229 45.3262 18";
+      rotation = "-0.0 -0.0 -1.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "24.4046 46.9443 18";
+      rotation = "-0.0 -0.0 -1.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "22 46.1244 18";
+      rotation = "-0.0 -0.0 -1.0 60.0001403060998";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "23 47.8564 18";
+      rotation = "-0.0 -0.0 -1.0 60.0001403060998";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "20.6943 46.7896 18";
+      rotation = "-0.0 -0.0 -1.0 66.0001543367098";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "21.5078 48.6167 18";
+      rotation = "-0.0 -0.0 -1.0 66.0001543367098";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "19.3262 47.3148 18";
+      rotation = "-0.0 -0.0 -1.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "19.9443 49.2169 18";
+      rotation = "-0.0 -0.0 -1.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "17.9108 47.6941 18";
+      rotation = "-0.0 -0.0 -1.0 78.00018239792975";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "18.3266 49.6504 18";
+      rotation = "-0.0 -0.0 -1.0 78.00018239792975";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "16.4634 47.9233 18";
+      rotation = "-0.0 -0.0 -1.0 84.00019642853974";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "16.6725 49.9123 18";
+      rotation = "-0.0 -0.0 -1.0 84.00019642853974";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "15 48 18";
+      rotation = "-0.0 -0.0 -1.0 90.00021045914971";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "15 50 18";
+      rotation = "-0.0 -0.0 -1.0 90.00021045914971";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "13.5366 47.9233 18";
+      rotation = "-0.0 -0.0 -1.0 96.00022448975969";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "13.3275 49.9123 18";
+      rotation = "-0.0 -0.0 -1.0 96.00022448975969";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "12.0892 47.6941 18";
+      rotation = "-0.0 -0.0 -1.0 102.00023852036968";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "11.6734 49.6504 18";
+      rotation = "-0.0 -0.0 -1.0 102.00023852036968";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "10.6738 47.3148 18";
+      rotation = "-0.0 -0.0 -1.0 108.00025255097965";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "10.0557 49.2169 18";
+      rotation = "-0.0 -0.0 -1.0 108.00025255097965";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "9.30569 46.7896 18";
+      rotation = "-0.0 -0.0 -1.0 114.00026658158963";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "8.49221 48.6167 18";
+      rotation = "-0.0 -0.0 -1.0 114.00026658158963";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "8 46.1244 18";
+      rotation = "-0.0 -0.0 -1.0 120.0002806121996";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "7 47.8564 18";
+      rotation = "-0.0 -0.0 -1.0 120.0002806121996";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "6.771 45.3262 18";
+      rotation = "-0.0 -0.0 -1.0 126.0002946428096";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "5.59543 46.9443 18";
+      rotation = "-0.0 -0.0 -1.0 126.0002946428096";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "5.63217 44.404 18";
+      rotation = "-0.0 -0.0 -1.0 131.99973571562444";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "4.29391 45.8903 18";
+      rotation = "-0.0 -0.0 -1.0 131.99973571562444";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "4.59597 43.3678 18";
+      rotation = "-0.0 -0.0 -1.0 137.99974974623441";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "3.10968 44.7061 18";
+      rotation = "-0.0 -0.0 -1.0 137.99974974623441";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "3.67376 42.229 18";
+      rotation = "-0.0 -0.0 -1.0 143.9997637768444";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "2.05573 43.4046 18";
+      rotation = "-0.0 -0.0 -1.0 143.9997637768444";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "2.87564 41 18";
+      rotation = "-0.0 -0.0 -1.0 149.9997778074544";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1.14359 42 18";
+      rotation = "-0.0 -0.0 -1.0 149.9997778074544";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "2.21036 39.6943 18";
+      rotation = "-0.0 -0.0 -1.0 155.99979183806437";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "0.383271 40.5078 18";
+      rotation = "-0.0 -0.0 -1.0 155.99979183806437";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1.68521 38.3262 18";
+      rotation = "-0.0 -0.0 -1.0 161.99980586867437";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-0.216904 38.9443 18";
+      rotation = "-0.0 -0.0 -1.0 161.99980586867437";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1.30593 36.9108 18";
+      rotation = "-0.0 -0.0 -1.0 167.99981989928435";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-0.650362 37.3266 18";
+      rotation = "-0.0 -0.0 -1.0 167.99981989928435";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1.07669 35.4634 18";
+      rotation = "-0.0 -0.0 -1.0 173.9998339298943";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-0.912348 35.6725 18";
+      rotation = "-0.0 -0.0 -1.0 173.9998339298943";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 34 18";
+      rotation = "-0.0 -0.0 -1.0 179.99984796115504";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 34 18";
+      rotation = "-0.0 -0.0 -1.0 179.99984796115504";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 7.5 27.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 7.5 27.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 5.53852 27.4229";
+      rotation = "-1.0 -0.0 -0.0 4.499999063801567";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 5.53852 27.4229";
+      rotation = "-1.0 -0.0 -0.0 4.499999063801567";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 3.58914 27.1922";
+      rotation = "-1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 3.58914 27.1922";
+      rotation = "-1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 1.66387 26.8092";
+      rotation = "-1.0 -0.0 -0.0 13.499974273092919";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 1.66387 26.8092";
+      rotation = "-1.0 -0.0 -0.0 13.499974273092919";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 -0.225426 26.2764";
+      rotation = "-1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 -0.225426 26.2764";
+      rotation = "-1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 -2.06709 25.597";
+      rotation = "-1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 -2.06709 25.597";
+      rotation = "-1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 -3.84976 24.7752";
+      rotation = "-1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 -3.84976 24.7752";
+      rotation = "-1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 -5.56247 23.816";
+      rotation = "-1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 -5.56247 23.816";
+      rotation = "-1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 -7.19463 22.7254";
+      rotation = "-1.0 -0.0 -0.0 36.000026887880374";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 -7.19463 22.7254";
+      rotation = "-1.0 -0.0 -0.0 36.000026887880374";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 -8.7362 21.5102";
+      rotation = "-1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 -8.7362 21.5102";
+      rotation = "-1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 -10.1777 20.1777";
+      rotation = "-1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 -10.1777 20.1777";
+      rotation = "-1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 -11.5102 18.7362";
+      rotation = "-1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 -11.5102 18.7362";
+      rotation = "-1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 26.5102 18.7362";
+      rotation = "1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 26.5102 18.7362";
+      rotation = "1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 25.1777 20.1777";
+      rotation = "1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 25.1777 20.1777";
+      rotation = "1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 23.7362 21.5102";
+      rotation = "1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 23.7362 21.5102";
+      rotation = "1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 22.1946 22.7254";
+      rotation = "1.0 -0.0 -0.0 36.000026887880374";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 22.1946 22.7254";
+      rotation = "1.0 -0.0 -0.0 36.000026887880374";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 20.5625 23.816";
+      rotation = "1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 20.5625 23.816";
+      rotation = "1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 18.8498 24.7752";
+      rotation = "1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 18.8498 24.7752";
+      rotation = "1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 17.0671 25.597";
+      rotation = "1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 17.0671 25.597";
+      rotation = "1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 15.2254 26.2764";
+      rotation = "1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 15.2254 26.2764";
+      rotation = "1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 13.3361 26.8093";
+      rotation = "1.0 -0.0 -0.0 13.499974273092919";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 13.3361 26.8093";
+      rotation = "1.0 -0.0 -0.0 13.499974273092919";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 11.4109 27.1922";
+      rotation = "1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 11.4109 27.1922";
+      rotation = "1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1 9.46148 27.4229";
+      rotation = "1.0 -0.0 -0.0 4.499993334223721";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "1 9.46148 27.4229";
+      rotation = "1.0 -0.0 -0.0 4.499993334223721";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "0 30 18";
+      rotation = "-0.0 -0.0 -1.0 179.99984796115504";
+      scale = "1 1 1";
+      datablock = "CheckpointPad";
+   };
+   new StaticShape() {
+      position = "-3.73415 -16 18.3647";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-3.73415 -14 18.3647";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-5.63626 -16 18.9828";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-5.63626 -14 18.9828";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-7.53838 -16 19.6008";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-7.53838 -14 19.6008";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-9.44049 -16 20.2188";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-9.44049 -14 20.2188";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-11.3426 -16 20.8369";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-11.3426 -14 20.8369";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-13.2447 -16 21.4549";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-13.2447 -14 21.4549";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-15.1468 -16 22.0729";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-15.1468 -14 22.0729";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-17.0489 -16 22.691";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-17.0489 -14 22.691";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-18.9511 -16 23.309";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-18.9511 -14 23.309";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-20.8532 -16 23.9271";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-20.8532 -14 23.9271";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-22.7553 -16 24.5451";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-22.7553 -14 24.5451";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-24.6574 -16 25.1631";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-24.6574 -14 25.1631";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-26.5595 -16 25.7812";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-26.5595 -14 25.7812";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-28.4616 -16 26.3992";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-28.4616 -14 26.3992";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-30.3637 -16 27.0172";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-30.3637 -14 27.0172";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-32.2659 -16 27.6353";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-32.2659 -14 27.6353";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-40.0288 -14 28.2333";
+      rotation = "-0.0 -1.0 -0.0 15.00003507652495";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-40.0288 -16 28.2333";
+      rotation = "-0.0 -1.0 -0.0 15.00003507652495";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-41.8476 -13.926 28.7206";
+      rotation = "0.03762271607070724 -0.9575586517578614 0.2857725663515126 15.656731524881332";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-41.9993 -15.9198 28.7613";
+      rotation = "0.03762271607070724 -0.9575586517578614 0.2857725663515126 15.656731524881332";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-43.6553 -13.7045 29.205";
+      rotation = "0.0673983675642497 -0.8563744364471473 0.5119377741967331 17.479593664095592";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-43.9575 -15.6799 29.286";
+      rotation = "0.0673983675642497 -0.8563744364471473 0.5119377741967331 17.479593664095592";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-45.4406 -13.3369 29.6834";
+      rotation = "0.08767822957223873 -0.7407940690885323 0.6659854917806638 20.154629349498943";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-45.8915 -15.2816 29.8042";
+      rotation = "0.08767822957223873 -0.7407940690885323 0.6659854917806638 20.154629349498943";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-47.1925 -12.8254 30.1528";
+      rotation = "0.10072850754138567 -0.6359752023674954 0.7651073844514301 23.391084700862272";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-47.7894 -14.7275 30.3127";
+      rotation = "0.10072850754138567 -0.6359752023674954 0.7651073844514301 23.391084700862272";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-48.9003 -12.1731 30.6104";
+      rotation = "0.109128514550679 -0.5486261212271153 0.8289151623774611 26.9879553990623";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-49.6396 -14.0209 30.8085";
+      rotation = "0.109128514550679 -0.5486261212271153 0.8289151623774611 26.9879553990623";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-50.5533 -11.3842 31.0533";
+      rotation = "0.11467322978627822 -0.47764986953107397 0.8710342430165023 30.81906321657557";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-51.4304 -13.1662 31.2883";
+      rotation = "0.11467322978627822 -0.47764986953107397 0.8710342430165023 30.81906321657557";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-52.1415 -10.4634 31.4789";
+      rotation = "0.11845462691969084 -0.42000910918422096 0.8997559944582719 34.8073209225011";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-53.1509 -12.1686 31.7494";
+      rotation = "0.11845462691969084 -0.42000910918422096 0.8997559944582719 34.8073209225011";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-53.655 -9.41641 31.8845";
+      rotation = "0.1211182767770687 -0.372765250233897 0.9199871908068142 38.904268378866256";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-54.7905 -11.0344 32.1887";
+      rotation = "0.1211182767770687 -0.372765250233897 0.9199871908068142 38.904268378866256";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-55.0845 -8.24975 32.2675";
+      rotation = "0.12305082820354013 -0.3335454343370178 0.9346688915928213 43.07894076186486";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-56.3391 -9.77056 32.6036";
+      rotation = "0.12305082820354013 -0.3335454343370178 0.9346688915928213 43.07894076186486";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-56.4211 -6.97056 32.6256";
+      rotation = "0.12449135979699018 -0.30054880264796563 0.9456068520070964 47.310704789474386";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-57.7872 -8.38478 32.9916";
+      rotation = "0.12449135979699018 -0.30054880264796563 0.9456068520070964 47.310704789474386";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-57.6567 -5.58675 32.9567";
+      rotation = "0.12558951624926423 -0.2724247009281717 0.9539455203167905 51.58548935223884";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-59.1257 -6.88565 33.3503";
+      rotation = "0.12558951624926423 -0.2724247009281717 0.9539455203167905 51.58548935223884";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-58.7836 -4.10685 33.2587";
+      rotation = "0.12644325315364363 -0.24815839400434414 0.9604319420016748 55.8934471032187";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-60.3465 -5.28242 33.6774";
+      rotation = "0.12644325315364363 -0.24815839400434414 0.9604319420016748 55.8934471032187";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-59.7949 -2.53997 33.5296";
+      rotation = "0.12711753112933094 -0.2269867132869059 0.9655662407472578 60.22773312444888";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-61.4421 -3.58496 33.9709";
+      rotation = "0.12711753112933094 -0.2269867132869059 0.9655662407472578 60.22773312444888";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-60.6843 -0.895772 33.7679";
+      rotation = "0.12766257829565594 -0.2083265324014788 0.9696918696165712 64.5819119021935";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-62.4056 -1.80376 34.2291";
+      rotation = "0.12766257829565594 -0.2083265324014788 0.9696918696165712 64.5819119021935";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-61.4464 0.815597 33.9721";
+      rotation = "0.12810460712827434 -0.19172270603913338 0.9730527291064666 68.95344299520525";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-63.2312 0.0502291 34.4504";
+      rotation = "0.12810460712827434 -0.19172270603913338 0.9730527291064666 68.95344299520525";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-62.0764 2.58359 34.141";
+      rotation = "0.12846886247752193 -0.17682286907693925 0.9758224348441324 73.33889377922934";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-63.9137 1.96556 34.6332";
+      rotation = "0.12846886247752193 -0.17682286907693925 0.9758224348441324 73.33889377922934";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-62.5705 4.39731 34.2734";
+      rotation = "0.12877235557713415 -0.16334724423357033 0.9781284978163218 77.73542369335946";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-64.4489 3.93042 34.7766";
+      rotation = "0.12877235557713415 -0.16334724423357033 0.9781284978163218 77.73542369335946";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-62.9256 6.24557 34.3685";
+      rotation = "0.12902718411100378 -0.15107191251217852 0.9800659482964899 82.1417044733948";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-64.8336 5.9327 34.8798";
+      rotation = "0.12902718411100378 -0.15107191251217852 0.9800659482964899 82.1417044733948";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-63.1396 8.11698 34.4258";
+      rotation = "0.12924442034248954 -0.139815378678845 0.9817064427287951 86.55540808051411";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-65.0655 7.96007 34.9419";
+      rotation = "0.12924442034248954 -0.139815378678845 0.9817064427287951 86.55540808051411";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-63.211 10 34.445";
+      rotation = "0.12942843712552352 -0.12942832106202679 0.9831055840398372 90.97640738343124";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-65.1429 10 34.9626";
+      rotation = "0.12942843712552352 -0.12942832106202679 0.9831055840398372 90.97640738343124";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-63.1396 11.883 34.4258";
+      rotation = "0.12958621578687324 -0.11978844003807601 0.9843059190674829 95.40324004108288";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-65.0655 12.0399 34.9419";
+      rotation = "0.12958621578687324 -0.11978844003807601 0.9843059190674829 95.40324004108288";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-62.9256 13.7544 34.3685";
+      rotation = "0.12972198265828147 -0.11079353232245588 0.9853410579138157 99.8351730403766";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-64.8336 14.0673 34.8798";
+      rotation = "0.12972198265828147 -0.11079353232245588 0.9853410579138157 99.8351730403766";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-62.5705 15.6027 34.2734";
+      rotation = "0.12984066578064887 -0.10235778621115656 0.9862374385063615 104.27092650243685";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-64.4489 16.0696 34.7766";
+      rotation = "0.12984066578064887 -0.10235778621115656 0.9862374385063615 104.27092650243685";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-62.0764 17.4164 34.141";
+      rotation = "0.1299438102025492 -0.09440938105136172 0.9870164512101824 108.71022816273234";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-63.9137 18.0344 34.6332";
+      rotation = "0.1299438102025492 -0.09440938105136172 0.9870164512101824 108.71022816273234";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-61.4464 19.1844 33.9721";
+      rotation = "0.13003252466708454 -0.08688508791786505 0.9876955624210372 113.15365498129326";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-63.2312 19.9498 34.4504";
+      rotation = "0.13003252466708454 -0.08688508791786505 0.9876955624210372 113.15365498129326";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-60.6843 20.8958 33.7679";
+      rotation = "0.13011089764065784 -0.07973177010654811 0.9882884190107758 117.59975148335144";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-62.4056 21.8038 34.2291";
+      rotation = "0.13011089764065784 -0.07973177010654811 0.9882884190107758 117.59975148335144";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-59.7949 22.54 33.5296";
+      rotation = "0.13017931973008837 -0.07290334475180053 0.9888065771618894 122.0483102760224";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-61.4421 23.585 33.9709";
+      rotation = "0.13017931973008837 -0.07290334475180053 0.9888065771618894 122.0483102760224";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-58.7836 24.1069 33.2587";
+      rotation = "0.13023802100735457 -0.066360066515872 0.9892595207811229 126.49917788192877";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-60.3465 25.2824 33.6774";
+      rotation = "0.13023802100735457 -0.066360066515872 0.9892595207811229 126.49917788192877";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-57.6567 25.5868 32.9567";
+      rotation = "0.1302906312884898 -0.060064914352195825 0.9896547668062384 130.9516193752166";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-59.1257 26.8857 33.3503";
+      rotation = "0.1302906312884898 -0.060064914352195825 0.9896547668062384 130.9516193752166";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-56.4211 26.9706 32.6256";
+      rotation = "0.13033605560851227 -0.05398659341257941 0.9899989698682113 135.4054853177039";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-57.7872 28.3848 32.9916";
+      rotation = "0.13033605560851227 -0.05398659341257941 0.9899989698682113 135.4054853177039";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-55.0845 28.2498 32.2675";
+      rotation = "0.13037491385602767 -0.04809801467403171 0.9902974112969547 139.8617241031902";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-56.3391 29.7706 32.6036";
+      rotation = "0.13037491385602767 -0.04809801467403171 0.9902974112969547 139.8617241031902";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-53.655 29.4164 31.8845";
+      rotation = "0.1304092194112385 -0.04237249698572066 0.9905543937572265 144.31788172853578";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-54.7905 31.0344 32.1887";
+      rotation = "0.1304092194112385 -0.04237249698572066 0.9905543937572265 144.31788172853578";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-52.1415 30.4634 31.4789";
+      rotation = "0.13043799491374647 -0.03678735633285689 0.9907737480862726 148.77665140362237";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-53.1509 32.1686 31.7494";
+      rotation = "0.13043799491374647 -0.03678735633285689 0.9907737480862726 148.77665140362237";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-50.5533 31.3842 31.0533";
+      rotation = "0.13046207785438413 -0.031321294045460635 0.9909584364549475 153.23509358774584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-51.4304 33.1662 31.2883";
+      rotation = "0.13046207785438413 -0.031321294045460635 0.9909584364549475 153.23509358774584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-48.9003 32.1731 30.6104";
+      rotation = "0.13048222431318718 -0.025954645859612498 0.9911108643822775 157.69494369450274";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-49.6396 34.0209 30.8085";
+      rotation = "0.13048222431318718 -0.025954645859612498 0.9911108643822775 157.69494369450274";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-47.1925 32.8254 30.1528";
+      rotation = "0.1304984083302416 -0.02066919881891369 0.9912330450723773 162.15525713479778";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-47.7894 34.7275 30.3127";
+      rotation = "0.1304984083302416 -0.02066919881891369 0.9912330450723773 162.15525713479778";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-45.4406 33.3369 29.6834";
+      rotation = "0.13051103908689177 -0.01544655244525855 0.991326521734396 166.61590693874615";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-45.8915 35.2816 29.8042";
+      rotation = "0.13051103908689177 -0.01544655244525855 0.991326521734396 166.61590693874615";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-43.6553 33.7045 29.205";
+      rotation = "0.1305193526597895 -0.010271908512910703 0.9913925491331735 171.0770333846096";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-43.9575 35.6799 29.286";
+      rotation = "0.1305193526597895 -0.010271908512910703 0.9913925491331735 171.0770333846096";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-41.8476 33.926 28.7206";
+      rotation = "0.13052419349582225 -0.005128521371162022 0.9914318600795572 175.53859717691768";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-41.9993 35.9199 28.7613";
+      rotation = "0.13052419349582225 -0.005128521371162022 0.9914318600795572 175.53859717691768";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-40.0288 34 28.2333";
+      rotation = "-0.13052649570200595 -2.7890557473151353e-08 -0.9914448214196057 179.99984623064952";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-40.0288 36 28.2333";
+      rotation = "-0.13052649570200595 -2.7890557473151353e-08 -0.9914448214196057 179.99984623064952";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-36 35 28";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "CheckpointPad";
+   };
+   new StaticShape() {
+      position = "-37 38 25";
+      rotation = "1.0 -0.0 -0.0 89.98015693632013";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 38 25";
+      rotation = "1.0 -0.0 -0.0 89.98015693632013";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 38.0771 23.0385";
+      rotation = "1.0 -0.0 -0.0 85.50019993619222";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 38.0771 23.0385";
+      rotation = "1.0 -0.0 -0.0 85.50019993619222";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 38.3078 21.0891";
+      rotation = "1.0 -0.0 -0.0 81.00018941323475";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 38.3078 21.0891";
+      rotation = "1.0 -0.0 -0.0 81.00018941323475";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 38.6908 19.1639";
+      rotation = "1.0 -0.0 -0.0 76.50017889027725";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 38.6908 19.1639";
+      rotation = "1.0 -0.0 -0.0 76.50017889027725";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 39.2236 17.2746";
+      rotation = "1.0 -0.0 -0.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 39.2236 17.2746";
+      rotation = "1.0 -0.0 -0.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 39.903 15.4329";
+      rotation = "1.0 -0.0 -0.0 67.50015784436228";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 39.903 15.4329";
+      rotation = "1.0 -0.0 -0.0 67.50015784436228";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 40.7248 13.6502";
+      rotation = "1.0 -0.0 -0.0 63.00014732140479";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 40.7248 13.6502";
+      rotation = "1.0 -0.0 -0.0 63.00014732140479";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 41.684 11.9375";
+      rotation = "1.0 -0.0 -0.0 58.500136798447315";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 41.684 11.9375";
+      rotation = "1.0 -0.0 -0.0 58.500136798447315";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 42.7746 10.3054";
+      rotation = "1.0 -0.0 -0.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 42.7746 10.3054";
+      rotation = "1.0 -0.0 -0.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 43.9898 8.7638";
+      rotation = "1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 43.9898 8.7638";
+      rotation = "1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 45.3223 7.32233";
+      rotation = "1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 45.3223 7.32233";
+      rotation = "1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 46.7638 5.98985";
+      rotation = "1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 46.7638 5.98985";
+      rotation = "1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 48.3054 4.77457";
+      rotation = "1.0 -0.0 -0.0 35.99996959210085";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 48.3054 4.77457";
+      rotation = "1.0 -0.0 -0.0 35.99996959210085";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 49.9375 3.68399";
+      rotation = "1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 49.9375 3.68399";
+      rotation = "1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 51.6502 2.72484";
+      rotation = "1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 51.6502 2.72484";
+      rotation = "1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 53.4329 1.903";
+      rotation = "1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 53.4329 1.903";
+      rotation = "1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 55.2746 1.22359";
+      rotation = "1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 55.2746 1.22359";
+      rotation = "1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 57.1639 0.69075";
+      rotation = "1.0 -0.0 -0.0 13.499974273092919";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 57.1639 0.69075";
+      rotation = "1.0 -0.0 -0.0 13.499974273092919";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 59.0891 0.307791";
+      rotation = "1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 59.0891 0.307791";
+      rotation = "1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 61.0385 0.0770645";
+      rotation = "1.0 -0.0 -0.0 4.499999063801567";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 61.0385 0.0770645";
+      rotation = "1.0 -0.0 -0.0 4.499999063801567";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 63 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 63 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 64.9615 0.0770626";
+      rotation = "-1.0 -0.0 -0.0 4.500004793379593";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 64.9615 0.0770626";
+      rotation = "-1.0 -0.0 -0.0 4.500004793379593";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 66.9109 0.307791";
+      rotation = "-1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 66.9109 0.307791";
+      rotation = "-1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 68.8361 0.690744";
+      rotation = "-1.0 -0.0 -0.0 13.500031568872489";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 68.8361 0.690744";
+      rotation = "-1.0 -0.0 -0.0 13.500031568872489";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 70.7254 1.22359";
+      rotation = "-1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 70.7254 1.22359";
+      rotation = "-1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 72.5671 1.90301";
+      rotation = "-1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 72.5671 1.90301";
+      rotation = "-1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 74.3498 2.72483";
+      rotation = "-1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 74.3498 2.72483";
+      rotation = "-1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 76.0625 3.68399";
+      rotation = "-1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 76.0625 3.68399";
+      rotation = "-1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 77.6946 4.77457";
+      rotation = "-1.0 -0.0 -0.0 36.000026887880374";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 77.6946 4.77457";
+      rotation = "-1.0 -0.0 -0.0 36.000026887880374";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 79.2362 5.98984";
+      rotation = "-1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 79.2362 5.98984";
+      rotation = "-1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 80.6777 7.32233";
+      rotation = "-1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 80.6777 7.32233";
+      rotation = "-1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 82.0102 8.76379";
+      rotation = "-1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 82.0102 8.76379";
+      rotation = "-1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 83.2254 10.3054";
+      rotation = "-1.0 -0.0 -0.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 83.2254 10.3054";
+      rotation = "-1.0 -0.0 -0.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 84.316 11.9375";
+      rotation = "-1.0 -0.0 -0.0 58.500136798447315";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 84.316 11.9375";
+      rotation = "-1.0 -0.0 -0.0 58.500136798447315";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 85.2752 13.6502";
+      rotation = "-1.0 -0.0 -0.0 63.00014732140479";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 85.2752 13.6502";
+      rotation = "-1.0 -0.0 -0.0 63.00014732140479";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 86.097 15.4329";
+      rotation = "-1.0 -0.0 -0.0 67.50015784436228";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 86.097 15.4329";
+      rotation = "-1.0 -0.0 -0.0 67.50015784436228";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 86.7764 17.2746";
+      rotation = "-1.0 -0.0 -0.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 86.7764 17.2746";
+      rotation = "-1.0 -0.0 -0.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 87.3092 19.1639";
+      rotation = "-1.0 -0.0 -0.0 76.50017889027725";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 87.3092 19.1639";
+      rotation = "-1.0 -0.0 -0.0 76.50017889027725";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 87.6922 21.0891";
+      rotation = "-1.0 -0.0 -0.0 81.00018941323475";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 87.6922 21.0891";
+      rotation = "-1.0 -0.0 -0.0 81.00018941323475";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 87.9229 23.0385";
+      rotation = "-1.0 -0.0 -0.0 85.50019993619222";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 87.9229 23.0385";
+      rotation = "-1.0 -0.0 -0.0 85.50019993619222";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-37 88 25";
+      rotation = "-0.9999999999929584 -2.6535946669421236e-06 -2.6535946669421236e-06 89.99978954125375";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-35 88 25";
+      rotation = "-0.9999999999929584 -2.6535946669421236e-06 -2.6535946669421236e-06 89.99978954125375";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new Item() {
+      position = "-36 91 30.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "8.67767 62 26.3223";
+      rotation = "0.3574055377205378 0.357406850546794 -0.8628566652630754 98.42123636815091";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "8.67767 64 26.3223";
+      rotation = "0.3574055377205378 0.357406850546794 -0.8628566652630754 98.42123636815091";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "7.2362 62 24.9898";
+      rotation = "0.3270783078193849 0.32707950924730095 -0.8865882782805965 96.880568101127";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "7.2362 64 24.9898";
+      rotation = "0.3270783078193849 0.32707950924730095 -0.8865882782805965 96.880568101127";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "5.69463 62 23.7746";
+      rotation = "0.2952406169865396 0.2952416679948802 -0.9086612875879594 95.47979109540614";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "5.69463 64 23.7746";
+      rotation = "0.2952406169865396 0.2952416679948802 -0.9086612875879594 95.47979109540614";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "4.06247 62 22.684";
+      rotation = "0.2619606227449077 0.2619614226521887 -0.9288448983404826 94.22557444306113";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "4.06247 64 22.684";
+      rotation = "0.2619606227449077 0.2619614226521887 -0.9288448983404826 94.22557444306113";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "2.34976 62 21.7248";
+      rotation = "0.22733233240299508 0.22733316744281223 -0.9469105774172303 93.12418131193577";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "2.34976 64 21.7248";
+      rotation = "0.22733233240299508 0.22733316744281223 -0.9469105774172303 93.12418131193577";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "0.56709 62 20.903";
+      rotation = "0.19147973851627947 0.19148044186192392 -0.9626373928547028 92.1814192885161";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "0.56709 64 20.903";
+      rotation = "0.19147973851627947 0.19148044186192392 -0.9626373928547028 92.1814192885161";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1.27457 62 20.2236";
+      rotation = "0.15455408675005763 0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-1.27457 64 20.2236";
+      rotation = "0.15455408675005763 0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-3.16386 62 19.6908";
+      rotation = "0.11673318457079822 0.11673360579935789 -0.9862791840533999 90.7917731719835";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-3.16386 64 19.6908";
+      rotation = "0.11673318457079822 0.11673360579935789 -0.9862791840533999 90.7917731719835";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-5.08914 62 19.3078";
+      rotation = "0.07821861041416975 0.07821889772769637 -0.9938629950969804 90.35291610270245";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-5.08914 64 19.3078";
+      rotation = "0.07821861041416975 0.07821889772769637 -0.9938629950969804 90.35291610270245";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-7.03852 62 19.0771";
+      rotation = "0.039229442441949584 0.039229586540002415 -0.9984598591759181 90.0885220166225";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-7.03852 64 19.0771";
+      rotation = "0.039229442441949584 0.039229586540002415 -0.9984598591759181 90.0885220166225";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-9 62 19";
+      rotation = "-5.960428106084839e-08 -5.9604499999999864e-08 -0.9999999999999964 90.00021045914991";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-9 64 19";
+      rotation = "-5.960428106084839e-08 -5.9604499999999864e-08 -0.9999999999999964 90.00021045914991";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-10.9615 62 19.0771";
+      rotation = "-0.039229492287930295 -0.03922963638616622 -0.9984598552590086 90.08852224139079";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-10.9615 64 19.0771";
+      rotation = "-0.039229492287930295 -0.03922963638616622 -0.9984598552590086 90.08852224139079";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-12.9109 62 19.3078";
+      rotation = "-0.07821861041416975 -0.07821889772769637 -0.9938629950969804 90.35291610270245";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-12.9109 64 19.3078";
+      rotation = "-0.07821861041416975 -0.07821889772769637 -0.9938629950969804 90.35291610270245";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-14.8361 62 19.6907";
+      rotation = "-0.1167336288579672 -0.1167341332168781 -0.9862790690447377 90.79178042404651";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-14.8361 64 19.6907";
+      rotation = "-0.1167336288579672 -0.1167341332168781 -0.9862790690447377 90.79178042404651";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-16.7254 62 20.2236";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-16.7254 64 20.2236";
+      rotation = "-0.15455408675005763 -0.15455468503827538 -0.9758206206068691 91.40247080900832";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-18.5671 62 20.903";
+      rotation = "-0.19147973851627947 -0.19148044186192392 -0.9626373928547028 92.1814192885161";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-18.5671 64 20.903";
+      rotation = "-0.19147973851627947 -0.19148044186192392 -0.9626373928547028 92.1814192885161";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-20.3498 62 21.7248";
+      rotation = "-0.22733233240299508 -0.22733316744281223 -0.9469105774172303 93.12418131193577";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-20.3498 64 21.7248";
+      rotation = "-0.22733233240299508 -0.22733316744281223 -0.9469105774172303 93.12418131193577";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-22.0625 62 22.684";
+      rotation = "-0.2619606227449077 -0.2619614226521887 -0.9288448983404826 94.22557444306113";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-22.0625 64 22.684";
+      rotation = "-0.2619606227449077 -0.2619614226521887 -0.9288448983404826 94.22557444306113";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-23.6946 62 23.7746";
+      rotation = "-0.2952410135175327 -0.295242098000322 -0.9086610190304789 95.47980863460856";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-23.6946 64 23.7746";
+      rotation = "-0.2952410135175327 -0.295242098000322 -0.9086610190304789 95.47980863460856";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-25.2362 62 24.9898";
+      rotation = "-0.3270783078193849 -0.32707950924730095 -0.8865882782805965 96.880568101127";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-25.2362 64 24.9898";
+      rotation = "-0.3270783078193849 -0.32707950924730095 -0.8865882782805965 96.880568101127";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-26.6777 62 26.3223";
+      rotation = "-0.3574055377205378 -0.357406850546794 -0.8628566652630754 98.42123636815091";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-26.6777 64 26.3223";
+      rotation = "-0.3574055377205378 -0.357406850546794 -0.8628566652630754 98.42123636815091";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-28.0102 62 27.7638";
+      rotation = "-0.3861801245453677 -0.38618154306677727 -0.8376925015784057 100.09489533926256";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-28.0102 64 27.7638";
+      rotation = "-0.3861801245453677 -0.38618154306677727 -0.8376925015784057 100.09489533926256";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-29.2254 62 29.3054";
+      rotation = "-0.4133830638246583 -0.4133843354531788 -0.8113124143909498 101.89449971232705";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-29.2254 64 29.3054";
+      rotation = "-0.4133830638246583 -0.4133843354531788 -0.8113124143909498 101.89449971232705";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-30.316 62 30.9375";
+      rotation = "-0.43901535555994714 -0.43901719172384013 -0.7839192706863929 103.81305065369332";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-30.316 64 30.9375";
+      rotation = "-0.43901535555994714 -0.43901719172384013 -0.7839192706863929 103.81305065369332";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-31.2752 62 32.6502";
+      rotation = "-0.4630943341460221 -0.46309618401529984 -0.7557020325712509 105.84337801435274";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-31.2752 64 32.6502";
+      rotation = "-0.4630943341460221 -0.46309618401529984 -0.7557020325712509 105.84337801435274";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-32.097 62 34.4329";
+      rotation = "-0.4856522422741729 -0.4856538563661959 -0.7268302631087333 107.97861416449683";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-32.097 64 34.4329";
+      rotation = "-0.4856522422741729 -0.4856538563661959 -0.7268302631087333 107.97861416449683";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-32.7764 62 36.2746";
+      rotation = "-0.5067312322126811 -0.5067330935438478 -0.6974561134635641 110.21203390898934";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-32.7764 64 36.2746";
+      rotation = "-0.5067312322126811 -0.5067330935438478 -0.6974561134635641 110.21203390898934";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-33.3092 62 38.1639";
+      rotation = "-0.5263817411088295 -0.5263847827837927 -0.6677135037431071 112.53712036829467";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-33.3092 64 38.1639";
+      rotation = "-0.5263817411088295 -0.5263847827837927 -0.6677135037431071 112.53712036829467";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-33.6922 62 40.0891";
+      rotation = "-0.5446622328584053 -0.5446642335181731 -0.6377177469882404 114.94742969385766";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-33.6922 64 40.0891";
+      rotation = "-0.5446622328584053 -0.5446642335181731 -0.6377177469882404 114.94742969385766";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-33.9229 62 42.0385";
+      rotation = "-0.5616304869971579 -0.561632780777167 -0.607568774404875 117.43708693437705";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-33.9229 64 42.0385";
+      rotation = "-0.5616304869971579 -0.561632780777167 -0.607568774404875 117.43708693437705";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new Item() {
+      position = "-36 63 48";
+      rotation = "-0.0 -1.0 -0.0 90.00021045914971";
+      scale = "1 1 1";
+      datablock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "66.9378 64 38.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "66.9378 62 38.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "66.9378 68 38.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "66.9378 66 38.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "66.9378 60 38.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "66.9378 58 38.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "68.6699 64 39.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "68.6699 62 39.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "68.6699 68 39.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "68.6699 66 39.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "68.6699 60 39.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "68.6699 58 39.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "70.4019 64 40.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "70.4019 62 40.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "70.4019 68 40.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "70.4019 66 40.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "70.4019 60 40.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "70.4019 58 40.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "72.134 64 41.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "72.134 62 41.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "72.134 68 41.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "72.134 66 41.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "72.134 60 41.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "72.134 58 41.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "73.866 64 42.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "73.866 62 42.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "73.866 68 42.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "73.866 66 42.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "73.866 60 42.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "73.866 58 42.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "75.5981 64 43.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "75.5981 62 43.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "75.5981 68 43.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "75.5981 66 43.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "75.5981 60 43.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "75.5981 58 43.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "77.3301 64 44.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "77.3301 62 44.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "77.3301 68 44.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "77.3301 66 44.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "77.3301 60 44.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "77.3301 58 44.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "79.0622 64 45.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "79.0622 62 45.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "79.0622 68 45.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "79.0622 66 45.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "79.0622 60 45.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "79.0622 58 45.5";
+      rotation = "-0.0 1.0 -0.0 30.0000128572704";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-34 62 44";
+      rotation = "-0.5772821932072609 -0.5774842773415414 -0.5772843136870536 119.98866579997109";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "-34 64 44";
+      rotation = "-0.5772821932072609 -0.5774842773415414 -0.5772843136870536 119.98866579997109";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 69 43";
+      rotation = "1.0 -0.0 -0.0 89.98015693632013";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 69 43";
+      rotation = "1.0 -0.0 -0.0 89.98015693632013";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 69.0771 41.0385";
+      rotation = "1.0 -0.0 -0.0 85.50019993619222";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 69.0771 41.0385";
+      rotation = "1.0 -0.0 -0.0 85.50019993619222";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 69.3078 39.0891";
+      rotation = "1.0 -0.0 -0.0 81.00018941323475";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 69.3078 39.0891";
+      rotation = "1.0 -0.0 -0.0 81.00018941323475";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 69.6908 37.1639";
+      rotation = "1.0 -0.0 -0.0 76.50017889027725";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 69.6908 37.1639";
+      rotation = "1.0 -0.0 -0.0 76.50017889027725";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 70.2236 35.2746";
+      rotation = "1.0 -0.0 -0.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 70.2236 35.2746";
+      rotation = "1.0 -0.0 -0.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 70.903 33.4329";
+      rotation = "1.0 -0.0 -0.0 67.50015784436228";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 70.903 33.4329";
+      rotation = "1.0 -0.0 -0.0 67.50015784436228";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 71.7248 31.6502";
+      rotation = "1.0 -0.0 -0.0 63.00014732140479";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 71.7248 31.6502";
+      rotation = "1.0 -0.0 -0.0 63.00014732140479";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 72.684 29.9375";
+      rotation = "1.0 -0.0 -0.0 58.500136798447315";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 72.684 29.9375";
+      rotation = "1.0 -0.0 -0.0 58.500136798447315";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 73.7746 28.3054";
+      rotation = "1.0 -0.0 -0.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 73.7746 28.3054";
+      rotation = "1.0 -0.0 -0.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 74.9898 26.7638";
+      rotation = "1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 74.9898 26.7638";
+      rotation = "1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 76.3223 25.3223";
+      rotation = "1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 76.3223 25.3223";
+      rotation = "1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 77.7638 23.9898";
+      rotation = "1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 77.7638 23.9898";
+      rotation = "1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 79.3054 22.7746";
+      rotation = "1.0 -0.0 -0.0 35.99996959210085";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 79.3054 22.7746";
+      rotation = "1.0 -0.0 -0.0 35.99996959210085";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 80.9375 21.684";
+      rotation = "1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 80.9375 21.684";
+      rotation = "1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 82.6502 20.7248";
+      rotation = "1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 82.6502 20.7248";
+      rotation = "1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 84.4329 19.903";
+      rotation = "1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 84.4329 19.903";
+      rotation = "1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 86.2746 19.2236";
+      rotation = "1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 86.2746 19.2236";
+      rotation = "1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 88.1639 18.6908";
+      rotation = "1.0 -0.0 -0.0 13.499974273092919";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 88.1639 18.6908";
+      rotation = "1.0 -0.0 -0.0 13.499974273092919";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 90.0891 18.3078";
+      rotation = "1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 90.0891 18.3078";
+      rotation = "1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 92.0385 18.0771";
+      rotation = "1.0 -0.0 -0.0 4.499999063801567";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 92.0385 18.0771";
+      rotation = "1.0 -0.0 -0.0 4.499999063801567";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 94 18";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 94 18";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 95.9615 18.0771";
+      rotation = "-1.0 -0.0 -0.0 4.500004793379593";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 95.9615 18.0771";
+      rotation = "-1.0 -0.0 -0.0 4.500004793379593";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 97.9109 18.3078";
+      rotation = "-1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 97.9109 18.3078";
+      rotation = "-1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 99.8361 18.6907";
+      rotation = "-1.0 -0.0 -0.0 13.500031568872489";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 99.8361 18.6907";
+      rotation = "-1.0 -0.0 -0.0 13.500031568872489";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 101.725 19.2236";
+      rotation = "-1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 101.725 19.2236";
+      rotation = "-1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 103.567 19.903";
+      rotation = "-1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 103.567 19.903";
+      rotation = "-1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 105.35 20.7248";
+      rotation = "-1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 105.35 20.7248";
+      rotation = "-1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 107.063 21.684";
+      rotation = "-1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 107.063 21.684";
+      rotation = "-1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 108.695 22.7746";
+      rotation = "-1.0 -0.0 -0.0 36.000026887880374";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 108.695 22.7746";
+      rotation = "-1.0 -0.0 -0.0 36.000026887880374";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 110.236 23.9898";
+      rotation = "-1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 110.236 23.9898";
+      rotation = "-1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 111.678 25.3223";
+      rotation = "-1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 111.678 25.3223";
+      rotation = "-1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 113.01 26.7638";
+      rotation = "-1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 113.01 26.7638";
+      rotation = "-1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 114.225 28.3054";
+      rotation = "-1.0 -0.0 -0.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 114.225 28.3054";
+      rotation = "-1.0 -0.0 -0.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 115.316 29.9375";
+      rotation = "-1.0 -0.0 -0.0 58.500136798447315";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 115.316 29.9375";
+      rotation = "-1.0 -0.0 -0.0 58.500136798447315";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 116.275 31.6502";
+      rotation = "-1.0 -0.0 -0.0 63.00014732140479";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 116.275 31.6502";
+      rotation = "-1.0 -0.0 -0.0 63.00014732140479";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 117.097 33.4329";
+      rotation = "-1.0 -0.0 -0.0 67.50015784436228";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 117.097 33.4329";
+      rotation = "-1.0 -0.0 -0.0 67.50015784436228";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 117.776 35.2746";
+      rotation = "-1.0 -0.0 -0.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 117.776 35.2746";
+      rotation = "-1.0 -0.0 -0.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 118.309 37.1639";
+      rotation = "-1.0 -0.0 -0.0 76.50017889027725";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 118.309 37.1639";
+      rotation = "-1.0 -0.0 -0.0 76.50017889027725";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 118.692 39.0891";
+      rotation = "-1.0 -0.0 -0.0 81.00018941323475";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 118.692 39.0891";
+      rotation = "-1.0 -0.0 -0.0 81.00018941323475";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 118.923 41.0385";
+      rotation = "-1.0 -0.0 -0.0 85.50019993619222";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 118.923 41.0385";
+      rotation = "-1.0 -0.0 -0.0 85.50019993619222";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "85 119 43";
+      rotation = "-0.9999999999929584 -2.6535946669421236e-06 -2.6535946669421236e-06 89.99978954125375";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "87 119 43";
+      rotation = "-0.9999999999929584 -2.6535946669421236e-06 -2.6535946669421236e-06 89.99978954125375";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 119 43";
+      rotation = "1.0 -0.0 -0.0 89.98015693632013";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 119 43";
+      rotation = "1.0 -0.0 -0.0 89.98015693632013";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 119.077 41.0385";
+      rotation = "1.0 -0.0 -0.0 85.50019993619222";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 119.077 41.0385";
+      rotation = "1.0 -0.0 -0.0 85.50019993619222";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 119.308 39.0891";
+      rotation = "1.0 -0.0 -0.0 81.00018941323475";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 119.308 39.0891";
+      rotation = "1.0 -0.0 -0.0 81.00018941323475";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 119.691 37.1639";
+      rotation = "1.0 -0.0 -0.0 76.50017889027725";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 119.691 37.1639";
+      rotation = "1.0 -0.0 -0.0 76.50017889027725";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 120.224 35.2746";
+      rotation = "1.0 -0.0 -0.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 120.224 35.2746";
+      rotation = "1.0 -0.0 -0.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 120.903 33.4329";
+      rotation = "1.0 -0.0 -0.0 67.50015784436228";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 120.903 33.4329";
+      rotation = "1.0 -0.0 -0.0 67.50015784436228";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 121.725 31.6502";
+      rotation = "1.0 -0.0 -0.0 63.00014732140479";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 121.725 31.6502";
+      rotation = "1.0 -0.0 -0.0 63.00014732140479";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 122.684 29.9375";
+      rotation = "1.0 -0.0 -0.0 58.500136798447315";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 122.684 29.9375";
+      rotation = "1.0 -0.0 -0.0 58.500136798447315";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 123.775 28.3054";
+      rotation = "1.0 -0.0 -0.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 123.775 28.3054";
+      rotation = "1.0 -0.0 -0.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 124.99 26.7638";
+      rotation = "1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 124.99 26.7638";
+      rotation = "1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 126.322 25.3223";
+      rotation = "1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 126.322 25.3223";
+      rotation = "1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 127.764 23.9898";
+      rotation = "1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 127.764 23.9898";
+      rotation = "1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 129.305 22.7746";
+      rotation = "1.0 -0.0 -0.0 35.99996959210085";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 129.305 22.7746";
+      rotation = "1.0 -0.0 -0.0 35.99996959210085";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 130.938 21.684";
+      rotation = "1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 130.938 21.684";
+      rotation = "1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 132.65 20.7248";
+      rotation = "1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 132.65 20.7248";
+      rotation = "1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 134.433 19.903";
+      rotation = "1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 134.433 19.903";
+      rotation = "1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 136.275 19.2236";
+      rotation = "1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 136.275 19.2236";
+      rotation = "1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 138.164 18.6908";
+      rotation = "1.0 -0.0 -0.0 13.499974273092919";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 138.164 18.6908";
+      rotation = "1.0 -0.0 -0.0 13.499974273092919";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 140.089 18.3078";
+      rotation = "1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 140.089 18.3078";
+      rotation = "1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 142.038 18.0771";
+      rotation = "1.0 -0.0 -0.0 4.499999063801567";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 142.038 18.0771";
+      rotation = "1.0 -0.0 -0.0 4.499999063801567";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 144 18";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 144 18";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 145.962 18.0771";
+      rotation = "-1.0 -0.0 -0.0 4.500004793379593";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 145.962 18.0771";
+      rotation = "-1.0 -0.0 -0.0 4.500004793379593";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 147.911 18.3078";
+      rotation = "-1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 147.911 18.3078";
+      rotation = "-1.0 -0.0 -0.0 9.00002104591493";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 149.836 18.6907";
+      rotation = "-1.0 -0.0 -0.0 13.500031568872489";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 149.836 18.6907";
+      rotation = "-1.0 -0.0 -0.0 13.500031568872489";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 151.725 19.2236";
+      rotation = "-1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 151.725 19.2236";
+      rotation = "-1.0 -0.0 -0.0 17.999984796050423";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 153.567 19.903";
+      rotation = "-1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 153.567 19.903";
+      rotation = "-1.0 -0.0 -0.0 22.499995319007898";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 155.35 20.7248";
+      rotation = "-1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 155.35 20.7248";
+      rotation = "-1.0 -0.0 -0.0 27.000005841965383";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 157.063 21.684";
+      rotation = "-1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 157.063 21.684";
+      rotation = "-1.0 -0.0 -0.0 31.50001636492289";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 158.695 22.7746";
+      rotation = "-1.0 -0.0 -0.0 36.000026887880374";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 158.695 22.7746";
+      rotation = "-1.0 -0.0 -0.0 36.000026887880374";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 160.236 23.9898";
+      rotation = "-1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 160.236 23.9898";
+      rotation = "-1.0 -0.0 -0.0 40.499980115058335";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 161.678 25.3223";
+      rotation = "-1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 161.678 25.3223";
+      rotation = "-1.0 -0.0 -0.0 44.99999063801584";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 163.01 26.7638";
+      rotation = "-1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 163.01 26.7638";
+      rotation = "-1.0 -0.0 -0.0 49.50000116097331";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 164.225 28.3054";
+      rotation = "-1.0 -0.0 -0.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 164.225 28.3054";
+      rotation = "-1.0 -0.0 -0.0 54.0000116839308";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 165.316 29.9375";
+      rotation = "-1.0 -0.0 -0.0 58.500136798447315";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 165.316 29.9375";
+      rotation = "-1.0 -0.0 -0.0 58.500136798447315";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 166.275 31.6502";
+      rotation = "-1.0 -0.0 -0.0 63.00014732140479";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 166.275 31.6502";
+      rotation = "-1.0 -0.0 -0.0 63.00014732140479";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 167.097 33.4329";
+      rotation = "-1.0 -0.0 -0.0 67.50015784436228";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 167.097 33.4329";
+      rotation = "-1.0 -0.0 -0.0 67.50015784436228";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 167.776 35.2746";
+      rotation = "-1.0 -0.0 -0.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 167.776 35.2746";
+      rotation = "-1.0 -0.0 -0.0 72.00016836731977";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 168.309 37.1639";
+      rotation = "-1.0 -0.0 -0.0 76.50017889027725";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 168.309 37.1639";
+      rotation = "-1.0 -0.0 -0.0 76.50017889027725";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 168.692 39.0891";
+      rotation = "-1.0 -0.0 -0.0 81.00018941323475";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 168.692 39.0891";
+      rotation = "-1.0 -0.0 -0.0 81.00018941323475";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 168.923 41.0385";
+      rotation = "-1.0 -0.0 -0.0 85.50019993619222";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 168.923 41.0385";
+      rotation = "-1.0 -0.0 -0.0 85.50019993619222";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "89 169 43";
+      rotation = "-0.9999999999929584 -2.6535946669421236e-06 -2.6535946669421236e-06 89.99978954125375";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "91 169 43";
+      rotation = "-0.9999999999929584 -2.6535946669421236e-06 -2.6535946669421236e-06 89.99978954125375";
+      scale = "1 1 1";
+      datablock = "TrapDoor";
+   };
+   new StaticShape() {
+      position = "88 63 46";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "CheckpointPad";
+   };
+   new StaticShape() {
+      position = "90 172 46";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "EndPad";
+   };
+
+   new Trigger(Bounds) {
+      position = "-93.1429 203.0 -34.0";
+      rotation = "1 0 0 0";
+      scale = "217.1429 249.0 170.0";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+};
+//--- OBJECT WRITE END ---
+

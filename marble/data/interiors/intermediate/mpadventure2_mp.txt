@@ -1,0 +1,15 @@
+2 origin
+3 node1
+4 node2
+5 node3
+6 node4
+48 block1a
+49 block1b
+50 block2a
+51 block2b
+52 block3a
+53 block3b
+mp44 origin 7500 node1 15000 node2 15000 node3 15000 node4 7500 
+mb222 block1a 3000a block1b 3000a block1a
+mb222 block2b 3000a block2a 3000a block2b
+mb222 block3a 3000a block3b 3000a block3a

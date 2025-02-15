@@ -6,6 +6,7 @@ new SimGroup(MissionGroup) {
          time = "0";
          desc = "Welcome to the intermediate levels!";
          level = "1";
+         goldTime = "40000";
          type = "Intermediate";
          note = "Moving Blocks, made in Jul 18, 2023.";
          music = "puzzlegame3.ogg";

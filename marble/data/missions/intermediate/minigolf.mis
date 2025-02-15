@@ -1,0 +1,265 @@
+
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   new ScriptObject(MissionInfo) {
+         time = "0";
+         desc = "Every Marble Blast mod needs a mini golf level, right?";
+         name = "Marble Mini Golf: Synergy";
+         level = "11";
+         music = "loading.ogg";
+         note = "Marble Mini Golf: Synergy, made in Dec 7, 2024. The precise jumping are there so this level would be hard enough for an intermediate level...";
+         type = "Intermediate";
+         goldTime = "30000";
+         startHelpText = "To fit the theme, the water in the puddles has been replaced with lava.";
+   };
+
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 7.45949e-031 1.3684e-038";
+      fogVolume2 = "-1 1.07208e-014 8.756e-014";
+      fogVolume3 = "-1 5.1012e-010 2.05098e-008";
+      materialList = "~/data/skies/rainforest.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 0.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000004";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 14435505.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/intermediate/minigolf_trimmed.dif";
+      showTerrainInside = "0";
+   };
+
+   new StaticShape() {
+      position = "0 0 -0.25";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "StartPad";
+   };
+   new Item() {
+      position = "2.5 65 3.25";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+      timeBonus = "5000";
+   };
+   new Item() {
+      position = "23 38.5 10.75";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "18.75 34.5 5.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "23.25 34.5 6.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "-26 34 -0.5";
+      rotation = "-0.0 -0.0 -1.0 90.00021045914971";
+      scale = "1 1 1";
+      datablock = "EndPad";
+   };
+   new Item() {
+      position = "27.5 34.5 6.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1 7 -0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-1 13 -0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "1 19 -0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "0.25 5.5 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "3.75 16.5 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "0.0 36.375 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "3.5 9.375 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "12.375 36.0 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "8.875 9.0 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "30.375 36.0 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "9.125 9.0 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "30.375 54.0 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "9.125 9.0 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "12.375 54.0 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "8.875 9.0 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "30.625 -1.0 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "8.875 10.0 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "30.625 18.0 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "8.875 9.0 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "12.875 -1.0 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "8.875 10.0 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "12.875 18.0 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "8.875 9.0 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "30.375 72.0 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "9.125 9.0 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "12.375 72.0 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "8.875 9.0 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "-13.25 69.5 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "16.75 11.5 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "-16.75 46.5 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "13.25 11.5 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "-16.75 23.5 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "13.25 11.5 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "-16.75 0.5 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "13.25 11.5 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "-39.125 35.125 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "9.125 45.875 1.0";
+      datablock = "Lava";
+   };
+   new StaticShape() {
+      position = "48.625 35.125 -1.5";
+      rotation = "1 0 0 0.0";
+      scale = "9.125 45.875 1.0";
+      datablock = "Lava";
+   };
+
+   new Trigger(Bounds) {
+      position = "-76.25 109.0 -33.0";
+      rotation = "1 0 0 0";
+      scale = "162.0 148.0 76.0";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+};
+//--- OBJECT WRITE END ---
+

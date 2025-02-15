@@ -7,7 +7,7 @@ new SimGroup(MissionGroup) {
          goldTime = "60000";
          desc = "Travel between the islands to get to the finish.";
          name = "Tale of Three Islands";
-         level = "5";
+         level = "10";
          note = "Tale of Three Islands, made in Aug 13, 2023.";
          music = "puzzlegame3.ogg";
          type = "Intermediate";

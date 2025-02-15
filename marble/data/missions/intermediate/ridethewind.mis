@@ -1,16 +1,17 @@
 
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
-
    new ScriptObject(MissionInfo) {
          time = "0";
          desc = "Harness the duct fan\'s power to conquer the challanges.";
          name = "Ride the Wind";
-         level = "7";
-         note = "Ride the Wind, made in Aug 13, 2023. The author thinks this level is possibly too hard to be in Intermediate Theme 1.";
-         music = "puzzlegame3.ogg";
+         level = "12";
+         note = "Ride the Wind, made in Aug 13, 2023.";
+         goldTime = "35000";
+         music = "loading.ogg";
          type = "Intermediate";
    };
+
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
@@ -36,7 +37,7 @@ new SimGroup(MissionGroup) {
       fogVolume1 = "-1 7.45949e-031 1.3684e-038";
       fogVolume2 = "-1 1.07208e-014 8.756e-014";
       fogVolume3 = "-1 5.1012e-010 2.05098e-008";
-      materialList = "~/data/skies/blizzard.dml";
+      materialList = "~/data/skies/rainforest.dml";
       windVelocity = "1 0 0";
       windEffectPrecipitation = "0";
       noRenderBans = "1";
@@ -53,9 +54,10 @@ new SimGroup(MissionGroup) {
       position = "0 0 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      interiorFile = "~/data/interiors/intermediate/ridethewind_trimmed.dif";
+      interiorFile = "~/data/interiors/intermediate/ridethewind_recolored_trimmed.dif";
       showTerrainInside = "0";
    };
+
 
    new StaticShape() {
       position = "0 0 0";

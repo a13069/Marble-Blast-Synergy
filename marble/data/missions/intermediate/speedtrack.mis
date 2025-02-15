@@ -2,11 +2,11 @@
 new SimGroup(MissionGroup) {
 
    new ScriptObject(MissionInfo) {
-         level = "6";
+         level = "9";
          name = "Gravitational Speedtrack";
          time = "0";
          desc = "Go fast and don\'t get dizzy!";
-         note = "Gravitational Speedtrack, made in Jul 23, 2023, with minor adjustments Nov 16, 2024. The author thinks this level is possibly too hard to be in Intermediate Theme 1. Also while this level is fun to play, the author thinks it looks rather ugly. What do you think?";
+         note = "Gravitational Speedtrack, made in Jul 23, 2023, with minor adjustments Nov 16, 2024. The author thinks this level, while fun to play, looks rather ugly. What do you think?";
          goldTime = "40000";
          type = "Intermediate";
          music = "puzzlegame3.ogg";

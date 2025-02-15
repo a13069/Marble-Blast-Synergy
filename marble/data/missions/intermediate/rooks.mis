@@ -1,0 +1,961 @@
+
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   new ScriptObject(MissionInfo) {
+         time = "0";
+         desc = "Survive on this humongous and chaotic chessboard.";
+         name = "Rooks";
+         level = "30";
+         music = "resilience.ogg";
+         note = "Rooks, made in Jan 13, 2025.";
+         type = "Intermediate";
+         goldTime = "35000";
+         AwesomeTime = "12000";
+         AwesomeHint = "Jump + Super Jump directly under a time travel and collect both the time travel and the gem in one go!";
+   };
+
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 7.45949e-031 1.3684e-038";
+      fogVolume2 = "-1 1.07208e-014 8.756e-014";
+      fogVolume3 = "-1 5.1012e-010 2.05098e-008";
+      materialList = "~/data/skies/starfield.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 0.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000004";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 14435505.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/intermediate/rooks_trimmed.dif";
+      showTerrainInside = "0";
+   };
+
+   new StaticShape() {
+      position = "0 20 8";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "EndPad";
+   };
+   new StaticShape() {
+      position = "0 -20 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "StartPad";
+   };
+   new Item() {
+      position = "0 -20 0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "14 14 0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-14 14 0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-14 -14 0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "14 -14 0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "6 6 8";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "6 -6 8";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-6 -6 8";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-6 6 8";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "14 14 8.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+         timeBonus = "4000";
+   };
+   new Item() {
+      position = "14 -14 8.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+         timeBonus = "4000";
+   };
+   new Item() {
+      position = "-14 -14 8.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+         timeBonus = "4000";
+   };
+   new Item() {
+      position = "-14 14 8.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+         timeBonus = "4000";
+   };
+   new Item() {
+      position = "0 0 0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      dataBlock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+         timeBonus = "4000";
+   };
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "-14 -2 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "2400";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-14 14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-14 -14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "1800";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-14 -2 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rooky.dif";
+         interiorIndex = "0";
+         basePosition = "-14 -2 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "-10 6 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "1200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-10 14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-10 -14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "3000";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-10 6 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rooky.dif";
+         interiorIndex = "0";
+         basePosition = "-10 6 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "-6 14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-6 -14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-6 14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rooky.dif";
+         interiorIndex = "0";
+         basePosition = "-6 14 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "-2 -10 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "3600";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-2 14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-2 -14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "600";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-2 -10 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rooky.dif";
+         interiorIndex = "0";
+         basePosition = "-2 -10 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "2 10 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "600";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "2 14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "2 -14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "3600";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "2 10 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rooky.dif";
+         interiorIndex = "0";
+         basePosition = "2 10 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "6 -14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "6 14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "6 -14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rooky.dif";
+         interiorIndex = "0";
+         basePosition = "6 -14 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "10 -6 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "3000";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "10 14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "10 -14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "1200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "10 -6 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rooky.dif";
+         interiorIndex = "0";
+         basePosition = "10 -6 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "14 2 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "1800";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "14 14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "14 -14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "2400";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "14 2 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rooky.dif";
+         interiorIndex = "0";
+         basePosition = "14 2 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+
+
+
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "10 14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "600";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "14 14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-14 14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "3600";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "10 14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rookb.dif";
+         interiorIndex = "0";
+         basePosition = "10 14 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+
+
+
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "14 10 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-14 10 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "14 10 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rookb.dif";
+         interiorIndex = "0";
+         basePosition = "14 10 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "-6 6 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "3000";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "14 6 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-14 6 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "1200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-6 6 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rookb.dif";
+         interiorIndex = "0";
+         basePosition = "-6 6 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "-2 2 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "2400";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "14 2 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-14 2 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "1800";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-2 2 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rookb.dif";
+         interiorIndex = "0";
+         basePosition = "-2 2 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "2 -2 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "1800";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "14 -2 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-14 -2 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "2400";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "2 -2 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rookb.dif";
+         interiorIndex = "0";
+         basePosition = "2 -2 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "6 -6 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "3000";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-14 -6 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "14 -6 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "1200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "6 -6 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rookb.dif";
+         interiorIndex = "0";
+         basePosition = "6 -6 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "-14 -10 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "14 -10 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-14 -10 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rookb.dif";
+         interiorIndex = "0";
+         basePosition = "-14 -10 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+   new SimGroup(MustChange) {
+      new Path() {
+         new Marker() {
+            position = "-10 -14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "0";
+            msToNext = "3600";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "14 -14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "1";
+            msToNext = "4200";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-14 -14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "2";
+            msToNext = "600";
+            smoothingType = "Linear";
+         };
+         new Marker() {
+            position = "-10 -14 0";
+            rotation = "1 0 0 0";
+            scale = "1 1 1";
+            seqNum = "3";
+            msToNext = "0";
+            smoothingType = "Linear";
+         };
+      };
+      new PathedInterior(MustChange) {
+         position = "0 0 0";
+         rotation = "1 0 0 0";
+         scale = "1 1 1";
+         dataBlock = "PathedDefault";
+         interiorResource = "marble/data/interiors/intermediate/rookb.dif";
+         interiorIndex = "0";
+         basePosition = "-10 -14 0";
+         baseRotation = "1 0 0 0";
+         baseScale = "1 1 1";
+         initialTargetPosition = "-1";
+      };
+   };
+
+
+   new Trigger(Bounds) {
+      position = "-44.5 50.5 -28.5";
+      rotation = "1 0 0 0";
+      scale = "89.0 101.0 114.5";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+};
+//--- OBJECT WRITE END ---
+
