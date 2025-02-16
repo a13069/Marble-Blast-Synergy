@@ -519,7 +519,7 @@ function get_stat_string(%catstr){
 		 if(%mission.AwesomeTime !$= ""){
             $stats_awesome_count += 1;
 	 	 }
-         %file_best_time = $pref::highScores[%mission.file, 0];
+         %file_best_time = getField($pref::highScores[%mission.file, 0], 0);
 		 %status_text = "";
          if(%file_best_time !$= ""){ 
             %beginner_beaten += 1;

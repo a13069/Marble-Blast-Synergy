@@ -15,49 +15,45 @@ function HelpCreditsGui::setPage(%this, %page)
                  "<font:Lucida Sans:18><just:left>\n\n" @
                  "Roll your marble through a rich cartoon landscape of moving platforms and dangerous hazards.  Along the way find power ups to increase your speed, jumping ability or flight power, and use them to collect the hidden gems and race to the finish for the fastest time."
 @ "\n\n" @
-                 "Over the years, many Marble Blast players have made their own modification of the game. Some notable mods of the game are Platinum Quest, STOP DeluXe, Marble Blast Emerald, Gerson's Level Compilation etc.";
+                 "Over the years, many Marble Blast players have made their own modification of the game. Some notable mods of the game are Platinum Quest, STOP DeluXe, Marble Blast Emerald, Gerson\'s Level Compilation, etc.";
       case 2:
          %text = "<font:Lucida Sans:24><color:FFFFFF><just:center>About Marble Blast: Synergy" @
                  "<font:Lucida Sans:18><just:left>\n\n" @
                  "Marble Blast Synergy (referred to as \"this mod\" from now on) is a Marble Blast modification by a13069. This mod started in 2019, and was being developed on and off until eventually being forgotten by its author. The author rediscovered it in November 2024, and decided to release it."
                  @ "\n\n" @
-                 "The main new feature in this mod is the addition of a new hazard (lava) and a new powerup (water) that counters it. Play the first few beginner levels to see how they work. There are other gameplay features in this mod, such as checkpoints, bouncy floors, powerup timer, etc., but they are common in other mods as well.";
+                 "The main new feature of this mod is the addition of a new hazard (lava) and a new powerup (water) that counters it. Play the first few beginner levels to see how they work. There are other gameplay features in this mod, such as checkpoints, bouncy floors, powerup timer, etc., but they are common in other mods as well."
+                 @ "\n\n" @
+                 "This mod is currently released in an unfinished state - However, with 50 levels (over 60 if you count scrapped ones) and all its planned gameplay features implemented, the author believes it is able to stand on its own, even in its current unfinished state. The author also wishes to continue working on this mod, but there isn't a set schedule for it.";
       case 3:
-         %text = "<font:Lucida Sans:24><color:FFFFFF><just:center>The Level Themes" @
+         %text = "<font:Lucida Sans:24><color:FFFFFF><just:center>About the Levels (1)" @
                  "<font:Lucida Sans:18><just:left>\n\n" @
 
-"This mod's aesthetic and level designs are inspired by jmtb02's \"Ball Revamped V: Synergy\" (hence the name). Each difficulty is divided into 10-level \"themes\", which correspond to 10-level \"realms\" in Ball Revamped V. Each theme has its own skybox, textures and soundtracks."@ "\n\n" @
-"The correspondence is as follows: (This mod's theme - Ball Revamped V's realm)"@ "\n" @
-"Tutorial: Level 1-10"@ "\n" @
-"Beginner Theme 1: Level 11-20"@ "\n" @
-"Beginner Theme 2: Level 41-50"@ "\n" @
-"Beginner Theme 3: Level 61-70"@ "\n" @
-"Intermediate Theme 1: Level 21-30"@ "\n" @
-"Intermediate Theme 2: Level 51-60"@ "\n" @
-"Intermediate Theme 3: Space-themed (There aren't enough realms in BRV's roadmap)"@ "\n" @
-"Advanced Theme 1: Level 31-40"@ "\n" @
-"Advanced Theme 2: Level 71-80"@ "\n" @
-"Advanced Theme 3: Level 81-90"@ "\n" @
-"Expert: Level 91-99 "@ "\n\n" @
-"Themes are purely aesthetic and have no impact on gameplay. However, the levels in the same theme may share some common gameplay elements. There's also a \"Custom\" difficulty, which contains levels the author didn't like enough to put into the main game.";
+"This mod's aesthetic and level designs are inspired by jmtb02's \"Ball Revamped V: Synergy\" (hence the name). Each difficulty is divided into 10-level \"realms\", which correspond to 10-level \"realms\" in Ball Revamped V. Each realm has its own skybox, textures and soundtracks."@ "\n\n" @
+"The correspondence is as follows:<tab:200,400>"@ "\n" @
+"This mod's realm" TAB " Ball Revamped V's realm"@ "\n" @
+"Tutorial" TAB " Level 1-10 (Bengium)"@ "\n" @
+"Early Beginner" TAB " Level 11-20 (Eucharis)"@ "\n" @
+"Middle Beginner" TAB " Level 41-50 (Solidago)"@ "\n" @
+"Late Beginner" TAB " Level 61-70 (Achillea)"@ "\n" @
+"Early Intermediate" TAB " Level 21-30 (Centaurea)"@ "\n" @
+"Middle Intermediate" TAB " Level 51-60 (Amaranthus)"@ "\n" @
+"Late Intermediate" TAB " None"@ "\n" @
+"Early Advanced" TAB " Level 31-40 (Allium)"@ "\n" @
+"Middle Advanced" TAB " Level 71-80 (Arachnis)"@ "\n" @
+"Late Advanced" TAB " Level 81-90 (Platycodon)"@ "\n" @
+"Expert" TAB " Level 91-99 (Lilium)"@ "\n\n" @
+"Realms are purely aesthetic and have no impact on gameplay. However, the levels in the same realm may share some common gameplay elements. There's also a \"Custom\" difficulty, which contains levels the author didn't like enough to put into the main game.";
 
 
       case 4:
-         %text = "<font:Lucida Sans:24><color:FFFFFF><just:center>Status of This Mod" @
+         %text = "<font:Lucida Sans:24><color:FFFFFF><just:center>About the Levels (2)" @
                  "<font:Lucida Sans:18><just:left>\n\n" @
-                 "This mod is currently released in an unfinished state - However, with 30+ levels (nearly 50 if you count scrapped ones) and all its planned gameplay features implemented, the author believes it is able to stand on its own, even in its current unfinished state."
-                 @ "\n\n" @
+"On the level select screen, you can see a \"Level Info\" tab to the bottom left. Inside it is author\'s notes on the level, which shows the change log (if there are any) and author\'s thoughts on the level. Sometimes there are some trivia in it. If you\'ve beaten the gold time, an awesome hint will show. It shows what the author thinks that will help you beat the awesome time. However, keep in mind that many level do not have awesome hints yet." @ "\n\n" @
 
 
-
-"With that being said, there are still significant gaps in this mod:" @ "\n" @
-"- Every Marble Blast Gold UI you see in this mod are meant to be replaced with this mod's UI. The MBG UI are there because the author haven't made the UI for them yet." @ "\n" @
-"- Most levels in this mod are unnamed and without a description." @ "\n" @
-"- Some levels may lack indicators (the \"where to go\" signs) and help texts." @ "\n" @
-"- The intermediate levels are unstable right now. Some intermediate levels may be changed, reordered, or be delegeted to a later theme in the future." @ "\n" @
-"- There aren't any advanced or expert level being made yet. The author planned to make the level in the order of difficulty, so there won't be any of them in quite some time." @ "\n\n" @
-
-"The author wishes to continue working on this mod, but there isn't a set schedule for it.";
+"The gold times and the awesome times are as follows:" @ "\n" @
+"- The gold times are meant to be as hard as the platinum times in Platinum Quest. They are set to be a little lower than the author\'s first play through, or a little lower than the time it takes with the intended route." @ "\n" @
+"- The awesome times are meant to be as hard as the ultimate times in Platinum Quest. They are set to be the best time the author can achieve. However, if the author still hasn\'t had a run he likes (or the time is too close to the gold time), the awesome time is left undetermined." ;
 
       case 5:
          %text = "<font:Lucida Sans:24><color:FFFFFF><just:center>How You Can Help" @
@@ -86,18 +82,18 @@ function HelpCreditsGui::setPage(%this, %page)
          %text = "<font:Lucida Sans:24><color:FFFFFF><just:center>Soundtracks Used" @
                  "<font:Lucida Sans:18><just:left>\n\n" @
       
-"<lmargin:0>Shell Music & Custom Levels:\n" @ "<lmargin:35> \"Rig - Celtic Warloads preview\" - Rig: https://www.newgrounds.com/audio/listen/94774"@ "\n" @
-"<lmargin:0>Beginner Theme 1:\n" @ "<lmargin:35> \"Moving Pieces\" - Montron: https://www.newgrounds.com/audio/listen/1106610"@ "\n" @
-"<lmargin:0>Beginner Theme 2:\n" @ "<lmargin:35> \"Purple Skies\" - Qshunt: https://www.newgrounds.com/audio/listen/941702"@ "\n" @
-"<lmargin:0>Beginner Theme 3:\n" @ "<lmargin:35> \"Custom Shader\" - AliceMako: https://www.newgrounds.com/audio/listen/955260"@ "\n" @
-"<lmargin:0>Intermediate Theme 1:\n" @ "<lmargin:35> \"PUZZLE GAME 3\" - Eric Matyas: https://soundimage.org/wp-content/uploads/2016/03/Puzzle-Game-3_Looping.mp3"@ "\n" @
-"<lmargin:0>Intermediate Theme 2:\n" @ "<lmargin:35> \"Loading\" - CorruptedFrame: https://www.newgrounds.com/audio/listen/1137802"@ "\n" @
-"<lmargin:0>Intermediate Theme 3:\n" @ "<lmargin:35> \"Resilience\" - Zoonotist: https://www.newgrounds.com/audio/listen/1004454"@ "\n" @
-"<lmargin:0>Advanced Theme 1:\n" @ "<lmargin:35> \"-Temptation-\" - Sabodis: https://www.newgrounds.com/audio/listen/59043"@ "\n" @
-"<lmargin:0>Advanced Theme 2:\n" @ "<lmargin:35> \"Journey to the Third Sun\" - Dem0n1x: https://www.newgrounds.com/audio/listen/1177385"@ "\n" @
-"<lmargin:0>Advanced Theme 3:\n" @ "<lmargin:35> \"Map the Sky\" - Ynor9: https://www.newgrounds.com/audio/listen/967045"@ "\n" @
-"<lmargin:0>Expert:\n" @ "<lmargin:35> \"Ordinary\" - Zoonotist & Eurns: https://www.newgrounds.com/audio/listen/935824"@ "\n" @
-"<lmargin:0>Sound Effect for Water Powerup:\n" @ "<lmargin:35> \"MODERATE RAIN WITH PASSING CARS\" - Eric Matyas: https://soundimage.org/wp-content/uploads/2016/08/Moderate-Rain-with-Passing-Cars-.mp3"@ "\n" @
+"<lmargin:0>Shell Music & Custom Levels:\n" @ "<lmargin:35> \"Rig - Celtic Warloads preview\" - Rig: \n" @ "<lmargin:35>https://www.newgrounds.com/audio/listen/94774"@ "\n" @
+"<lmargin:0>Early Beginner:\n" @ "<lmargin:35> \"Moving Pieces\" - Montron: \n" @ "<lmargin:35>https://www.newgrounds.com/audio/listen/1106610"@ "\n" @
+"<lmargin:0>Middle Beginner:\n" @ "<lmargin:35> \"Purple Skies\" - Qshunt: \n" @ "<lmargin:35>https://www.newgrounds.com/audio/listen/941702"@ "\n" @
+"<lmargin:0>Late Beginner:\n" @ "<lmargin:35> \"Custom Shader\" - AliceMako: \n" @ "<lmargin:35>https://www.newgrounds.com/audio/listen/955260"@ "\n" @
+"<lmargin:0>Early Intermediate:\n" @ "<lmargin:35> \"PUZZLE GAME 3\" - Eric Matyas: \n" @ "<lmargin:35>https://soundimage.org/wp-content/uploads/2016/03/Puzzle-Game-3_Looping.mp3"@ "\n" @
+"<lmargin:0>Middle Intermediate:\n" @ "<lmargin:35> \"Loading\" - CorruptedFrame: \n" @ "<lmargin:35>https://www.newgrounds.com/audio/listen/1137802"@ "\n" @
+"<lmargin:0>Late Intermediate:\n" @ "<lmargin:35> \"Resilience\" - Zoonotist: \n" @ "<lmargin:35>https://www.newgrounds.com/audio/listen/1004454"@ "\n" @
+"<lmargin:0>Early Advanced:\n" @ "<lmargin:35> \"-Temptation-\" - Sabodis: \n" @ "<lmargin:35>https://www.newgrounds.com/audio/listen/59043"@ "\n" @
+"<lmargin:0>Middle Advanced:\n" @ "<lmargin:35> \"Journey to the Third Sun\" - Dem0n1x: \n" @ "<lmargin:35>https://www.newgrounds.com/audio/listen/1177385"@ "\n" @
+"<lmargin:0>Late Advanced:\n" @ "<lmargin:35> \"Map the Sky\" - Ynor9: \n" @ "<lmargin:35>https://www.newgrounds.com/audio/listen/967045"@ "\n" @
+"<lmargin:0>Expert:\n" @ "<lmargin:35> \"Ordinary\" - Zoonotist & Eurns: \n" @ "<lmargin:35>https://www.newgrounds.com/audio/listen/935824"@ "\n" @
+"<lmargin:0>Sound Effect for Water Powerup:\n" @ "<lmargin:35> \"MODERATE RAIN WITH PASSING CARS\" - Eric Matyas: \n" @ "<lmargin:35>https://soundimage.org/wp-content/uploads/2016/08/Moderate-Rain-with-Passing-Cars-.mp3"@ "\n" @
 "<lmargin:0>Sound Effect for \"Ready\", \"Set\", \"Go\", \"Water\" made with https://ttsmaker.com/";
 
       case 8:
