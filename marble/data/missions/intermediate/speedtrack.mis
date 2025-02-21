@@ -8,6 +8,8 @@ new SimGroup(MissionGroup) {
          desc = "Go fast and don\'t get dizzy!";
          note = "Gravitational Speedtrack, made in Jul 23, 2023, with minor adjustments Nov 16, 2024. The author thinks this level, while fun to play, looks rather ugly. What do you think?";
          goldTime = "40000";
+         AwesomeTime = "27000";
+         AwesomeHint = "Can you find the shortcut?";
          type = "Intermediate";
          music = "puzzlegame3.ogg";
    };

@@ -6,7 +6,9 @@ new SimGroup(MissionGroup) {
          desc = "Collect the gems in this confusing structure.";
          name = "Chilly Gem Hunter";
          level = "2";
-         goldTime = "32000";
+         goldTime = "40000";
+         AwesomeTime = "25000";
+         AwesomeHint = "Make a path that doesn\'t overlap with itself too much while also grabbing most of the TTs.";
          music = "puzzlegame3.ogg";
          type = "Intermediate";
          note = "Chilly Gem Hunter, made in Aug 5, 2023, with minor adjustments in Aug 15, 2023. This level\'s working name is \"Does it work?\", probably referring to the author\'s python code that automatically converts .csx files to mission files.";

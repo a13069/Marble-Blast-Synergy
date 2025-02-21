@@ -6,7 +6,9 @@ new SimGroup(MissionGroup) {
          time = "0";
          desc = "Welcome to the intermediate levels!";
          level = "1";
-         goldTime = "40000";
+         goldTime = "60000";
+         AwesomeTime = "40000";
+         AwesomeHint = "Jumping onto the blocks before they move forward is the key to getting a fast run here.";
          type = "Intermediate";
          note = "Moving Blocks, made in Jul 18, 2023.";
          music = "puzzlegame3.ogg";

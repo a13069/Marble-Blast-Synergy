@@ -7,7 +7,8 @@ new SimGroup(MissionGroup) {
          time = "0";
          desc = "Many marble blast mods have tube levels, this mod is not an exception.";
          name = "Tube Pathfinder";
-         goldTime = "30000";
+         GoldTime = "40000";
+         AwesomeTime = "30000";
          note = "Tube Pathfinder, made in Jul 24, 2020.";
          music = "customshader.ogg";
    };

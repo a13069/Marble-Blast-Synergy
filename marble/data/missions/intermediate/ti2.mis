@@ -5,6 +5,8 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          time = "0";
          goldTime = "60000";
+         AwesomeTime = "35000";
+         AwesomeHint = "Make your way to the top of the Lava Island first, then go from there.";
          desc = "Travel between the islands to get to the finish.";
          name = "Tale of Three Islands";
          level = "10";

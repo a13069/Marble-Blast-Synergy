@@ -8,6 +8,8 @@ new SimGroup(MissionGroup) {
          level = "12";
          note = "Ride the Wind, made in Aug 13, 2023.";
          goldTime = "35000";
+         AwesomeTime = "17000";
+         AwesomeHint = "Feel free to ignore one or two Time Travels that might be tough to get when beating this time.";
          music = "loading.ogg";
          type = "Intermediate";
    };
