@@ -90,9 +90,9 @@ function reformatGameEndText()
    // Qualification time
    if($Game::Qualified) {
       if(MissionInfo.AwesomeTime && $Game::ScoreTime < MissionInfo.AwesomeTime && MissionInfo.AwesomeTime < MissionInfo.goldTime) 
-         %text = %text @ "You beat the <color:00ffff>Awesome Time<color:000000>!";
+         %text = %text @ "You beat the <color:00ffff>Awesome Time<color:ffffff>!";
       else if(MissionInfo.goldTime && $Game::ScoreTime < MissionInfo.goldTime) 
-         %text = %text @ "You beat the <color:ffff00>Gold Time<color:ffff00>!";
+         %text = %text @ "You beat the <color:ffff00>Gold Time<color:ffffff>!";
       else
          %text = %text @ "You\'ve qualified!"; //that "\'" is suppost to be in there
    } 
