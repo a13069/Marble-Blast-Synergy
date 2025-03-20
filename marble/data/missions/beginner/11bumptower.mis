@@ -5,6 +5,7 @@ new SimGroup(MissionGroup) {
          time = "30000";
          goldTime = "10000";
          AwesomeTime = "6250";
+         AwesomeHint = "Try to be as close to the center of the level as possible.";
          name = "Bump Tower";
          desc = "A simple level that greets you to the second realm.";
          level = "11";

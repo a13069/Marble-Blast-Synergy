@@ -7,8 +7,10 @@ new SimGroup(MissionGroup) {
          type = "Beginner";
          time = "0";
          goldTime = "45000";
+         AwesomeTime = "35000";
+         AwesomeHint = "Cut as many corners as possible while being fast!";
          desc = "Follow the winding trail... or... maybe you can find a shortcut?";
-         note = "Winding Trail, made in Jul 16, 2023";
+         note = "Winding Trail, made in Jul 16, 2023.";
          music = "customshader.ogg";
    };
    new MissionArea(MissionArea) {

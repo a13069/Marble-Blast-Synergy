@@ -10,6 +10,7 @@ new SimGroup(MissionGroup) {
          note = "Platform Adventure I, made in Jul 23, 2020. The author doesn't like this type of level, but made one anyway.";
          goldTime = "25000";
          AwesomeTime = "15000";
+         AwesomeHint = "If you collect all the TTs, you should have no problem beating this time.";
          music = "customshader.ogg";
    };
    new MissionArea(MissionArea) {

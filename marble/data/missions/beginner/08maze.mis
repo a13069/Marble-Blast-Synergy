@@ -9,6 +9,7 @@ new SimGroup(MissionGroup) {
          time = "0";
          goldTime = "45000";
          AwesomeTime = "24250";
+         AwesomeHint = "For the first floor: hop between the paths to save the distance you travel between the gems. For the second floor: ignore the gyrocopter, just go after the TTs!";
          note = "Magma Maze, made in Mar 10, 2019.";
          music = "movingpieces.ogg";
    };

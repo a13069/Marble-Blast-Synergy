@@ -9,6 +9,7 @@ new SimGroup(MissionGroup) {
          level = "13";
          goldTime = "36000";
          AwesomeTime = "25000";
+         AwesomeHint = "When you have all the gems, edge hit off the platform with the bouncy floor and fly to the finish!";
          note = "Challange Gazebos, made in Jul 8, 2020. Yes I know the bridges between the gazebos aren't perfectly aligned. I tried my best.";
          music = "purpleskies.ogg";
    };

@@ -5,7 +5,7 @@ new SimGroup(MissionGroup) {
          time = "0";
          goldTime = "38000";
          AwesomeTime = "24000";
-         AwesomeHint = "When I beat the awesome time I\'ve set, I\'ll fill this field out.";
+         AwesomeHint = "Make big jumps between the taller pillars!";
          type = "Custom";
          desc = "This level feels like MBG\'s \"Stepping Stone\" without the time limit... what do you think?";
          level = "23";

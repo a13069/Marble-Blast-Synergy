@@ -8,8 +8,9 @@ new SimGroup(MissionGroup) {
          level = "24";
          goldTime = "28000";
          AwesomeTime = "10000";
+         AwesomeHint = "The author is very generous with the TTs in this level, you should grab some.";
          type = "Beginner";
-         startHelpText = "Once you have collected all gems, use the tornado to launch you to the finish.";
+         startHelpText = "Once you have collected all the gems, use the tornado to launch you to the finish.";
          note = "Tornado Arena, made in Jul 15, 2023";
          music = "customshader.ogg";
    };

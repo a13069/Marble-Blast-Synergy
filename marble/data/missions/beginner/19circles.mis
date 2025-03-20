@@ -9,6 +9,7 @@ new SimGroup(MissionGroup) {
          time = "0";
          note = "Dome Hopping, made in Jul 11, 2019.";
          AwesomeTime = "20000";
+         AwesomeHint = "If you don\'t screw up, you get to use the Super Jump to skip the middle of the level.";
          desc = "Keep you balance on the domes!";
          type = "Beginner";
          startHelpText = "If you screw up, you have one chance to save yourself.";

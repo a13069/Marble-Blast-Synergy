@@ -10,6 +10,7 @@ new SimGroup(MissionGroup) {
          note = "Twin Mountain, made in Jul 19, 2020.";
          goldTime = "25000";
          AwesomeTime = "16750";
+         AwesomeHint = "Hit an edge or two to skip the small steps at the base of the yellow mountain.";
          music = "customshader.ogg";
    };
    new MissionArea(MissionArea) {

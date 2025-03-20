@@ -9,6 +9,7 @@ new SimGroup(MissionGroup) {
          time = "0";
          goldTime = "25000";
          AwesomeTime = "16000";
+         AwesomeHint = "Use the hazards to bring you back up after collecting all the gems.";
          music = "purpleskies.ogg";
          note = "Theta, made in Jun 8, 2019. Originally in Realm 1 but moved here.";
    };

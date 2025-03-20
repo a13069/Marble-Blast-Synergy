@@ -10,6 +10,7 @@ new SimGroup(MissionGroup) {
          note = "Wind Field, made in Jul 15, 2020.";
          goldTime = "25000";
          AwesomeTime = "13250";
+         AwesomeHint = "If you find yourself fighting with the wind at some points in your run, you haven\'t find out the route yet. Also a well-timed Super Speed can absolutely make your run.";
          music = "purpleskies.ogg";
    };
    new MissionArea(MissionArea) {

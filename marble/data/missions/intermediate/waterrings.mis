@@ -8,7 +8,7 @@ new SimGroup(MissionGroup) {
          level = "22";
          goldTime = "35000";
          AwesomeTime = "25000";
-         AwesomeHint = "Fast and efficient movement is all you need to beat this time."
+         AwesomeHint = "Fast and efficient movement is all you need to beat this time.";
          note = "Water Rings, made in Aug 17, 2023.";
          music = "resilience.ogg";
          type = "Intermediate";
