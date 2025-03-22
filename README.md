@@ -3,7 +3,7 @@ A (imcomplete) Marble Blast Gold mod by a13069
 
 [Version History](https://github.com/a13069/Marble-Blast-Synergy/blob/master/versions.md)
 
-[List of Levels](https://github.com/a13069/Marble-Blast-Synergy/blob/master/level_list.md)
+[List of Levels](https://github.com/a13069/Marble-Blast-Synergy/blob/master/level_index.md)
 
 ## How to play
 1. On the top of this page, click "Code"
