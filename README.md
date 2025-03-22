@@ -16,6 +16,7 @@ A (imcomplete) Marble Blast Gold mod by a13069
     1. Go to the folder \<synergy-old>/marble/client
     2. Copy "prefs.cs" and "config.cs" (The latter is only needed if you have changed your keybinding)
     3. Paste them into \<synergy-new>/marble/client
+    4. If you have pasted the "config.cs" from your old install, you need to delete the "config.cs.dso" (in the same folder) from your fresh install
     4. Congrats! You have just transferred your progress and configuration into the new copy!
 5. In the extracted folder, double click "marbleblast.exe" to play!
 
