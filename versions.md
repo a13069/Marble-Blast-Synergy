@@ -1,10 +1,12 @@
 # Changelog
-#### Marble Blast Synergy 0.4.0 (March 23, 2025)
+#### Marble Blast Synergy 0.4.0 (March 22, 2025)
 -  Added 12 main levels:
     -  Now the mod contains 50 main levels (30 beginner + 20 intermediate) and 11 custom levels.
     -  Added 2 intermediate realms. Note that none of the three intermediate realms are finished.
     -  Moved "Ride the Wind" into Middle Intermediate Realm. It's only a cosmetic change and the level itself wasn't changed.
     -  Moved "Water Rings" and "Connect Gems!" into Late Intermediate Realm. It's only a cosmetic change and the levels themselves weren't changed.
+-  Other additions:
+    -  Add awesome times and hints for the levels. Now every main level from the initial release has its awesome time set. (Thank Mazik!)
 -  Bug fixes:
     -  Fixed total time not showing correctly in statistics menu.
     -  Fixed some typos.

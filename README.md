@@ -6,8 +6,18 @@ A (imcomplete) Marble Blast Gold mod by a13069
 [List of Levels](https://github.com/a13069/Marble-Blast-Synergy/blob/master/level_list.md)
 
 ## How to play
-- Make a local copy of this repository
-- Double click "marbleblast.exe" to play!
+1. On the top of this page, click "Code"
+![step1](https://github.com/a13069/Marble-Blast-Synergy/blob/master/howto1.png)
+2. Click on "Download ZIP" to download all the files
+![step2](https://github.com/a13069/Marble-Blast-Synergy/blob/master/howto2.png)
+3. Extract the ZIP to somewhere you like
+4. (Optional) If you already have a older version of Marble Blast Synergy:
+    >For the following steps, replace \<synergy-old> and \<synergy-new> with the locations of your "old Marble Blast Synergy install" and "the folder you just extracted respectively.
+    1. Go to the folder \<synergy-old>/marble/client
+    2. Copy "prefs.cs" and "config.cs" (The latter is only needed if you have changed your keybinding)
+    3. Paste them into \<synergy-new>/marble/client
+    4. Congrats! You have just transferred your progress and configuration into the new copy!
+5. In the extracted folder, double click "marbleblast.exe" to play!
 
 ## Completion Status
 This mod is currently unfinished, and the author wishes to continue working on it in the future. The current completion status is as follows:
@@ -26,6 +36,8 @@ This mod is currently unfinished, and the author wishes to continue working on i
 ### How do I open console? / Is the console disabled?
 No, the console isn't disabled in this mod. Press F10 to open the console.
 
-## Other
+## Others
+[Marble Blast Synergy: Satisfying Runs](https://www.youtube.com/watch?v=DvRexvnXPZg) (A full speedrun compilation of the 49 levels of the initial release by Mazik)
+
 If you have any feedback, suggestions, bug reports or you want to help with this mod, contact a13069 on Discord or marbleblast.com!
 
