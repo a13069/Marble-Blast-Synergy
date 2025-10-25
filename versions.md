@@ -1,4 +1,8 @@
 # Changelog
+#### Marble Blast Synergy 0.5.0 (October ?, 2025)
+-  Added 10 main levels:
+    - Now the mod contains 60 main levels (30 beginner + 30 intermediate) and 11 custom levels. It also means that the intermediate category is complete.
+
 #### Marble Blast Synergy 0.4.0 (March 22, 2025)
 -  Added 12 main levels:
     -  Now the mod contains 50 main levels (30 beginner + 20 intermediate) and 11 custom levels.

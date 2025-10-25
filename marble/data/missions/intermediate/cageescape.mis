@@ -7,6 +7,8 @@ new SimGroup(MissionGroup) {
          name = "Cage Escape";
          level = "4";
          goldTime = "40000";
+         AwesomeTime = "25000";
+         AwesomeHint = "Both the super jump and the gyrocopter enable you to go up two layers at once.";
          note = "Cage Escape, made in Dec 14, 2024.";
          music = "puzzlegame3.ogg";
          type = "Intermediate";

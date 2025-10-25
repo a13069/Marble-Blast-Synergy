@@ -5,7 +5,7 @@ new SimGroup(MissionGroup) {
          time = "0";
          desc = "Fetch the powerups far, far away to proceed through the level.";
          name = "Detours";
-         level = "28";
+         level = "29";
          goldTime = "110000";
          music = "resilience.ogg";
          type = "Intermediate";

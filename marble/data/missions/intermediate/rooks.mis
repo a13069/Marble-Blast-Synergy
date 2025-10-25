@@ -5,7 +5,7 @@ new SimGroup(MissionGroup) {
          time = "0";
          desc = "Survive on this humongous and chaotic chessboard.";
          name = "Rooks";
-         level = "30";
+         level = "28";
          music = "resilience.ogg";
          note = "Rooks, made in Jan 13, 2025.";
          type = "Intermediate";

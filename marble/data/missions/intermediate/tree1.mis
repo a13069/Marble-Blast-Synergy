@@ -1,0 +1,209 @@
+
+//--- OBJECT WRITE BEGIN ---
+new SimGroup(MissionGroup) {
+   new ScriptObject(MissionInfo) {
+         time = "0";
+         desc = "Climb up the tall tree to finish this forest-themed realm!";
+         name = "Tree Scaling";
+         level = "20";
+         goldTime = "80000";
+         note = "Tree Scaling, made in Jun 15, 2025.";
+         music = "loading.ogg";
+         type = "Intermediate";
+   };
+
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 7.45949e-031 1.3684e-038";
+      fogVolume2 = "-1 1.07208e-014 8.756e-014";
+      fogVolume3 = "-1 5.1012e-010 2.05098e-008";
+      materialList = "~/data/skies/rainforest.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 0.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 0.000004";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 14435505.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/intermediate/tree1_trimmed.dif";
+      showTerrainInside = "0";
+   };
+
+   new StaticShape() {
+      position = "0 -20 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "StartPad";
+   };
+   new Item() {
+      position = "-4.5 -6.5 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "7 4 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-7.5 -4 11.25";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-6 6 13.25";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "8 -1.5 14.25";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "0.5 -8 12.75";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "3.5 7.5 14.75";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "8.75 -4 40.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-7.25 -7 40.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-3.25 8 40.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "0 0 43";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "EndPad";
+   };
+   new Item() {
+      position = "-5 -7 29.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-9 3 29.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "4.5 10.5 29.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "5.5 -7.5 29.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+
+   new Trigger(Bounds) {
+      position = "-52.0 52.0 -32.0";
+      rotation = "1 0 0 0";
+      scale = "104.0 104.0 103.0";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+};
+//--- OBJECT WRITE END ---
+

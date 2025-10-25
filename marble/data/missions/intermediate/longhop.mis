@@ -1,17 +1,17 @@
 
 //--- OBJECT WRITE BEGIN ---
 new SimGroup(MissionGroup) {
-
    new ScriptObject(MissionInfo) {
-         desc = "Catch the gravity modifiers and aim for the water!";
-         level = "30";
-         note = "Catch and Aim, made in Jan 26, 2025.";
-         name = "Catch and Aim";
          time = "0";
-         music = "resilience.ogg";
+         desc = "Jump between the platforms with the help of the super jumps.";
+         name = "Long Jumping";
+         level = "15";
+         note = "Long Jumping, made in Mar 29, 2025.";
+         goldTime = "50000";
+         music = "loading.ogg";
          type = "Intermediate";
-         goldTime = "55000";
    };
+
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
       flightCeiling = "300";
@@ -37,7 +37,7 @@ new SimGroup(MissionGroup) {
       fogVolume1 = "-1 7.45949e-031 1.3684e-038";
       fogVolume2 = "-1 1.07208e-014 8.756e-014";
       fogVolume3 = "-1 5.1012e-010 2.05098e-008";
-      materialList = "~/data/skies/starfield.dml";
+      materialList = "~/data/skies/rainforest.dml";
       windVelocity = "1 0 0";
       windEffectPrecipitation = "0";
       noRenderBans = "1";
@@ -54,283 +54,332 @@ new SimGroup(MissionGroup) {
       position = "0 0 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      interiorFile = "~/data/interiors/intermediate/catchandaim_trimmed.dif";
+      interiorFile = "~/data/interiors/intermediate/longhop_trimmed.dif";
       showTerrainInside = "0";
    };
-   new StaticShape(StartPoint) {
-      position = "1 1 0";
+
+   new InteriorInstance() {
+      position = "0 0 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "StartPad";
+      interiorFile = "~/data/interiors/intermediate/longhop_decor.dif";
+      showTerrainInside = "0";
    };
-   new Item() {
-      position = "1 15 2";
-      rotation = "0 -1 0 90.0002";
-      scale = "1 1 1";
-      dataBlock = "AntiGravityItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new Item() {
-      position = "11 53 2";
+
+   new StaticShape() {
+      position = "0 0 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "AntiGravityItem";
+      datablock = "StartPad";
+   };
+   new Item() {
+      position = "0 24 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
       collideable = "0";
       static = "1";
       rotate = "1";
    };
    new Item() {
-      position = "-48 65 8";
-      rotation = "-1 0 0 89.9801";
+      position = "0 24 0.5";
+      rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "AntiGravityItem";
+      datablock = "SuperJumpItem";
       collideable = "0";
       static = "1";
       rotate = "1";
    };
    new Item() {
-      position = "-67 49 13.5";
-      rotation = "1 1.32679e-006 1.32679e-006 180";
+      position = "0 0 0.5";
+      rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "AntiGravityItem";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "24 32 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "24 32 0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "8 48 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "8 48 0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-16 40 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-16 40 0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-24 16 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-24 16 0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "16 72 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "16 72 0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-8 72 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-8 72 0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-32 64 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-32 64 0.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-12 56 14";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-12 56 14.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-14 28 14";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-14 28 14.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "10 38 14";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "10 38 14.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "12 12 14";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "12 12 14.5";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "SuperJumpItem";
       collideable = "0";
       static = "1";
       rotate = "1";
    };
    new StaticShape() {
-      position = "-67 44 12";
+      position = "-4 42 28";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "CheckpointPad";
+      datablock = "EndPad";
    };
    new Item() {
-      position = "-67 53 14";
-      rotation = "-1 0 0 89.9801";
-      scale = "1 1 1";
-      dataBlock = "ArrowItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new StaticShape() {
-      position = "-67 35 12";
+      position = "-4 42 27";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "DuctFan";
-   };
-   new Item() {
-      position = "-67 31.5 14.5";
-      rotation = "0 -1 0 34";
-      scale = "1 1 1";
-      dataBlock = "ArrowItem";
+      datablock = "TimeTravelItem";
       collideable = "0";
       static = "1";
       rotate = "1";
+      timeBonus = "7500";
    };
    new Item() {
-      position = "-65 35 18";
+      position = "20.5 52 14";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "AntiGravityItem";
+      datablock = "TimeTravelItem";
       collideable = "0";
       static = "1";
       rotate = "1";
+      timeBonus = "4000";
    };
    new Item() {
-      position = "-67 44 12.5";
+      position = "-29 40 14";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "GemItem";
+      datablock = "TimeTravelItem";
       collideable = "0";
       static = "1";
       rotate = "1";
+      timeBonus = "4000";
    };
    new Item() {
-      position = "-36 33 36";
-      rotation = "-1 0 0 89.9801";
-      scale = "1 1 1";
-      dataBlock = "AntiGravityItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new Item() {
-      position = "-35.5 36.5 35";
-      rotation = "-1 0 0 89.9801";
-      scale = "1 1 1";
-      dataBlock = "ArrowItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new Item() {
-      position = "-5 5 18";
-      rotation = "1 0 0 89.9801";
-      scale = "1 1 1";
-      dataBlock = "AntiGravityItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new Item() {
-      position = "-5 8 18";
-      rotation = "0.430646 0.793151 0.430645 103.161";
-      scale = "1 1 1";
-      dataBlock = "ArrowItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new Item() {
-      position = "-16.5 43.5 -3";
-      rotation = "0 -1 0 90.0002";
-      scale = "1 1 1";
-      dataBlock = "AntiGravityItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new Item() {
-      position = "17.5 53.5 4";
-      rotation = "1 1.32679e-006 1.32679e-006 180";
-      scale = "1 1 1";
-      dataBlock = "AntiGravityItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new Item() {
-      position = "17.5 53.5 0";
-      rotation = "1 1.32679e-006 1.32679e-006 180";
-      scale = "1 1 1";
-      dataBlock = "AntiGravityItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new StaticShape() {
-      position = "13 59 -19.5";
-      rotation = "0 0 1 180";
-      scale = "1 1 1";
-      dataBlock = "CheckpointPad";
-   };
-   new Item() {
-      position = "5 59 -19";
+      position = "14 13.5 10";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "SuperJumpItem";
+      datablock = "TimeTravelItem";
       collideable = "0";
       static = "1";
       rotate = "1";
+      timeBonus = "3000";
    };
    new Item() {
-      position = "5 59 -15.5";
+      position = "-12 56 10";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "ArrowItem";
+      datablock = "TimeTravelItem";
       collideable = "0";
       static = "1";
       rotate = "1";
+      timeBonus = "3000";
    };
    new Item() {
-      position = "5 59 -12.5";
-      rotation = "-1 0 0 89.9801";
+      position = "4 63 14";
+      rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "AntiGravityItem";
+      datablock = "TimeTravelItem";
       collideable = "0";
       static = "1";
       rotate = "1";
+      timeBonus = "3000";
    };
    new Item() {
-      position = "5 19 30";
-      rotation = "1 0 0 89.9801";
+      position = "-8.5 12 14";
+      rotation = "1 0 0 0";
       scale = "1 1 1";
-      dataBlock = "HelicopterItem";
+      datablock = "TimeTravelItem";
       collideable = "0";
       static = "1";
       rotate = "1";
+      timeBonus = "3000";
    };
-   new Item() {
-      position = "5 21 36";
-      rotation = "0 1 0 90.0002";
-      scale = "1 1 1";
-      dataBlock = "AntiGravityItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new Item() {
-      position = "3.5 22 38";
-      rotation = "1 0 0 46";
-      scale = "1 1 1";
-      dataBlock = "ArrowItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new Item() {
-      position = "-5 5 41";
-      rotation = "1 0 0 89.9801";
-      scale = "1 1 1";
-      dataBlock = "GemItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new Item() {
-      position = "-12 55 27.5";
-      rotation = "-1 0 0 89.9801";
-      scale = "1 1 1";
-      dataBlock = "AntiGravityItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new Item() {
-      position = "-19.5 55 58";
-      rotation = "0 -1 0 88";
-      scale = "1 1 1";
-      dataBlock = "HelicopterItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new Item() {
-      position = "-19.5 55 62";
-      rotation = "0 -1 0 90.0002";
-      scale = "1 1 1";
-      dataBlock = "GemItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new StaticShape(EndPoint) {
-      position = "1 32.5 -23";
-      rotation = "1 4.81813e-007 8.88862e-007 89.7046";
-      scale = "1 1 1";
-      dataBlock = "EndPad";
-   };
+
    new Trigger(Bounds) {
-      position = "-98.5 96.5 -54.5";
+      position = "-64.0 104.0 -28.5";
       rotation = "1 0 0 0";
-      scale = "151 127 155";
+      scale = "120.0 136.0 84.5";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-   };
-   new Trigger() {
-      position = "7.2 38 -2.6";
-      rotation = "1 0 0 0";
-      scale = "10 10 10";
-      dataBlock = "HelpTrigger";
-      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-         text = "Catch the gravity modifier in the air if you haven\'t got any gems yet. Roll off the ege if you have two.";
-   };
-   new AudioProfile(MusicProfile) {
-      fileName = "~/data/sound/Shell.ogg";
-      description = "AudioMusic";
-      preload = "0";
    };
 };
 //--- OBJECT WRITE END ---

@@ -5,7 +5,7 @@ new SimGroup(MissionGroup) {
          time = "0";
          desc = "Be decisive, for any hesitation will make you fall into the abyss below!";
          name = "Trapdoor Bridges";
-         level = "15";
+         level = "13";
          music = "loading.ogg";
          goldTime = "60000";
          note = "Trapdoor Bridges, made in Dec 29, 2024.";
