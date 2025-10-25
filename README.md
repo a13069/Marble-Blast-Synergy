@@ -26,7 +26,7 @@ This mod is currently unfinished, and the author wishes to continue working on i
     - All the gameplay elements planned (Lava, Water powerup, Powerup Timer, Checkpoint, Bouncy floor etc.) for this mod are completed.
 - Levels
     - Beginner: 30 planned, 30 finished. While the levels are all finished, some levels may lack indicators, help texts etc. and may be confusing to play.
-    - Intermediate: 30 planned, 20 finished. They are unstable now and some may be changed, reordered, or be moved to other realms (or even demoted to custom) in the future.
+    - Intermediate: 30 planned, 30 finished. Many intermediate levels' awesome times are still underterminited, so please suggest them and give awesome hints! 
     - Advanced: 30 planned.
     - Expert: 10 planned.
     - Some levels lack awesome times, as they're still undetermined yet. Many also lack awesome hints. Feel free to make suggestions!

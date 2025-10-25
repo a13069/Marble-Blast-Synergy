@@ -23,7 +23,7 @@ function HelpCreditsGui::setPage(%this, %page)
                  @ "\n\n" @
                  "The main new feature of this mod is the addition of a new hazard (lava) and a new powerup (water) that counters it. Play the first few beginner levels to see how they work. There are other gameplay features in this mod, such as checkpoints, bouncy floors, powerup timer, etc., but they are common in other mods as well."
                  @ "\n\n" @
-                 "This mod is currently released in an unfinished state - However, with 50 levels (over 60 if you count scrapped ones) and all its planned gameplay features implemented, the author believes it is able to stand on its own, even in its current unfinished state. The author also wishes to continue working on this mod, but there isn\'t a set schedule for it.";
+                 "This mod is currently released in an unfinished state - However, with 60 levels (over 70 if you count scrapped ones) and all its planned gameplay features implemented, the author believes it is able to stand on its own, even in its current unfinished state. The author also wishes to continue working on this mod, but there isn\'t a set schedule for it.";
       case 3:
          %text = "<font:Lucida Sans:24><color:FFFFFF><just:center>About the Levels (1)" @
                  "<font:Lucida Sans:18><just:left>\n\n" @
