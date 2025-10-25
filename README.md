@@ -6,10 +6,8 @@ A (imcomplete) Marble Blast Gold mod by a13069
 [List of Levels](https://github.com/a13069/Marble-Blast-Synergy/blob/master/level_index.md)
 
 ## How to play
-1. On the top of this page, click "Code"
-![step1](https://github.com/a13069/Marble-Blast-Synergy/blob/master/howto1.png)
-2. Click on "Download ZIP" to download all the files
-![step2](https://github.com/a13069/Marble-Blast-Synergy/blob/master/howto2.png)
+1. Go to [the latest release page](https://github.com/a13069/Marble-Blast-Synergy/releases/tag/0.5.0)
+2. Download the appropriate ZIP file in the release
 3. Extract the ZIP to somewhere you like
 4. (Optional) If you already have a older version of Marble Blast Synergy:
     >For the following steps, replace \<synergy-old> and \<synergy-new> with the locations of your "old Marble Blast Synergy install" and "the folder you just extracted respectively.
@@ -26,7 +24,7 @@ This mod is currently unfinished, and the author wishes to continue working on i
     - All the gameplay elements planned (Lava, Water powerup, Powerup Timer, Checkpoint, Bouncy floor etc.) for this mod are completed.
 - Levels
     - Beginner: 30 planned, 30 finished. While the levels are all finished, some levels may lack indicators, help texts etc. and may be confusing to play.
-    - Intermediate: 30 planned, 30 finished. Many intermediate levels' awesome times are still underterminited, so please suggest them and give awesome hints! 
+    - Intermediate: 30 planned, 30 finished. Many intermediate levels' awesome times are still undetermined, so please suggest them and give awesome hints! 
     - Advanced: 30 planned.
     - Expert: 10 planned.
     - Some levels lack awesome times, as they're still undetermined yet. Many also lack awesome hints. Feel free to make suggestions!
