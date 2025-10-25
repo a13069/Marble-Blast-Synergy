@@ -6,10 +6,10 @@ new SimGroup(MissionGroup) {
          desc = "Fetch the powerups far, far away to proceed through the level.";
          name = "Detours";
          level = "29";
-         goldTime = "110000";
+         goldTime = "135000";
          music = "resilience.ogg";
          type = "Intermediate";
-         note = "Detours, made in Feb 15, 2025. If the author was willing to add a few gems, this level\'s (intended) route would be much less convoluted...";
+         note = "Detours, made in Feb 15, 2025. When making this mod, the author set out to include gemless level in every realm (so as not to overrely on gems for level design), and thus this level was made to be a gemless level. This level\'s convoluted path is the result of the author trying to constrain the path without any gems.";
          startHelpText = "You probably want a shock absorber here... where is it?";
    };
 

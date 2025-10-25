@@ -10,7 +10,7 @@ new SimGroup(MissionGroup) {
          level = "26";
          music = "resilience.ogg";
          type = "Intermediate";
-         note = "Speed Control, made in Oct 19, 2025. There was a three month gap in making this level.";
+         note = "Speed Control, made in Oct 19, 2025. The mod entered a hiatus of three months during this level\'s development.";
    };
 
    new MissionArea(MissionArea) {

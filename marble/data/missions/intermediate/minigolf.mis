@@ -7,9 +7,9 @@ new SimGroup(MissionGroup) {
          name = "Marble Mini Golf: Synergy";
          level = "11";
          music = "loading.ogg";
-         note = "Marble Mini Golf: Synergy, made in Dec 7, 2024. The precise jumping are there so this level would be hard enough for an intermediate level...";
+         note = "Marble Mini Golf: Synergy, made in Dec 7, 2024. The precise jumping are there so this level would be hard enough for an intermediate level.";
          type = "Intermediate";
-         goldTime = "30000";
+         goldTime = "32000";
          startHelpText = "To fit the theme, the water in the puddles has been replaced with lava.";
    };
 

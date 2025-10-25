@@ -6,7 +6,7 @@ new SimGroup(MissionGroup) {
          desc = "Climb up the tall tree to finish this forest-themed realm!";
          name = "Tree Scaling";
          level = "20";
-         goldTime = "80000";
+         goldTime = "100000";
          note = "Tree Scaling, made in Jun 15, 2025.";
          music = "loading.ogg";
          type = "Intermediate";

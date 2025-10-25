@@ -7,7 +7,7 @@ new SimGroup(MissionGroup) {
          name = "Trapdoor Bridges";
          level = "13";
          music = "loading.ogg";
-         goldTime = "60000";
+         goldTime = "70000";
          note = "Trapdoor Bridges, made in Dec 29, 2024.";
          type = "Intermediate";
    };

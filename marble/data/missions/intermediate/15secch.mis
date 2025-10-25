@@ -3,7 +3,7 @@
 new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          time = "0";
-         goldTime = "115000";
+         goldTime = "120000";
          desc = "Race through each challange with fifteen seconds of water each.";
          name = "Fifteen-second Races";
          level = "18";

@@ -6,7 +6,7 @@ new SimGroup(MissionGroup) {
          time = "0";
          name = "Connect Gems!";
          level = "23";
-         goldTime = "65000";
+         goldTime = "70000";
          AwesomeTime = "50000";
          AwesomeHint = "You can jump directly from some gem platforms to others and land safely, take advantage of it.";
          music = "resilience.ogg";

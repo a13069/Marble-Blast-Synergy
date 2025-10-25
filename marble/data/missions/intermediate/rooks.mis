@@ -9,7 +9,7 @@ new SimGroup(MissionGroup) {
          music = "resilience.ogg";
          note = "Rooks, made in Jan 13, 2025.";
          type = "Intermediate";
-         goldTime = "35000";
+         goldTime = "40000";
          AwesomeTime = "12000";
          AwesomeHint = "Jump + Super Jump directly under a time travel and collect both the time travel and the gem in one go!";
    };

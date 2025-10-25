@@ -7,7 +7,7 @@ new SimGroup(MissionGroup) {
          name = "Ice Fortress";
          level = "6";
          music = "puzzlegame3.ogg";
-         goldTime = "48000";
+         goldTime = "55000";
          note = "Ice Fortress, made in Dec 23, 2024. This level took the author a couple weeks to make.";
          startHelpText = "There are four gems on each floor.";
          type = "Intermediate";

@@ -9,6 +9,7 @@ new SimGroup(MissionGroup) {
          level = "25";
          music = "resilience.ogg";
          type = "Intermediate";
+         goldTime = "75000";
    };
 
    new MissionArea(MissionArea) {

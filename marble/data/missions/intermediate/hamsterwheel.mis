@@ -9,7 +9,7 @@ new SimGroup(MissionGroup) {
          level = "21";
          music = "resilience.ogg";
          type = "Intermediate";
-         goldTime = "42000";
+         goldTime = "48000";
          note = "Cosmic Hamster Wheel, made in Dec 28, 2024.";
    };
    new MissionArea(MissionArea) {

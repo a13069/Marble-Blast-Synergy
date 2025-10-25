@@ -7,7 +7,7 @@ new SimGroup(MissionGroup) {
          name = "Powerup Playground";
          note = "Powerup Playground, made in May 4, 2025.";
          level = "16";
-         goldTime = "120000";
+         goldTime = "140000";
          music = "loading.ogg";
          type = "Intermediate";
    };

@@ -10,7 +10,7 @@ new SimGroup(MissionGroup) {
          time = "0";
          music = "resilience.ogg";
          type = "Intermediate";
-         goldTime = "55000";
+         goldTime = "70000";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";

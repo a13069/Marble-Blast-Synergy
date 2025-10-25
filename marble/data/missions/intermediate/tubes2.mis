@@ -9,7 +9,7 @@ new SimGroup(MissionGroup) {
          desc = "No gems, no powerups, just you, the finish, and a bunch of tubes in between. Can you make it?";
          name = "Tube Hopping";
          startHelpText = "It is advised to plan ahead before you make your jump.";
-         note = "Tube Hopping, made in Feb 8, 2025. Although the author has a code that makes levels automatically from .csx files, this level is made by assembling level parts on Notepad...";
+         note = "Tube Hopping, made in Feb 8, 2025. Although the author has a script that makes levels automatically from .csx files, this level is made by assembling level parts on Notepad.";
          music = "loading.ogg";
    };
    new MissionArea(MissionArea) {

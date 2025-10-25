@@ -9,7 +9,7 @@ new SimGroup(MissionGroup) {
          goldTime = "40000";
          AwesomeTime = "25000";
          AwesomeHint = "Don\'t spend too much time on each powerup corner and you\'ll be fine.";
-         note = "Knight of the Marble, made in Jul 28, 2023. This level is inspired by MBP\'s \"King of the Marble\", where the level looks like the possible moves of a chess king from the center. So this level takes an obvious extension...";
+         note = "Knight of the Marble, made in Jul 28, 2023. This level is inspired by MBP\'s \"King of the Marble\", where the level looks like the possible moves of a chess king from the center. So this level takes an obvious extension.";
          startHelpText = "Go to the center after you\'ve collected all the gems!";
          name = "Knight of the Marble";
          music = "puzzlegame3.ogg";
