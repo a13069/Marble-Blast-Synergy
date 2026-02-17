@@ -1,0 +1,419 @@
+
+new SimGroup(MissionGroup) {
+   new ScriptObject(MissionInfo) {
+         type = "Advanced";
+         time = "0";
+         desc = "Fly with Super Speeds!";
+         AwesomeHint = "It\'s not about how fast you go, but about how many times you try. Be consistent!";
+         level = "7";
+         AwesomeTime = "50000";
+         goldTime = "90000";
+         name = "Ring Launch";
+         music = "temptation.ogg";
+         note = "Ring Launch, made in Feb 15, 2026.";
+   };
+
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 1 0";
+      fogVolume2 = "-1 1 0";
+      fogVolume3 = "-1 1 0";
+materialList = "~/data/skies/rockq3.dml";
+
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 1.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 1.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 0.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+
+   new StaticShape() {
+      position = "0 0 0";
+      rotation = "0 0 1 0";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "StartPad";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/2x2platform_30.dif";
+      showTerrainInside = "0";
+   };
+
+
+   new InteriorInstance() {
+      position = "0 10 -0.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+   new Item() {
+      position = "0 4 0.25";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "SuperSpeedItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+
+   new InteriorInstance() {
+      position = "0 60 -0.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+   new InteriorInstance() {
+      position = "0 100 -0.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+   new InteriorInstance() {
+      position = "0 115 -0.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+   new InteriorInstance() {
+      position = "0 122 6";
+      rotation = "1 0 0 -90";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+   new Item() {
+      position = "0 122 6";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+      noRespawn = "1";
+      skin = "mbg";
+      timeBonus = "5000";
+   };
+
+   new Item() {
+      position = "-5 115 0";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "SuperSpeedItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+
+
+   new InteriorInstance() {
+      position = "50 115 -0.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+   new InteriorInstance() {
+      position = "-10 115 0";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/2x2platform_30.dif";
+      showTerrainInside = "0";
+   };
+   new StaticShape() {
+      position = "-10 115 0";
+      rotation = "0 0 1 90";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "CheckpointPad";
+   };
+
+   new InteriorInstance() {
+      position = "90 130 -0.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+   new InteriorInstance() {
+      position = "120 150 -0.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "120 150 -2";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/2x2platform_30.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "126.062 153.5 6";
+      rotation = "0.5 -0.866 0 -90";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+   new Item() {
+      position = "126.062 153.5 6";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+      noRespawn = "1";
+      skin = "mbg";
+      timeBonus = "5000";
+   };
+
+   new StaticShape() {
+      position = "120 150 -2";
+      rotation = "0 0 1 -45";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "CheckpointPad";
+   };
+
+   new Item() {
+      position = "120 150 -1";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "SuperSpeedItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+
+
+   new InteriorInstance() {
+      position = "95 175 2.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+   new InteriorInstance() {
+      position = "85 185 2.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+
+
+   new Item() {
+      position = "81.5 181.5 3";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "SuperSpeedItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+
+
+
+   new InteriorInstance() {
+      position = "110 210 4.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+   new InteriorInstance() {
+      position = "130 220 5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/2x2platform_30.dif";
+      showTerrainInside = "0";
+   };
+
+   new StaticShape() {
+      position = "130 220 5";
+      rotation = "0 0 1 -90";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "CheckpointPad";
+   };
+
+   new Item() {
+      position = "125 220 5";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "SuperSpeedItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new InteriorInstance() {
+      position = "120 220 4.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+   new InteriorInstance() {
+      position = "60 250 -0.5";
+      rotation = "-2 1 0 -10";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+
+   new InteriorInstance() {
+      position = "5 301 -4.5";
+      rotation = "-2 1 0 -5";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+
+   new InteriorInstance() {
+      position = "-20 339 -4.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+
+   new Item() {
+      position = "-20 339 -4";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+      noRespawn = "1";
+      skin = "mbg";
+      timeBonus = "5000";
+   };
+
+   new InteriorInstance() {
+      position = "-23 355 -4.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+   new InteriorInstance() {
+      position = "-35 344 -4.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+
+
+
+   new InteriorInstance() {
+      position = "-45 354 -4.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+
+   new InteriorInstance() {
+      position = "-45 354 -0.5";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/ring20.dif";
+      showTerrainInside = "0";
+   };
+
+   new Item() {
+      position = "-45 354 0";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+      noRespawn = "1";
+      skin = "mbg";
+      timeBonus = "5000";
+   };
+
+
+   new StaticShape() {
+      position = "-45 354 -6";
+      rotation = "0 0 1 0";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "EndPad";
+   };
+   new InteriorInstance() {
+      position = "-45 354 -6";
+      rotation = "0 0 1 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/2x2platform_30.dif";
+      showTerrainInside = "0";
+   };
+
+
+   new Trigger() {
+      position = "-100.000000 500.000000 -50.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "400.000000 600.000000 340.000000";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+
+
+
+
+
+
+
+
+
+
+};
+

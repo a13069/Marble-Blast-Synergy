@@ -11,6 +11,8 @@ new SimGroup(MissionGroup) {
          goldTime = "55000";
          startHelpText = "To go straight or go diagonal, that\'s the question...";
          type = "Intermediate";
+         AwesomeTime = "40000";
+         AwesomeHint = "Cut some corners and go as smooth as possible.";
    };
 
    new MissionArea(MissionArea) {

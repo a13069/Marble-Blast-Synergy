@@ -1,0 +1,238 @@
+
+new SimGroup(MissionGroup) {
+   new ScriptObject(MissionInfo) {
+         type = "Tutorial";
+         time = "0";
+         desc = "Hazards aren\'t always a hinderance. Learn to harness their power!";
+         level = "9";
+         name = "Hazards II";
+         music = "shell.ogg";
+         note = "Hazards II, made in Nov 22, 2025.";
+         startHelpText = "Jump onto a bumper to reach the platform before you!";
+   };
+
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 1 0";
+      fogVolume2 = "-1 1 0";
+      fogVolume3 = "-1 1 0";
+materialList = "~/data/skies/underwater.dml";
+
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 1.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 1.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 0.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/tutorial/usehazards0.dif";
+      showTerrainInside = "0";
+   };
+
+   new StaticShape() {
+      position = "0.000000 42.000000 10.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "DuctFan";
+   };
+   new StaticShape() {
+      position = "4.000000 46.000000 10.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "DuctFan";
+   };
+   new StaticShape() {
+      position = "-4.000000 46.000000 10.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "DuctFan";
+   };
+   new StaticShape() {
+      position = "-10.000000 50.000000 16.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "DuctFan";
+   };
+   new StaticShape() {
+      position = "10.000000 50.000000 16.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "DuctFan";
+   };
+   new StaticShape() {
+      position = "0.000000 0.000000 22.000000";
+      rotation = "0.0000 0.0000 1.0000 -180.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "EndPad";
+   };
+   new Trigger() {
+      position = "-12.000000 32.000000 7.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "24.099997 11.000000 12.000000";
+      dataBlock = "HelpTrigger";
+      text = "Ram into a mine and let the explosion bring you to the platform above!";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "-12.000000 52.000000 10.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "24.099997 17.600000 9.360000";
+      dataBlock = "HelpTrigger";
+      text = "Jump onto a fan and ride on its wind!";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "-12.000000 43.000000 22.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "24.099997 11.000000 12.000000";
+      dataBlock = "HelpTrigger";
+      text = "Let the tornado throw you to the finish!";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "-21.000000 65.000000 -10.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "42.000000 85.000000 70.000000";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new StaticShape() {
+      position = "0.000000 30.000000 7.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "2.000000 30.000000 7.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "4.000000 30.000000 7.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "6.000000 30.000000 7.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "8.000000 30.000000 7.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "10.000000 30.000000 7.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "-2.000000 30.000000 7.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "-4.000000 30.000000 7.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "-6.000000 30.000000 7.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "-8.000000 30.000000 7.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "-10.000000 30.000000 7.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "0.000000 0.000000 4.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "StartPad";
+   };
+   new StaticShape() {
+      position = "0.000000 28.000000 22.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "Tornado";
+   };
+   new StaticShape() {
+      position = "-8.000000 14.000000 4.099092";
+      rotation = "0.0000 0.0000 1.0000 -55.1218";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "-4.000000 14.000000 4.099092";
+      rotation = "0.0000 -0.0000 -1.0000 -86.1133";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "0.000000 14.000000 4.099092";
+      rotation = "0.0000 0.0000 1.0000 -81.1463";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "4.000000 14.000000 4.099092";
+      rotation = "0.0000 -0.0000 -1.0000 -52.9222";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TriangleBumper";
+   };
+   new StaticShape() {
+      position = "8.000000 14.000000 4.099092";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TriangleBumper";
+   };
+
+};
+

@@ -1,0 +1,169 @@
+
+new SimGroup(MissionGroup) {
+   new ScriptObject(MissionInfo) {
+         type = "Tutorial";
+         time = "0";
+         desc = "Make your powerups more powerful.";
+         level = "7";
+         name = "Powerups III";
+         note = "Powerups III, made in Nov 19, 2025.";
+         music = "shell.ogg";
+         startHelpText = "Hold your mouse button to activate two Super Speeds back to back!";
+   };
+
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 1 0";
+      fogVolume2 = "-1 1 0";
+      fogVolume3 = "-1 1 0";
+materialList = "~/data/skies/underwater.dml";
+
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 1.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 1.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 0.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/tutorial/morepower0.dif";
+      showTerrainInside = "0";
+   };
+
+   new StaticShape() {
+      position = "-162.000000 0.000000 48.000000";
+      rotation = "0.0000 -0.0000 -1.0000 -90.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "EndPad";
+   };
+   new Trigger() {
+      position = "-155.000000 8.000000 22.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "17.900000 16.000000 21.600000";
+      dataBlock = "HelpTrigger";
+      text = "Jump before using Super Jump to jump even higher!";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "-170.000000 8.000000 38.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "12.000000 16.000000 4.800000";
+      dataBlock = "HelpTrigger";
+      text = "The next challenge requires this trick.\nActivate the Shock Absorber and ram into the wall to climb it!";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "-202.000000 8.000000 40.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "10.000000 16.000000 10.000000";
+      dataBlock = "HelpTrigger";
+      text = "Activating multiple powerups of the same type extends its activation time!";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "-230.000000 30.000000 -20.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "272.000000 60.000000 120.000000";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Item() {
+      position = "-162.000000 0.000000 38.250000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "ShockAbsorberItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-198.000000 0.000000 40.250000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "ShockAbsorberItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-198.000000 -4.000000 40.250000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "ShockAbsorberItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-198.000000 4.000000 40.250000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "ShockAbsorberItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new StaticShape() {
+      position = "4.000000 0.000000 0.000000";
+      rotation = "0.0000 0.0000 1.0000 -90.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "StartPad";
+   };
+   new Item() {
+      position = "-149.000000 0.000000 22.200001";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-15.000000 0.000000 0.250000";
+      rotation = "0.0000 1.0000 0.0000 -2.8125";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "SuperSpeedItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-11.000000 0.000000 0.250000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "SuperSpeedItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+
+};
+

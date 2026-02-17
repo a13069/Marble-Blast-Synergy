@@ -10,6 +10,8 @@ new SimGroup(MissionGroup) {
          level = "7";
          music = "puzzlegame3.ogg";
          type = "Intermediate";
+         AwesomeTime = "33000";
+         AwesomeHint = "There is only one gem not in the center of this level, which means most of the outer parts is unnecessary.";
    };
 
    new MissionArea(MissionArea) {

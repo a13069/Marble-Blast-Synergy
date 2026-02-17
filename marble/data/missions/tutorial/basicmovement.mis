@@ -1,0 +1,138 @@
+
+new SimGroup(MissionGroup) {
+   new ScriptObject(MissionInfo) {
+         type = "Tutorial";
+         time = "0";
+         desc = "A level for those who\'ve never played Marble Blast before. Learn the basics of the game!";
+         level = "1";
+         name = "Basic Movement";
+         music = "shell.ogg";
+         startHelpText = "Welcome to Marble blast! Press <func:bind moveforward> to move forward.";
+         note = "Basic Movement, made in Oct 30, 2025. The tutorial category exists purely for completeness (or there will not be a realm corresponding to Ball Revamped V Synergy\'s initial realm), and its level aren\'t considered a proper part of the game (See the statistics tab, the tutorial levels aren\'t counted in the grand total). After completing the intermediate levels, the author decided to switch to Blender to have finer control over the shapes, and the tutorial levels were made so the author can get the hang of it.";
+   };
+
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 1 0";
+      fogVolume2 = "-1 1 0";
+      fogVolume3 = "-1 1 0";
+      materialList = "~/data/skies/underwater.dml";
+
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 1.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 1.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 0.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/tutorial/basicmovement0.dif";
+      showTerrainInside = "0";
+   };
+
+   new StaticShape() {
+      position = "16.000000 -32.000000 12.000000";
+      rotation = "0.0000 -0.0000 -1.0000 -180.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "EndPad";
+   };
+   new Trigger() {
+      position = "20.000000 4.000000 0.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "8.000000 8.000000 4.000000";
+      dataBlock = "HelpTrigger";
+      text = "Press <func:bind moveright> to move right.";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "20.000000 -36.000000 0.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "8.000000 8.000000 5.000000";
+      dataBlock = "HelpTrigger";
+      text = "Press <func:bind movebackward> to move backwards.";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "4.000000 -36.000000 0.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "8.000000 8.000000 4.000000";
+      dataBlock = "HelpTrigger";
+      text = "Press <func:bind moveleft> to move left.";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "4.000000 -20.000000 0.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "8.000000 8.000000 4.000000";
+      dataBlock = "HelpTrigger";
+      text = "You can also move your mouse or press <func:bind panUp>, <func:bind panDown>, <func:bind turnRight> and <func:bind turnLeft> to move your camera around and change your direction of movement.";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "4.000000 -12.000000 0.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "8.000000 8.000000 4.000000";
+      dataBlock = "HelpTrigger";
+      text = "Press <func:bind jump> to jump.";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "-4.000000 -12.000000 1.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "8.000000 8.000000 4.000000";
+      dataBlock = "HelpTrigger";
+      text = "If you fall off, you will have to restart the level. Be careful!";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "-4.000000 -20.000000 2.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "8.000000 8.000000 4.000000";
+      dataBlock = "HelpTrigger";
+      text = "Follow the path and go for the finish!";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "-13.000000 23.841333 -5.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "58.100002 86.064011 38.625763";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new StaticShape() {
+      position = "8.000000 0.000000 0.000000";
+      rotation = "0.0000 0.0000 -1.0000 -90.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "StartPad";
+   };
+
+};
+

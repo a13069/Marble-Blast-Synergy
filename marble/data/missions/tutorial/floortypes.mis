@@ -1,0 +1,122 @@
+
+new SimGroup(MissionGroup) {
+
+   new ScriptObject(MissionInfo) {
+         type = "Tutorial";
+         time = "0";
+         desc = "Meet the different floor types of this mod!";
+         level = "3";
+         name = "Floor Types";
+         music = "shell.ogg";
+         startHelpText = "Different surfaces have different properties. Use them to your advantage!";
+         note = "Floor Types, made in Nov 1, 2025. By the way, the author found it funny that almost every Marble Blast mod (except Platinum and PQ), completed or not, features three types of bouncy floor of different level of bounciness. The author deliberately avoided this trope in this mod.";
+   };
+
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 1 0";
+      fogVolume2 = "-1 1 0";
+      fogVolume3 = "-1 1 0";
+materialList = "~/data/skies/underwater.dml";
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 1.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 1.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 0.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/tutorial/floortypes0.dif";
+      showTerrainInside = "0";
+   };
+
+   new Trigger() {
+      position = "16.000000 -27.000000 2.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "6.000000 6.000000 6.000000";
+      dataBlock = "HelpTrigger";
+      text = "Bouncy surface bounces you up whenever you touch it. Use it to reach the heights!";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new StaticShape() {
+      position = "19.000000 -16.000000 10.000000";
+      rotation = "0.0000 0.0000 1.0000 -180.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "EndPad";
+   };
+   new Trigger() {
+      position = "-5.000000 -23.000000 1.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "6.000000 6.000000 6.000000";
+      dataBlock = "HelpTrigger";
+      text = "Grass has a higher friction than normal floor, giving you more control of the marble.";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "9.000000 -5.000000 2.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "6.000000 6.000000 6.000000";
+      dataBlock = "HelpTrigger";
+      text = "Ice is even more slippery than mud! Try jumping on it to get control of the marble.";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "2.000000 -20.000000 6.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "6.000000 6.000000 6.000000";
+      dataBlock = "HelpTrigger";
+      text = "Mud is slippery! Use caution whlie you slide on it.";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new StaticShape() {
+      position = "-2.000000 -2.000000 1.000000";
+      rotation = "0.0000 -0.0000 -1.0000 -180.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "StartPad";
+   };
+   new Trigger() {
+      position = "23.000000 -14.000000 2.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "6.000000 6.000000 20.000000";
+      dataBlock = "HelpTrigger";
+      text = "You won\'t bounce at all on water surfaces. You can also climb steep slopes on it.";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "-15.000000 10.0 -10.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "55 55 50";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+
+};
+

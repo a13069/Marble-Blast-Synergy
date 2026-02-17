@@ -1,0 +1,1162 @@
+
+new SimGroup(MissionGroup) {
+   new ScriptObject(MissionInfo) {
+         type = "Advanced";
+         time = "0";
+         desc = "Complete three laps in this three-layered track.";
+         AwesomeTime = "60000";
+         goldTime = "90000";
+         AwesomeHint = "Start with the middle layer, then the top one, then the bottom one.";
+         level = "5";
+         name = "Three-layered Track";
+         music = "temptation.ogg";
+         note = "Three-layered Track, made in Feb 8, 2026.";
+   };
+
+   new MissionArea(MissionArea) {
+      area = "-360 -648 720 1296";
+      flightCeiling = "300";
+      flightCeilingRange = "20";
+         locked = "true";
+   };
+   new Sky(Sky) {
+      position = "336 136 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      cloudHeightPer[0] = "0";
+      cloudHeightPer[1] = "0";
+      cloudHeightPer[2] = "0";
+      cloudSpeed1 = "0.0001";
+      cloudSpeed2 = "0.0002";
+      cloudSpeed3 = "0.0003";
+      visibleDistance = "500";
+      useSkyTextures = "1";
+      renderBottomTexture = "1";
+      SkySolidColor = "0.600000 0.600000 0.600000 1.000000";
+      fogDistance = "300";
+      fogColor = "0.600000 0.600000 0.600000 1.000000";
+      fogVolume1 = "-1 1 0";
+      fogVolume2 = "-1 1 0";
+      fogVolume3 = "-1 1 0";
+materialList = "~/data/skies/rockq3.dml";
+
+      windVelocity = "1 0 0";
+      windEffectPrecipitation = "0";
+      noRenderBans = "1";
+      fogVolumeColor1 = "128.000000 128.000000 128.000000 1.000000";
+      fogVolumeColor2 = "128.000000 128.000000 128.000000 1.000000";
+      fogVolumeColor3 = "128.000000 128.000000 128.000000 0.000000";
+   };
+   new Sun() {
+      direction = "0.57735 0.57735 -0.57735";
+      color = "0.600000 0.600000 0.600000 1.000000";
+      ambient = "0.400000 0.400000 0.400000 1.000000";
+   };
+   new InteriorInstance() {
+      position = "0 0 0";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/threelaps0.dif";
+      showTerrainInside = "0";
+   };
+
+   new StaticShape() {
+      position = "0.000000 0.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "CheckpointPad";
+   };
+   new StaticShape() {
+      position = "0.000000 0.000000 -10.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "EndPad";
+   };
+   new Item() {
+      position = "0.000000 88.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "GemItem";
+      static = "1";
+      collideable = "0";
+      rotate = "1";
+      noRespawn = "0";
+   };
+   new Item() {
+      position = "0.000000 88.000000 2.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "GemItem";
+      static = "1";
+      collideable = "0";
+      rotate = "1";
+      noRespawn = "0";
+   };
+   new Item() {
+      position = "0.000000 88.000000 -10.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "GemItem";
+      static = "1";
+      collideable = "0";
+      rotate = "1";
+      noRespawn = "0";
+   };
+   new Item() {
+      position = "52.000000 88.000000 -10.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "GemItem";
+      static = "1";
+      collideable = "0";
+      rotate = "1";
+      noRespawn = "0";
+   };
+   new Item() {
+      position = "52.000000 88.000000 2.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "GemItem";
+      static = "1";
+      collideable = "0";
+      rotate = "1";
+      noRespawn = "0";
+   };
+   new Item() {
+      position = "52.000000 88.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "GemItem";
+      static = "1";
+      collideable = "0";
+      rotate = "1";
+      noRespawn = "0";
+   };
+   new Item() {
+      position = "52.000000 0.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "GemItem";
+      static = "1";
+      collideable = "0";
+      rotate = "1";
+      noRespawn = "0";
+   };
+   new Item() {
+      position = "52.000000 0.000000 2.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "GemItem";
+      static = "1";
+      collideable = "0";
+      rotate = "1";
+      noRespawn = "0";
+   };
+   new Item() {
+      position = "52.000000 0.000000 -10.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "GemItem";
+      static = "1";
+      collideable = "0";
+      rotate = "1";
+      noRespawn = "0";
+   };
+   new Item() {
+      position = "49.938046 -0.118707 1.733429";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "HelicopterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "51.831802 85.893188 13.733427";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "HelicopterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "49.828480 0.160868 13.733427";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "HelicopterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "48.987366 56.889412 13.733427";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "HelicopterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "54.862694 30.863012 13.733431";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "HelicopterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Trigger() {
+      position = "-20.000000 121.000000 -20.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "90.000000 150.000000 80.000000";
+      dataBlock = "InBoundsTrigger";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new StaticShape() {
+      position = "46.101894 88.859413 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "45.952587 85.024124 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "43.339565 89.906387 1.999644";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "42.840710 86.715836 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "40.892471 89.453392 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "40.453606 85.894684 1.999642";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "38.465088 90.453445 1.999644";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "35.892357 91.150116 1.999641";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "37.099007 88.675575 1.999644";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "36.489231 85.044754 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "38.755684 86.595840 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "32.341972 85.877258 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "34.550919 87.686325 1.999644";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "33.054005 90.411430 1.999644";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "31.039793 89.213593 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "28.824905 85.840561 1.999642";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "25.492458 86.233055 1.999644";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "27.743103 89.249886 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "26.888546 84.670502 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "25.178932 91.240814 1.999644";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "23.572340 88.350128 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "21.912279 85.118729 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "20.882706 87.337982 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "17.398829 91.209274 1.999642";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "21.299019 90.375153 1.999642";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "18.821070 88.885162 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "17.810413 85.043350 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "15.768703 87.458519 1.999644";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "13.060415 85.987183 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "13.942529 90.136772 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "10.764898 88.198883 1.999643";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "7.840106 86.727127 1.999644";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "6.072951 89.941544 1.999645";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "LandMine";
+   };
+   new StaticShape() {
+      position = "9.000000 3.000000 9.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 10.500000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "12.858127 88.034721 15.300881";
+      rotation = "0.0000 -0.0000 -1.0000 -45.0000";
+      scale = "1.000000 1.000000 4.000000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "19.000000 1.000000 9.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 10.500000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "27.000000 -1.000000 9.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 10.500000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "23.062607 85.642281 13.689648";
+      rotation = "0.0000 -0.0000 -1.0000 -45.0000";
+      scale = "1.000000 1.000000 4.000000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "37.000000 -3.000000 9.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 10.500000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "25.849865 88.000000 8.560575";
+      rotation = "0.0000 1.0000 0.0000 -11.2017";
+      scale = "22.460243 3.800000 0.996671";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "46.373337 88.031944 9.207659";
+      rotation = "0.0000 1.0000 0.0000 -36.1630";
+      scale = "1.298561 3.810000 4.794010";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "26.000000 88.000000 -11.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "22.000000 4.000000 1.000000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "51.000000 74.000000 -13.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 10.000000 1.000000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "51.000000 34.000000 -13.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 10.000000 1.000000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "53.000000 14.000000 -13.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 10.000000 1.000000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "53.000000 54.000000 -13.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 10.000000 1.000000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "40.200630 85.282890 -9.000003";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "32.296432 89.233978 -8.999999";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "25.940052 90.942848 -8.999999";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "21.180187 87.935669 -8.999999";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "8.799904 85.057602 -8.999997";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "15.191974 89.450653 -9.000001";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "44.603188 90.979378 -9.000001";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "33.511215 90.427155 11.492512";
+      rotation = "0.0000 -0.0000 -1.0000 -45.0000";
+      scale = "1.000000 1.000000 4.000000";
+      dataBlock = "Lava";
+   };
+   new StaticShape() {
+      position = "0.000000 0.000000 2.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "StartPad";
+   };
+   new Item() {
+      position = "49.822258 0.051293 -9.812566";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "SuperSpeedItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "51.859241 85.969078 2.187436";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "SuperSpeedItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.953819 64.057259 15.489916";
+      rotation = "0.0000 -0.0000 -0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+      noRespawn = "1";
+      skin = "mbg";
+      timeBonus = "5000";
+   };
+   new Item() {
+      position = "21.257160 87.846268 -7.510088";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+      noRespawn = "1";
+      skin = "mbg";
+      timeBonus = "8000";
+   };
+   new Item() {
+      position = "52.000000 44.000000 20.000000";
+      rotation = "-0.0490 0.0490 -0.9976 -90.1379";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TimeTravelItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+      noRespawn = "1";
+      skin = "mbg";
+      timeBonus = "10000";
+   };
+   new StaticShape() {
+      position = "-1.000000 5.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 7.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 11.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 9.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 17.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 19.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 15.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 13.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 21.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 23.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 27.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 25.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 17.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 19.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 15.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 13.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 29.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 31.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 35.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 33.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 25.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 27.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 23.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 21.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 29.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 31.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 35.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 33.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 41.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 43.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 39.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 37.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 37.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 39.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 43.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 41.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 49.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 51.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 47.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 45.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 45.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 47.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 51.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 49.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 53.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 55.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 59.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 57.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 57.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 59.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 55.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 53.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 65.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 67.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 63.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 61.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 61.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 63.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 67.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 65.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 81.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 83.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 79.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "1.000000 77.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 77.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 79.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 83.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-1.000000 81.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 69.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 71.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 75.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "-3.000000 73.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 73.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 75.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 71.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new StaticShape() {
+      position = "3.000000 69.000000 14.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "TrapDoor";
+      skin = "skin1";
+   };
+   new Item() {
+      position = "2.024528 88.043892 14.300000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "2.024528 88.043892 -9.700000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "52.164013 86.003487 -9.700001";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "WaterItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+
+};
+
