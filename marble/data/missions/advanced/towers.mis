@@ -60,6 +60,20 @@ materialList = "~/data/skies/rockq3.dml";
       interiorFile = "~/data/interiors/advanced/towers0.dif";
       showTerrainInside = "0";
    };
+   new StaticShape() {
+      position = "12 -36 0";
+      rotation = "0 0 1 90";
+      scale = "1 1 1";
+      dataBlock = "CheckpointPad";
+   };
+
+   new StaticShape() {
+      position = "-12 -36 0";
+      rotation = "0 0 1 -90";
+      scale = "1 1 1";
+      dataBlock = "CheckpointPad";
+   };
+
 
    new StaticShape() {
       position = "39.000000 -37.000000 0.000000";

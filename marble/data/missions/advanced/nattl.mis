@@ -1,16 +1,17 @@
 
 new SimGroup(MissionGroup) {
+
    new ScriptObject(MissionInfo) {
          type = "Advanced";
          time = "0";
-         goldTime = "100000";
-         AwesomeTime = "75000";
-         desc = "A convoluted trail with countless shortcut possibilities.";
-         AwesomeHint = "Although this level was designed with a specific path in mind, the path was so convoluted that it\'s faster to simply go to the nearest gem. This essentially makes this level a playground level. Find the fastest path to collect all the gems!";
-         level = "4";
-         name = "Entangled Trail";
-         music = "temptation.ogg";
-         note = "Entangled Trail, made in Jan 1, 2026. The author thought about adding hazards (bumpers, mines etc.) to this level, but decided against it because the author considers it false difficulty.";
+         desc = "If you find yourself struggling to balance on the trims, you'\re not playing this level in the intended way.";
+         level = "11";
+         name = "Frame Hopping";
+         music = "third.ogg";
+         goldTime = "60000";
+         note = "Frame Hopping, made in Feb 22, 2026. This level is inspired by \"Pathways\" in MBG, which the author beat by finding a route that does *not* require walking on the metal beams and use Super Jumps to jump directly to the gems instead. There is a scrapped version of this level, which has a much more linear path and much fewer opportunities to use Super Jumps.";
+         AwesomeTime = "30000";
+
    };
 
    new MissionArea(MissionArea) {
@@ -38,8 +39,7 @@ new SimGroup(MissionGroup) {
       fogVolume1 = "-1 1 0";
       fogVolume2 = "-1 1 0";
       fogVolume3 = "-1 1 0";
-materialList = "~/data/skies/rockq3.dml";
-
+materialList = "~/data/skies/violentdays.dml";
       windVelocity = "1 0 0";
       windEffectPrecipitation = "0";
       noRenderBans = "1";
@@ -52,17 +52,37 @@ materialList = "~/data/skies/rockq3.dml";
       color = "0.600000 0.600000 0.600000 1.000000";
       ambient = "0.400000 0.400000 0.400000 1.000000";
    };
+
+
    new InteriorInstance() {
       position = "0 0 0";
       rotation = "1 0 0 0";
       scale = "1 1 1";
-      interiorFile = "~/data/interiors/advanced/carve0.dif";
+      interiorFile = "~/data/interiors/advanced/nattl0.dif";
       showTerrainInside = "0";
    };
 
    new Item() {
-      position = "-15.000000 13.000000 2.000000";
-      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      position = "-3.500000 42.500000 3.333318";
+      rotation = "1.0000 0.0000 0.0000 -180.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "21.500000 24.500000 -4.666682";
+      rotation = "1.0000 0.0000 0.0000 -180.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "ArrowItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-25.500000 24.500000 -16.666681";
+      rotation = "1.0000 0.0000 0.0000 -180.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "ArrowItem";
       collideable = "0";
@@ -70,25 +90,31 @@ materialList = "~/data/skies/rockq3.dml";
       rotate = "1";
    };
    new StaticShape() {
-      position = "-15.000000 13.000000 20.500000";
+      position = "-25.500000 25.500000 -27.999804";
       rotation = "0.0000 -0.0000 -1.0000 -90.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "CheckpointPad";
    };
    new StaticShape() {
-      position = "-13.000000 7.000000 4.000000";
-      rotation = "0.0000 -0.0000 -1.0000 -90.0000";
+      position = "21.500000 25.500000 -19.999807";
+      rotation = "0.0000 0.0000 1.0000 -90.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "CheckpointPad";
    };
    new StaticShape() {
-      position = "-8.000000 -6.000000 66.000000";
-      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      position = "-4.000000 42.500000 -7.999812";
+      rotation = "0.0000 0.0000 1.0000 -180.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "CheckpointPad";
+   };
+   new StaticShape() {
+      position = "8.500000 0.000000 -28.000000";
+      rotation = "0.0000 -0.0000 -1.0000 -180.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "EndPad";
    };
    new Item() {
-      position = "-15.000000 11.000000 12.000000";
+      position = "0.250000 8.750000 -0.000000";
       rotation = "0.0000 1.0000 0.0000 -0.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "GemItem";
@@ -98,7 +124,7 @@ materialList = "~/data/skies/rockq3.dml";
       noRespawn = "0";
    };
    new Item() {
-      position = "-11.000000 -7.000000 15.500000";
+      position = "0.250000 21.250000 -0.000000";
       rotation = "0.0000 1.0000 0.0000 -0.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "GemItem";
@@ -108,7 +134,7 @@ materialList = "~/data/skies/rockq3.dml";
       noRespawn = "0";
    };
    new Item() {
-      position = "13.000000 -9.000000 24.000000";
+      position = "8.750000 29.750000 -0.000002";
       rotation = "0.0000 1.0000 0.0000 -0.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "GemItem";
@@ -118,7 +144,7 @@ materialList = "~/data/skies/rockq3.dml";
       noRespawn = "0";
    };
    new Item() {
-      position = "11.000000 9.000000 16.000000";
+      position = "0.250000 21.250000 -10.000002";
       rotation = "0.0000 1.0000 0.0000 -0.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "GemItem";
@@ -128,7 +154,7 @@ materialList = "~/data/skies/rockq3.dml";
       noRespawn = "0";
    };
    new Item() {
-      position = "-9.000000 -1.000000 14.000000";
+      position = "21.750000 34.250000 -28.000000";
       rotation = "0.0000 1.0000 0.0000 -0.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "GemItem";
@@ -138,17 +164,7 @@ materialList = "~/data/skies/rockq3.dml";
       noRespawn = "0";
    };
    new Item() {
-      position = "-13.000000 -11.000000 21.000000";
-      rotation = "0.0000 1.0000 0.0000 -0.0000";
-      scale = "1.000000 1.000000 1.000000";
-      dataBlock = "GemItem";
-      static = "1";
-      collideable = "0";
-      rotate = "1";
-      noRespawn = "0";
-   };
-   new Item() {
-      position = "-13.000000 -9.000000 12.000000";
+      position = "0.250000 12.750000 -20.000004";
       rotation = "0.0000 1.0000 0.0000 -0.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "GemItem";
@@ -158,39 +174,57 @@ materialList = "~/data/skies/rockq3.dml";
       noRespawn = "0";
    };
    new Trigger() {
-      position = "-30.000000 30.000000 -10.000000";
+      position = "-40.000000 61.000000 -40.000000";
       rotation = "0.0000 1.0000 0.0000 -0.0000";
-      scale = "60.000000 60.000000 120.000000";
+      scale = "80.000000 80.000000 80.000000";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
    new StaticShape() {
-      position = "-14.000000 -14.000000 0.500000";
-      rotation = "0.0000 -0.0000 -1.0000 -90.0000";
+      position = "8.750000 29.750000 -19.998329";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "8.750000 21.250000 -19.998329";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "0.250000 21.250000 -19.998333";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-4.250000 21.250000 -19.998333";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-12.750000 21.250000 -19.998335";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "-12.750000 12.750000 -19.998333";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "RoundBumper";
+   };
+   new StaticShape() {
+      position = "0.000000 0.000000 0.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "StartPad";
    };
    new Item() {
-      position = "13.000000 13.000000 30.872946";
-      rotation = "0.0000 1.0000 0.0000 -0.0000";
-      scale = "1.000000 1.000000 1.000000";
-      dataBlock = "SuperBounceItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new Item() {
-      position = "11.000000 -11.000000 24.372944";
-      rotation = "0.0000 1.0000 0.0000 -0.0000";
-      scale = "1.000000 1.000000 1.000000";
-      dataBlock = "SuperBounceItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-   };
-   new Item() {
-      position = "-15.000000 15.000000 0.677907";
-      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      position = "0.000000 0.000000 0.376657";
+      rotation = "0.0000 -0.0000 -0.0000 -0.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "SuperJumpItem";
       collideable = "0";
@@ -198,7 +232,34 @@ materialList = "~/data/skies/rockq3.dml";
       rotate = "1";
    };
    new Item() {
-      position = "13.000000 2.000000 13.500000";
+      position = "-4.000000 42.500000 -7.575798";
+      rotation = "0.0000 0.0000 1.0000 -180.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "21.500000 25.500000 -19.575794";
+      rotation = "0.0000 0.0000 1.0000 -90.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "-25.500000 25.500000 -27.575787";
+      rotation = "0.0000 0.0000 -1.0000 -90.0000";
+      scale = "1.000000 1.000000 1.000000";
+      dataBlock = "SuperJumpItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
+   };
+   new Item() {
+      position = "17.250000 17.250000 0.489911";
       rotation = "0.0000 1.0000 0.0000 -0.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "TimeTravelItem";
@@ -210,7 +271,7 @@ materialList = "~/data/skies/rockq3.dml";
       timeBonus = "5000";
    };
    new Item() {
-      position = "-1.000000 -11.000000 9.500000";
+      position = "-8.250000 12.750000 -9.510088";
       rotation = "0.0000 1.0000 0.0000 -0.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "TimeTravelItem";
@@ -219,10 +280,10 @@ materialList = "~/data/skies/rockq3.dml";
       rotate = "1";
       noRespawn = "1";
       skin = "mbg";
-      timeBonus = "10000";
+      timeBonus = "5000";
    };
    new Item() {
-      position = "13.000000 0.623287 8.000000";
+      position = "8.750000 25.500000 -19.510088";
       rotation = "0.0000 1.0000 0.0000 -0.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "TimeTravelItem";
@@ -231,19 +292,7 @@ materialList = "~/data/skies/rockq3.dml";
       rotate = "1";
       noRespawn = "1";
       skin = "mbg";
-      timeBonus = "2500";
-   };
-   new Item() {
-      position = "9.000000 -1.319091 22.000000";
-      rotation = "0.0000 1.0000 0.0000 -0.0000";
-      scale = "1.000000 1.000000 1.000000";
-      dataBlock = "TimeTravelItem";
-      collideable = "0";
-      static = "1";
-      rotate = "1";
-      noRespawn = "1";
-      skin = "mbg";
-      timeBonus = "2500";
+      timeBonus = "5000";
    };
 
 };

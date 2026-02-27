@@ -9,7 +9,8 @@ new SimGroup(MissionGroup) {
          goldTime = "150000";
          name = "Conveyor Belts";
          time = "0";
-         note = "Conveyor Belts, made in Feb 17, 2026.";
+         note = "Conveyor Belts, made in Feb 17, 2026. If there are gaps in the conveyor belts, respawn and the gaps should go away. Also, sometimes the marble will get kicked off while on the ascending belt. I don\'t know why.";
+         startHelpText = "Once you\'ve collected three gems, use the Super Jump to jump the the higher parts of this level.";
 
 
    };
@@ -58,6 +59,14 @@ new SimGroup(MissionGroup) {
       interiorFile = "~/data/interiors/advanced/conveyorbelts0.dif";
       showTerrainInside = "0";
    };
+   new InteriorInstance() {
+      position = "32 8 56";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      interiorFile = "~/data/interiors/advanced/3_4x4x10.dif";
+      showTerrainInside = "0";
+   };
+
    new StaticShape() {
       position = "0 48 32";
       rotation = "0 0 1 90";

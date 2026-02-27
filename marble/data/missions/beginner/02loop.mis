@@ -11,7 +11,7 @@ new SimGroup(MissionGroup) {
          desc = "Walk around in this lava-filled backyard!";
          name = "Backyard Stroll";
          level = "2";
-         note = "Backyard Stroll, made in Apr 30, 2020. The spinning arrows use the code for the powerups, except that they don't do anything when touched.";
+         note = "Backyard Stroll, made in Apr 30, 2020.";
          music = "movingpieces.ogg";
    };
    new MissionArea(MissionArea) {

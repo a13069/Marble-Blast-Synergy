@@ -9,7 +9,7 @@ new SimGroup(MissionGroup) {
          name = "Floor Types";
          music = "shell.ogg";
          startHelpText = "Different surfaces have different properties. Use them to your advantage!";
-         note = "Floor Types, made in Nov 1, 2025. By the way, the author found it funny that almost every Marble Blast mod (except Platinum and PQ), completed or not, features three types of bouncy floor of different level of bounciness. The author deliberately avoided this trope in this mod.";
+         note = "Floor Types, made in Nov 1, 2025. There is a surface (sand) that is only used in custom levels, as the author decided not to use it in this mod\'s later development. It\'s not introduced in this level. By the way, the author found it funny that almost every Marble Blast mod (except Platinum and PQ) features three types of bouncy floor of different level of bounciness. The author deliberately avoided this trope in this mod.";
    };
 
    new MissionArea(MissionArea) {

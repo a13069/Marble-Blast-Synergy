@@ -7,7 +7,7 @@ new SimGroup(MissionGroup) {
          level = "6";
          name = "Powerups II";
          music = "shell.ogg";
-         note = "Powerups II, made in Nov 2, 2025.";
+         note = "Powerups II, made in Nov 2, 2025. The spinning arrows are actually powerups too (they use the same code as the powerups), except that they don't do anything when touched.";
          startHelpText = "The Gyrocopter reduces the gravity, making you fall slower.";
    };
 

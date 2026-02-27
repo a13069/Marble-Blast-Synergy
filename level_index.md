@@ -115,6 +115,11 @@ Realms:
 |Conveyor Belts|2026-02-17||||EA08|
 |Four Towers|2026-02-16||||EA09|
 |Bounce Adventure|2025-12-25||||EA10|
+|Frame Hopping|2026-02-22||||MA11|
+|Carousel Tower|2026-02-22||||MA12|
+|Fire Whirl|2026-02-22||||MA13|
+|Hazard Archipelago|2026-02-19||||MA14|
+|Floating Loops|2026-02-20||||MA15|
 
 ### Custom Levels
 

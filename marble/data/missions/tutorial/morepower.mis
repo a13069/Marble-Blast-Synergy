@@ -6,7 +6,7 @@ new SimGroup(MissionGroup) {
          desc = "Make your powerups more powerful.";
          level = "7";
          name = "Powerups III";
-         note = "Powerups III, made in Nov 19, 2025.";
+         note = "Powerups III, made in Nov 19, 2025. The calculation of powerup expiration time is different between this mod and PQ: in this mod, activating a powerup adds five seconds to its effective time. This allows you to stack the same powerups and maintain their effectiveness for a very long time.";
          music = "shell.ogg";
          startHelpText = "Hold your mouse button to activate two Super Speeds back to back!";
    };

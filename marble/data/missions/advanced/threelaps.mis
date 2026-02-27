@@ -4,7 +4,7 @@ new SimGroup(MissionGroup) {
          type = "Advanced";
          time = "0";
          desc = "Complete three laps in this three-layered track.";
-         AwesomeTime = "60000";
+         AwesomeTime = "54000";
          goldTime = "90000";
          AwesomeHint = "Start with the middle layer, then the top one, then the bottom one.";
          level = "5";

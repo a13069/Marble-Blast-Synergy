@@ -1,5 +1,9 @@
 # Changelog
-#### Marble Blast Synergy 0.5.0 (October ?, 2025)
+#### Marble Blast Synergy 0.6.0 (Febuary 27, 2026)
+-  Added 25 levels:
+    - Now the mod contains 75 main levels (30 beginner + 30 intermediate + 15 advanced), 10 tutorial levels and 11 custom levels.
+
+#### Marble Blast Synergy 0.5.0 (October 25, 2025)
 -  Added 10 main levels:
     - Now the mod contains 60 main levels (30 beginner + 30 intermediate) and 11 custom levels. It also means that the intermediate category is complete.
 -  Removed a gem in "Water Rings". The existing runs should still be valid.

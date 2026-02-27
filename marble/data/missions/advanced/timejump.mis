@@ -68,6 +68,13 @@ new SimGroup(MissionGroup) {
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "EndPad";
    };
+   new StaticShape() {
+      position = "0 69 18";
+      rotation = "0 0 1 180";
+      scale = "1 1 1";
+      dataBlock = "CheckpointPad";
+   };
+
    new Trigger() {
       position = "-30 150 -10";
       rotation = "0.0000 1.0000 0.0000 -0.0000";
