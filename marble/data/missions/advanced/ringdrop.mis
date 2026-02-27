@@ -11,7 +11,7 @@ new SimGroup(MissionGroup) {
          name = "Ring Drop";
          music = "temptation.ogg";
          startHelpText = "If you miss some gems, you can use the gravity modifiers at the bottom to get back to the top.";
-         note = "Ring Drop, made in Jan 25, 2026. Although the author has a script that converts blender files into mission files (The \"Create Sub\" button in the editor makes the mod crash somehow), this level was created by assembling level parts on Notepad. The author calculated the coordinates of each level part to make sure they are placed correctly.";
+         note = "Ring Drop, made in Jan 25, 2026. Although the author has a script that converts blender files into mission files (.dif files with game assets make the mod crash somehow), this level was created by assembling level parts on Notepad. The author calculated the coordinates of each level part to make sure they are placed correctly.";
    };
 
    new MissionArea(MissionArea) {
