@@ -7,6 +7,8 @@ new SimGroup(MissionGroup) {
          name = "Detours";
          level = "29";
          goldTime = "135000";
+         AwesomeTime = "80000";
+         AwesomeHint = "\"Acutally, I don\'t really need a Super Bounce here.\"";
          music = "resilience.ogg";
          type = "Intermediate";
          note = "Detours, made in Feb 15, 2025. When making this mod, the author set out to include gemless level in every realm (so as not to overrely on gems for level design), and thus this level was made to be a gemless level. This level\'s convoluted path is the result of the author trying to constrain the path without any gems.";

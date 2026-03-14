@@ -10,6 +10,8 @@ new SimGroup(MissionGroup) {
          music = "resilience.ogg";
          type = "Intermediate";
          goldTime = "48000";
+         AwesomeTime = "30000";
+         AwesomeHint = "Collect them all in just one lap.";
          note = "Cosmic Hamster Wheel, made in Dec 28, 2024.";
    };
    new MissionArea(MissionArea) {

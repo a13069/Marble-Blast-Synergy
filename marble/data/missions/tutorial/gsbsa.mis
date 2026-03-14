@@ -7,7 +7,7 @@ new SimGroup(MissionGroup) {
          level = "6";
          name = "Powerups II";
          music = "shell.ogg";
-         note = "Powerups II, made in Nov 2, 2025. The spinning arrows are actually powerups too (they use the same code as the powerups), except that they don't do anything when touched.";
+         note = "Powerups II, made in Nov 2, 2025. The spinning arrows are actually powerups too (they use the same code as the powerups), except that they don't do anything when touched.\nThe distance between the starting platform and the landing platform of the gyrocopter was increased in version 0.6.1 because of the increased gyrocopter airbound mobility.";
          startHelpText = "The Gyrocopter reduces the gravity, making you fall slower.";
    };
 
@@ -50,6 +50,8 @@ materialList = "~/data/skies/underwater.dml";
       color = "0.600000 0.600000 0.600000 1.000000";
       ambient = "0.400000 0.400000 0.400000 1.000000";
    };
+
+
    new InteriorInstance() {
       position = "0 0 0";
       rotation = "1 0 0 0";
@@ -83,7 +85,7 @@ materialList = "~/data/skies/underwater.dml";
       dataBlock = "EndPad";
    };
    new Item() {
-      position = "0.000000 5.000000 17.000000";
+      position = "0.000000 -23.000000 17.000000";
       rotation = "0.0000 1.0000 0.0000 -0.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "HelicopterItem";
@@ -92,9 +94,9 @@ materialList = "~/data/skies/underwater.dml";
       rotate = "1";
    };
    new Trigger() {
-      position = "-50.000000 250.000000 -50.000000";
+      position = "-50.000000 258.000000 -50.000000";
       rotation = "0.0000 1.0000 0.0000 -0.0000";
-      scale = "100.000000 300.000000 150.000000";
+      scale = "100.000000 360.000000 150.000000";
       dataBlock = "InBoundsTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
    };
@@ -107,17 +109,8 @@ materialList = "~/data/skies/underwater.dml";
       static = "1";
       rotate = "1";
    };
-   new Trigger() {
-      position = "-2.000000 120.000000 -16.000000";
-      rotation = "0.0000 1.0000 0.0000 -0.0000";
-      scale = "8.00000 8.000000 21.600000";
-      dataBlock = "HelpTrigger";
-      text = "The Shock Absorber makes you not bounce at all.\nUse it to stick to the wall and slide down to the platform below!";
-      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-   };
-
    new StaticShape() {
-      position = "0.000000 -4.000000 17.000000";
+      position = "0.000000 -32.000000 17.000000";
       rotation = "0.0000 1.0000 0.0000 -0.0000";
       scale = "1.000000 1.000000 1.000000";
       dataBlock = "StartPad";
@@ -131,15 +124,6 @@ materialList = "~/data/skies/underwater.dml";
       static = "1";
       rotate = "1";
    };
-   new Trigger() {
-      position = "-4.000000 82.000000 -10.000000";
-      rotation = "0.0000 1.0000 0.0000 -0.0000";
-      scale = "16.00000 2.000000 21.600000";
-      dataBlock = "HelpTrigger";
-      text = "The Super Bounce makes you bounce higher!\nUse it to bounce to the other side!";
-      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-   };
-
    new Item() {
       position = "0.000000 74.000000 10.000000";
       rotation = "0.0000 1.0000 0.0000 -0.0000";
@@ -152,6 +136,24 @@ materialList = "~/data/skies/underwater.dml";
       skin = "mbg";
       timeBonus = "5000";
    };
+
+   new Trigger() {
+      position = "-4.000000 82.000000 -10.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "16.00000 2.000000 21.600000";
+      dataBlock = "HelpTrigger";
+      text = "The Super Bounce makes you bounce higher!\nUse it to bounce to the other side!";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+   new Trigger() {
+      position = "-2.000000 120.000000 -16.000000";
+      rotation = "0.0000 1.0000 0.0000 -0.0000";
+      scale = "8.00000 8.000000 21.600000";
+      dataBlock = "HelpTrigger";
+      text = "The Shock Absorber makes you not bounce at all.\nUse it to stick to the wall and slide down to the platform below!";
+      polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
+   };
+
 
 };
 

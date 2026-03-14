@@ -7,9 +7,11 @@ new SimGroup(MissionGroup) {
          name = "Dodge Course";
          level = "27";
          goldTime = "75000";
+         AwesomeTime = "48000";
          music = "resilience.ogg";
          type = "Intermediate";
-         note = "Dodge Course, made in Oct 24, 2025.";
+         note = "Dodge Course, made in Oct 24, 2025. The increased gyrocopter aerial mobility in version 0.6.1 made a significant portion of this level completely skippable, so a gem was added in Mar 8, 2026 to compensate for it.";
+         AwesomeHint = "If the gyrocopter cannot be used to skip the level directly anymore... use it twice?";
    };
 
    new MissionArea(MissionArea) {
@@ -105,6 +107,15 @@ new SimGroup(MissionGroup) {
       rotation = "-0.0 -0.0 -1.0 -90";
       scale = "1 1 1";
       datablock = "CheckpointPad";
+   };
+   new Item() {
+      position = "-8.5 0 16";
+      rotation = "1 0 0 0";
+      scale = "1 1 1";
+      datablock = "GemItem";
+      collideable = "0";
+      static = "1";
+      rotate = "1";
    };
    new Item() {
       position = "-38 0 18";

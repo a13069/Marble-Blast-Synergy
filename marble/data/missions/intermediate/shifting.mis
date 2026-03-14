@@ -7,6 +7,8 @@ new SimGroup(MissionGroup) {
          name = "Sliding Paths";
          level = "24";
          goldTime = "60000";
+         AwesomeTime = "38000";
+         AwesomeHint = "After switching gravity, land on the top of the wall to skip some platform cycles.";
          music = "resilience.ogg";
          type = "Intermediate";
          note = "Sliding Paths, made in Mar 29, 2025.";

@@ -1,17 +1,17 @@
 
 new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
-         type = "Advanced";
+         type = "Custom";
          time = "0";
          desc = "Take advantage of the powerup timers!";
-         level = "6";
-         name = "Long Flights";
+         level = "60";
+         name = "Long Flights (Old version)";
          AwesomeTime = "40000";
          goldTime = "60000";
          AwesomeHint = "Complete this level without failing once and you should get this time.";
          music = "temptation.ogg";
          startHelpText = "Ignore the Super Bounce when you first see it. You\'ll see why it\'s there later.";
-         note = "Long Flights, made in Feb 15, 2026.";
+         note = "Long Flights, made in Feb 15, 2026. This level is an old version of \"Long flights\". See the note on that level for more information.";
    };
 
    new MissionArea(MissionArea) {

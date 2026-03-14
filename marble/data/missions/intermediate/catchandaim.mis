@@ -11,6 +11,8 @@ new SimGroup(MissionGroup) {
          music = "resilience.ogg";
          type = "Intermediate";
          goldTime = "70000";
+         AwesomeTime = "50000";
+         AwesomeHint = "Go through the standard route smoothly and you should be able to get this time.";
    };
    new MissionArea(MissionArea) {
       area = "-360 -648 720 1296";
@@ -325,7 +327,7 @@ new SimGroup(MissionGroup) {
       scale = "10 10 10";
       dataBlock = "HelpTrigger";
       polyhedron = "0.0000000 0.0000000 0.0000000 1.0000000 0.0000000 0.0000000 0.0000000 -1.0000000 0.0000000 0.0000000 0.0000000 1.0000000";
-         text = "Catch the gravity modifier in the air if you haven\'t got any gems yet. Roll off the ege if you have two.";
+         text = "Catch the gravity modifier in the air if you haven\'t got any gems yet. Roll off the edge if you have two.";
    };
    new AudioProfile(MusicProfile) {
       fileName = "~/data/sound/Shell.ogg";

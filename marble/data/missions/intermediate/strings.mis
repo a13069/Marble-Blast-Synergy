@@ -10,6 +10,9 @@ new SimGroup(MissionGroup) {
          music = "resilience.ogg";
          type = "Intermediate";
          goldTime = "75000";
+         AwesomeTime = "48000";
+         AwesomeHint = "Get the Gyrocopter early and use it to get the fourth gem.";
+
    };
 
    new MissionArea(MissionArea) {

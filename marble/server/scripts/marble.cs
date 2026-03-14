@@ -284,6 +284,7 @@ datablock MarbleData(DefaultMarble)
    bounceRestitution = 0.5;
    jumpImpulse = 7.5;
    maxForceRadius = 50;
+   airAcceleration = 5.0;
 
    bounce1 = Bounce1Sfx;
    bounce2 = Bounce2Sfx;
@@ -434,6 +435,7 @@ $shockAbsorberExpire = -1;
 $superBounceOn = false;
 $shockAbsorberOn = false;
 $gyrocopterGravity = 5;
+$gyrocopterAirAcceleration = 10.0;
 $gyrocopterTime = 5000;
 $gyrocopterOn = false;
 $gyrocopterExpire = -1;
@@ -508,6 +510,7 @@ function Marble::useCustomPowerUp(%this) {
          }
       case 10:
          DefaultMarble.gravity = $gyrocopterGravity;
+         DefaultMarble.airAcceleration = $gyrocopterAirAcceleration;
          %this.mountImage(HelicopterImage,1);
 		 $gyrocopterOn = true;
          if($gyrocopterExpire > %currentTime){
@@ -515,6 +518,8 @@ function Marble::useCustomPowerUp(%this) {
 		 }else{
 		    $gyrocopterExpire = %currentTime + $gyrocopterTime;
          }
+         %this.mPowerUpState[5].endTime = $gyrocopterExpire;
+         echo(%this.mPowerUpState);
       case 11:
 	     $waterOn = true;
          %this.mountImage(WaterImage,2);
@@ -549,6 +554,7 @@ function Marble::unbounceMe(%this) {
 
 function Marble::unheliMe(%this) {
    DefaultMarble.gravity = 20;
+   DefaultMarble.airAcceleration = 5.0;
    %this.unmountImage(1);
    $gyrocopterOn = false;
    $gyrocopterExpire = -1;

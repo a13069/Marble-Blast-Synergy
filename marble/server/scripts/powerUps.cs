@@ -190,7 +190,7 @@ datablock AudioProfile(PuSuperSpeedVoiceSfx)
    preload = true;
 };
 
-datablock ItemData(OldSuperSpeedItem)
+datablock ItemData(SuperSpeedItem)
 {
    // Mission editor category
    category = "Powerups";
@@ -213,7 +213,7 @@ datablock ItemData(OldSuperSpeedItem)
    maxInventory = 1;
 };
 
-datablock ItemData(SuperSpeedItem)
+datablock ItemData(WhirlgigSuperSpeedItem)
 {
    // Mission editor category
    category = "Powerups";

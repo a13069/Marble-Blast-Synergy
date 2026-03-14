@@ -6,11 +6,11 @@ new SimGroup(MissionGroup) {
          goldTime = "38000";
          AwesomeTime = "24000";
          AwesomeHint = "Make big jumps between the taller pillars!";
-         type = "Custom";
+         type = "Beginner";
          desc = "This level feels like MBG\'s \"Stepping Stone\" without the time limit... what do you think?";
          level = "23";
          name = "Hex Pillars";
-         note = "Hex Pillars, made in Jun 28, 2019.";
+         note = "Hex Pillars, made in Jun 28, 2019. The \"type\" field of this level\'s mission file was \"Custom\"... it was only discovered (and fixed) in March 7, 2026.";
          music = "customshader.ogg";
    };
    new MissionArea(MissionArea) {

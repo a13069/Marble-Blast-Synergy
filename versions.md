@@ -1,4 +1,12 @@
 # Changelog
+#### Marble Blast Synergy 0.6.1 (March 14, 2026)
+- Fixed discrepancies from MBG that arose from Whirlgig's remade powerup.
+    - Fixed the reduced mobility of the Gyrocopter in the air. 
+    - Fixed super speed firing in wrong directions after excessive gravity changes.
+    - "Powerups II" (Tutorial), "Dodge Course" (Intermediate), "Long Flights" (Advanced) were modified because of the Gyrocopter change. See their respective notes for what was changed.
+    - The old version of "Long Flights" was kept and moved to Custom. As a result this version contains one more level than the previous version.
+- Added awesome times to many intermediate levels
+
 #### Marble Blast Synergy 0.6.0 (Febuary 27, 2026)
 -  Added 25 levels:
     - Now the mod contains 75 main levels (30 beginner + 30 intermediate + 15 advanced), 10 tutorial levels and 11 custom levels.

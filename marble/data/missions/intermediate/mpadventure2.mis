@@ -5,11 +5,12 @@ new SimGroup(MissionGroup) {
    new ScriptObject(MissionInfo) {
          time = "0";
          goldTime = "50000";
+         AwesomeTime = "32000";
          desc = "Ride on the platform and do a lap!";
          name = "Platform Adventure II";
          level = "14";
          note = "Platform Adventure II, made in Jan 31, 2025.";
-         AwesomeHint = "This level was made with the intention that it\'s possible to beat the level without the moving platform after getting the water powerups, but the author isn\'t skilled enough to pull this off.";
+         AwesomeHint = "Collect the Time Travels along the way!";
          music = "loading.ogg";
          type = "Intermediate";
    };
